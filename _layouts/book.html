@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+{% include navigation.html %}
+
+  {% for entry in site.data.reading.years %}
+    {% for book in entry.books %}
+      {% if book.title == page.book %}
+        {% assign book_review = book %}
+        {% break %}
+
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+<article role="article">
+
+	<div class="book-intro">
+    <h1>{{ book_review.title }}</h1> 
+    <span>by {{ book_review.author }}</span>
+	</div>
+
+{{ content }}
+
+{% include post_nav.html %}
+
+</article>
+
+{% include footer.html %}
+
+{% if page.toc == true %}
+  <div class="toc narrow-remove mt-15-5">
+    {% include toc.html html=content h_min=2 %}
+    <a href="#"> ^ Return to top</a>
+  </div>
+{% endif%}

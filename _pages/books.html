@@ -1,0 +1,53 @@
+---
+layout: default
+title: Books
+updated: January 2023
+permalink: /books
+---
+
+{% include navigation.html %}
+
+<article>
+
+  <h1>Bookshelf</h1>
+
+<div class="reading-meta">
+
+<p>A list of books I've read over the last few years. Books that have notes are underlined; a list of only the books that I've written up notes for is <a href="{{ site.baseurl }}/books/reviews">here</a>. Excellent books have a star.
+<p>Last updated {{ page.updated }}.</p>
+
+</p>
+</div>
+
+{% for entry in site.data.reading.years %}
+  <div class="list-cat">
+        <span>{{ entry.year }}</span>
+        <span class="number">({{ entry.books | size }} books)</span>
+  </div>
+  <div class="list-cat-container border-top top-u1">
+    <ul class="reading-list">
+      {% for book in entry.books %}
+        
+        {% assign has_review = false %}
+        {% assign book_url = book.link %}
+        
+        {% for review in site.reviews %}
+          {% if review.book == book.title %}
+            {% assign book_url = review.url %}
+            {% assign has_review = true %}
+          {% endif %}
+        {% endfor %}
+        
+        {% if has_review %}<a href="{{ book_url }}">{% endif %}
+        <li class="list-item strong{% if book.star %} starred{% endif %}">
+          {{ book.title }}
+          <span class="author"> by {{ book.author }}</span>
+        </li>
+        {% if has_review %}</a>{% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}
+</article>
+
+{% include footer.html %}

@@ -1,0 +1,17 @@
+<div class="post-footer">
+
+  {% if page.tags %}
+	  <ul class="flexbox">
+		  {% for tag in page.tags %}
+        <li><a href="/tags#{{ tag | downcase }}" class="tag">#{{ tag }}</a></li> 
+      {% endfor %}
+	  </ul>
+  {% endif %}
+
+  {% if page.date %}
+    <div class="post-publish narrow-remove">
+      Published on <strong>{{ page.date | date: "%B %-d, %Y" }}</strong>
+    </div>
+  {% endif %}
+
+</div>

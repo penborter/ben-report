@@ -1,0 +1,21 @@
+{% comment %}
+Images to be inserted into posts.
+Pass the folder_name attribute into the post metadata and use as folder_name=page.folder_name
+Other attributes can be used as needed, requires:
+- folder
+- file
+- caption
+Optional:
+- class, defaults to "normal"
+- gallery, deaults to "post-gallery"
+
+{% endcomment %}
+
+<figure class="pic-{{ include.class | default: "normal" }}">
+    <a href="{{ page.photoloc }}/{{ include.file }}" title="{{ include.caption }}">
+        <img src="{{ page.photoloc }}/{{ include.file }}" alt="{{ include.caption }}" loading="lazy">
+    </a>
+    {% if include.caption %}
+    <figcaption {% if include.class == "wide" %}class="caption-wide"{% endif %}>{{ include.caption }}</figcaption>
+    {% endif %}
+</figure>

@@ -1,0 +1,294 @@
+euro:
+  title: Europe 2022
+  imagefolder: /assets/euro
+  thumb: euro-thumb.jpeg
+  blurb: "Happy snaps from a trip to Europe in 2022"
+  images:
+  - name: euro-1.jpeg
+    thumb: euro-1.jpeg
+    text: Metallic tower of Fourvière, Lyon
+  - name: euro-2.jpeg
+    thumb: euro-2.jpeg
+    text: Saint Antoine market place, Lyon
+  - name: euro-3.jpeg
+    thumb: euro-3.jpeg
+    text: Hotel view, Lyon
+  - name: euro-4.jpeg
+    thumb: euro-4.jpeg
+    text: By the Saône, Lyon
+  - name: euro-5.jpeg
+    thumb: euro-5.jpeg
+    text: Castel Sant'Angelo, Rome
+  - name: euro-6.jpeg
+    thumb: euro-6.jpeg
+    text: Local traffic, Rome
+  - name: euro-7.jpeg
+    thumb: euro-7.jpeg
+    text: Vatican museums, Vatican City
+  - name: euro-8.jpeg
+    thumb: euro-8.jpeg
+    text: Temple of Castor and Pollux, Rome 
+  - name: euro-9.jpeg
+    thumb: euro-9.jpeg
+    text: Towards the Gulf of Trieste, Trieste
+  - name: euro-10.jpeg
+    thumb: euro-10.jpeg
+    text: Santuario di Monte Grisa, Trieste
+  - name: euro-11.jpeg
+    thumb: euro-11.jpeg
+    text: Enjoying the Santuario sun, Trieste
+  - name: euro-12.jpeg
+    thumb: euro-12.jpeg
+    text: Bled Castle, Bled
+  - name: euro-13.jpeg
+    thumb: euro-13.jpeg
+    text: On the lake, Bled
+  - name: euro-14.jpeg
+    thumb: euro-14.jpeg
+    text: Watching the Place du Trocadéro, Paris
+  - name: euro-15.jpeg
+    thumb: euro-15.jpeg
+    text: Park gates, Paris
+  - name: euro-16.jpeg
+    thumb: euro-16.jpeg
+    text: Museé de l'Orangerie, Paris
+  - name: euro-17.jpeg
+    thumb: euro-17.jpeg
+    text: University town, Edinburgh
+sydney:
+  title: Sydney
+  blurb: "Pictures from in and around Sydney"
+  imagefolder: /assets/sydney
+  thumb: Sydney-thumb.jpeg
+  images:
+  - name: Sydney-1.jpg
+    thumb: Sydney-1.jpg
+    text: Brickwork, Surry Hills
+  - name: Sydney-2.jpg
+    thumb: Sydney-2.jpg
+    text: Lighthouse (in Wollongong, not Sydney)
+  - name: Sydney-3.jpg
+    thumb: Sydney-3.jpg
+    text: Street Exit, Wynyard 
+  - name: Sydney-4.jpg
+    thumb: Sydney-4.jpg
+    text: Personal transport, Darling Harbour
+  - name: Sydney-5.jpg
+    thumb: Sydney-5.jpg
+    text: Rat run, Darling Harbout
+  - name: Sydney-6.jpg
+    thumb: Sydney-6.jpg
+    text: Madonna's bra, Pyrmont
+  - name: Sydney-7.jpg
+    thumb: Sydney-7.jpg
+    text: Giving way, Garden Island
+  - name: Sydney-8.jpg
+    thumb: Sydney-8.jpg
+    text: Highway patrol, Bondi
+  - name: Sydney-9.jpg
+    thumb: Sydney-9.jpg
+    text: Cruising, Sydney Harbour
+  - name: Sydney-10.jpg
+    thumb: Sydney-10.jpg
+    text: Palm trees, Bondi
+  - name: Sydney-11.jpg
+    thumb: Sydney-11.jpg
+    text: Lights out, Cockatoo Island
+  - name: Sydney-12.jpg
+    thumb: Sydney-12.jpg
+    text: Balance, Sydney University
+  - name: Sydney-13.jpg
+    thumb: Sydney-13.jpg
+    text: Merging traffic, Darling Harbour
+  - name: Sydney-14.jpg
+    thumb: Sydney-14.jpg
+    text: Carousel, Luna Park
+  - name: Sydney-15.jpg
+    thumb: Sydney-15.jpg
+    text: Candid conversation, the Rocks
+  - name: Sydney-16.jpg
+    thumb: Sydney-16.jpg
+    text: In the shadows of International Towers, Barangaroo
+  - name: Sydney-17.jpg
+    thumb: Sydney-17.jpg
+    text: Palisade Hotel, Millers Point
+  - name: Sydney-18.jpg
+    thumb: Sydney-18.jpg
+    text: Don't look down, Barangaroo
+  - name: Sydney-19.jpg
+    thumb: Sydney-19.jpg
+    text: Start of the Wynard Walk, Barangaroo
+  - name: Sydney-20.jpg
+    thumb: Sydney-20.jpg
+    text: Couples baggage, Haymarket
+  - name: Sydney-21.jpg
+    thumb: Sydney-21.jpg
+    text: Admiring the other bridge, Pyrmont
+  - name: Sydney-22.jpg
+    thumb: Sydney-22.jpg
+    text: Watching the pacific, Valcluse
+  - name: Sydney-23.jpg
+    thumb: Sydney-23.jpg
+    text: Hornby Lighthouse, Watson's Bay
+  - name: Sydney-24.jpg
+    thumb: Sydney-24.jpg
+    text: North of the harbour, Waverton
+  - name: Sydney-25.jpg
+    thumb: Sydney-25.jpg
+    text: Lost, Darling Harbour
+  - name: Sydney-26.jpg
+    thumb: Sydney-26.jpg
+    text: Downhill, The Rocks
+nz:
+  title: New Zealand
+  blurb: "Roadtrip around New Zealand's South Island"
+  imagefolder: /assets/nz
+  thumb: nz-thumb.jpeg
+  images:
+  - name: nz-1.jpg
+    thumb: nz-1.jpg
+    text: Mountains off Lindis Pass
+  - name: nz-2.jpg
+    thumb: nz-2.jpg
+    text: Floating near Mt Pisa
+  - name: nz-3.jpg
+    thumb: nz-3.jpg
+    text: Dunedin cycle club
+  - name: nz-4.jpg
+    thumb: nz-4.jpg
+    text: View from Lindis Pass viewpoint
+  - name: nz-5.jpg
+    thumb: nz-5.jpg
+    text: Setting off - near Tekapo
+  - name: nz-6.jpg
+    thumb: nz-6.jpg
+    text: Lake Tekapo, near the Church
+  - name: nz-7.jpg
+    thumb: nz-7.jpg
+    text: Somewhere between Wanaka and Queenstown
+  - name: nz-8.jpg
+    thumb: nz-8.jpg
+    text: Somewhere between Wanaka and Queenstown, pt 2
+  - name: nz-9.jpg
+    thumb: nz-9.jpg
+    text: Exploring Larnach Castle, Dunedin
+  - name: nz-10.jpg
+    thumb: nz-10.jpg
+    text: Christchurch construction work
+usa:
+  title: USA
+  blurb: "A collection from two trips to the USA"
+  imagefolder: /assets/usa
+  thumb: usa-thumb.jpeg
+  images:
+  - name: usa-1.jpg
+    thumb: usa-1.jpg
+    text: LA Streets
+  - name: usa-2.jpg
+    thumb: usa-2.jpg
+    text: Up the road from the White House
+  - name: usa-3.jpg
+    thumb: usa-3.jpg
+    text: Salton City, CA
+  - name: usa-4.jpg
+    thumb: usa-4.jpg
+    text: Just outside of Salton City
+  - name: usa-5.jpg
+    thumb: usa-5.jpg
+    text: Parked in Seattle
+  - name: usa-6.jpg
+    thumb: usa-6.jpg
+    text: Santa Monica beach 
+  - name: usa-7.jpg
+    thumb: usa-7.jpg
+    text: Hotel windows in San Francisco
+  - name: usa-8.jpg
+    thumb: usa-8.jpg
+    text: Doorway in Alcatraz
+  - name: usa-9.jpg
+    thumb: usa-9.jpg
+    text: Alcatraz interior
+  - name: usa-10.jpg
+    thumb: usa-10.jpg
+    text: The Sky Needle
+  - name: usa-11.jpg
+    thumb: usa-11.jpg
+    text: Seattle bridge
+  - name: usa-12.jpg
+    thumb: usa-12.jpg
+    text: BNSF in Centennial Park, Seattle
+gor:
+  title: Great Ocean Road
+  blurb: "A trip down the Great Ocean Road"
+  imagefolder: /assets/gor
+  thumb: GOR-thumb.jpeg
+  images:
+  - name: GOR-1.jpg
+    thumb: GOR-1.jpg
+    text: Heading off
+  - name: GOR-2.jpg
+    thumb: GOR-2.jpg
+    text: Torquay surf patrol
+  - name: GOR-3.jpg
+    thumb: GOR-3.jpg
+    text: Incoming storm near Apollo Bay
+  - name: GOR-4.jpg
+    thumb: GOR-4.jpg
+    text: Cape Patton lookout point
+  - name: GOR-5.jpg
+    thumb: GOR-5.jpg
+    text: The Road, Cape Patton
+  - name: GOR-6.jpg
+    thumb: GOR-6.jpg
+    text: Me
+  - name: GOR-7.jpg
+    thumb: GOR-7.jpg
+    text: Assorted tourists
+  - name: GOR-8.jpg
+    thumb: GOR-8.jpg
+    text: The hero of the trip
+  - name: GOR-9.jpg
+    thumb: GOR-9.jpg
+    text: Assorted tourists, pt. 2
+  - name: GOR-10.jpg
+    thumb: GOR-10.jpg
+    text: The view from the 12 Apostles lookout
+  - name: GOR-11.jpg
+    thumb: GOR-11.jpg
+    text: Assorted tourists, pt. 3
+gee:
+  title: Geelong
+  blurb: "Some highlights from living in Geelong"
+  imagefolder: /assets/gee
+  thumb: gee-thumb.jpg
+  images:
+  - name: gee-1.jpg
+    thumb: gee-1.jpg
+    text: Geelong carousel
+  - name: gee-2.jpg
+    thumb: gee-2.jpg
+    text: Parked on the pier
+  - name: gee-3.jpg
+    thumb: gee-3.jpg
+    text: Clifton Springs digger
+  - name: gee-4.jpg
+    thumb: gee-4.jpg
+    text: Country Club Dr
+  - name: gee-5.jpg
+    thumb: gee-5.jpg
+    text: Fishing in Corio Bay
+  - name: gee-6.jpg
+    thumb: gee-6.jpg
+    text: Fishing in Corio Bay, pt 2
+  - name: gee-7.jpg
+    thumb: gee-7.jpg
+    text: Geelong architecture
+  - name: gee-8.jpg
+    thumb: gee-8.jpg
+    text: Setting off from Western Beach
+  - name: gee-9.jpg
+    thumb: gee-9.jpg
+    text: Point Lonsdale view
+  - name: gee-10.jpg
+    thumb: gee-10.jpg
+    text: The old Bellarine railway

@@ -1,0 +1,103 @@
+# 1. Site Details
+site: Ben Porter
+url: https://ben.report
+title: ben.report
+description: ben.report
+
+
+# 2. Excluded files
+exclude:
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - stretch.gemspec
+  - .jekyll-cache
+
+# 3. Gems / Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-target-blank
+
+# 4. Gem settings
+twitter:
+  username: penborter
+author: Ben Porter
+social:
+  name: Ben Porter
+  links:
+    - https://twitter.com/penborter
+    - https://www.linkedin.com/in/penborter
+markdown: kramdown
+
+# 5. Jekyll settings
+sass:
+  style: compressed
+timezone: Australia/Sydney #AEST FTW
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      main_columns: col-3 # Default to triple column layout
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: "photos"
+    values:
+      layout: photo
+      main_columns: col-2 # Default to double column layout for photos pages
+
+encoding: utf-8 
+lang: en-GB
+
+# 6. Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  photos:
+    output: true
+    permalink: /photos/:slug
+  posts:
+    output: true
+    permalink: /posts/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug
+  reviews:
+    output: true
+    permalink: /books/:slug
+
+# 7. Site Navigation
+nav_header:
+- title: Posts
+  url: /posts
+- title: Photos
+  url: /photos
+- title: Books
+  url: /books
+
+nav_secondary:
+- title: Tags
+  url: /tags
+- title: Notes
+  url: /books/reviews
+- title: Twitter
+  url: https://twitter.com/penborter
+- title: Github
+  url: https://github.com/penborter

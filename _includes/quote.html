@@ -1,0 +1,8 @@
+<blockquote>
+  {{ include.content }}
+  <div class="quote-meta">
+    {% if include.link %}<a href="{{ include.link }}">{% endif %} 
+      {{ include.author }}, <span style="font-style: italic;">{{ include.title }}</span>
+    {% if include.link %}</a>{% endif %}
+  </div>
+</blockquote>

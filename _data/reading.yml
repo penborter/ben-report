@@ -1,0 +1,613 @@
+years:
+  - year: "2023"
+    books:
+      - title: Energy
+        author: Richard Rhoades
+      - title: Ficciones
+        author: Jorge Luis Borges
+      - title: There is No Antimimetics Division
+        author: Sam Hughes
+      - title: The Keep
+        author: Jennifer Egan
+      - title: Tomorrow and Tomorrow and Tomorrow
+        author: Gabrielle Zevin
+      - title: Revelation Space
+        author: Alastair Reynolds
+        
+  - year: "2022"
+    books:
+      - title: The Pocket Guide to Action
+        author: Kyle Eschenroeder
+
+      - title: The Dispossessed
+        author: Ursula Le Guin
+
+      - title: The Man from the Future
+        author: Ananyo Bhattacharya
+
+      - title: A Swim in a Pond in the Rain
+        author: George Saunders
+
+      - title: Fool's Fate
+        author: Robin Hobb
+
+      - title: The Golden Fool
+        author: Robin Hobb
+
+      - title: Fool's Errand
+        author: Robin Hobb
+
+      - title: Ship of Destiny
+        author: Robin Hobb
+
+      - title: The Mad Ship
+        author: Robin Hobb
+
+      - title: Ship of Magic
+        author: Robin Hobb
+
+      - title: Four Thousand Weeks
+        author: Oliver Burkeman
+        star: yes
+        
+      - title: Assassin's Quest
+        author: Robin Hobb
+
+      - title: Royal Assassin
+        author: Robin Hobb
+
+      - title: When We Cease to Understand the World
+        author: Benjamin Labatut
+
+      - title: Beyond the Blue Event Horizon
+        author: Frederik Pohl
+
+      - title: The End of Eternity
+        author: Isaac Asimov
+
+      - title: After Babel
+        author: George Steiner
+
+      - title: Triumph of the City
+        author: Edward Glaeser
+
+      - title: The Emperor's Tomb
+        author: Steve Berry
+
+      - title: Scale
+        author: Geoffrey West
+
+      - title: The Alexandria Link
+        author: Steve Berry
+
+      - title: The City We Became
+        author: N. K. Jemisin
+
+      - title: The Sea of Tranquility
+        author: Emily St John Mandel
+
+      - title: The Unreal and the Real
+        author: Ursula K. Le Guin
+
+      - title: Piranesi
+        author: Susanna Clarke
+        star: yes
+
+      - title: Where Is My Flying Car
+        author: J Storrors Hall
+
+      - title: Six Memos for the Next Millenium
+        author: Italo Calvino
+
+      - title: A Desolation Called Peace
+        author: Arkady Martine
+
+      - title: A Memory Called Empire
+        author: Arkady Martine
+
+      - title: A Million Miles in a Thousand Years
+        author: Donald Miller
+
+      - title: Klara and the Sun
+        author: Kazuo Ishiguro
+
+      - title: The Light of All that Falls
+        author: James Islington
+
+      - title: An Echo of Things to Come
+        author: James Islington
+
+      - title: The Shadow of What Was Lost
+        author: James Islington
+
+      - title: On The Road
+        author: Jack Kerouac
+
+      - title: The Man Who Was Thursday
+        author: G. K. Chesterton
+        star: yes
+
+      - title: Mother Tongue
+        author: Bill Bryson
+
+      - title: Superpower
+        author: Ross Garnaut
+
+      - title: Zen and the Art of Motorcycle Maintenance
+        author: Robert Pirsig
+
+      - title: The Scout Mindset
+        author: Julia Galef
+
+      - title: Three Men in a Boat
+        author: Jerome K. Jerome
+
+      - title: The Lincoln Highway
+        author: Amor Towles
+
+      - title: Naming the Mind
+        author: Kurt Danzinger
+        star: yes
+
+      - title: Selected Non-Fictions
+        author: Jorge Luis Borges
+
+      - title: The Remains of the Day
+        author: Kazuo Ishiguro
+    
+      - title: I Am a Strange Loop
+        author: Douglas Hofstadter
+
+      - title: Mort
+        author: Terry Prachett       
+
+  - year: "2021"
+    books:
+      - title: Richer, Wiser, Happier
+        author: William Green
+
+      - title: Matrix
+        author: Lauren Groff
+        star: yes
+
+      - title: Three Moments of an Explosion
+        author: China Miéville
+
+      - title: Working Backwards
+        author: Carr and Bryar
+
+      - title: The City and the City
+        author: China Miéville
+        star: yes
+
+      - title: A Desolation Called Peace
+        author: Arkady Martine
+        star: yes
+
+      - title: Use of Weapons
+        author: Iain Banks
+
+      - title: Mindwise
+        author: Nicholas Epley  
+      
+      - title: How to Take Smart Notes
+        author: Sonke Ahrens
+      
+      - title: The One Impossible Labyrinth
+        author: Matthew Reilly
+
+      - title: Project Hail Mary
+        author: Andy Weir
+
+      - title: What I Talk About When I Talk About Running
+        author: Haruki Murakami
+
+      - title: A Brief History of Time
+        author: Stephen Hawking 
+
+      - title: How Asia Works
+        author: Joe Studwell
+
+      - title: The Man Who Mistook His Wife For a Hat
+        author: Oliver Sacks
+
+      - title: A Memory Called Empire
+        author: Arkady Martine
+        star: yes
+
+      - title: The Theory That Would Not Die
+        author: Sharon McGrayne
+
+      - title: A Short Stay In Hell
+        author: Steven Peck
+
+      - title: Friendly Ambitious Nerd
+        author: Visakan Veerasamy
+
+      - title: The Aleph
+        author: Jorge Borges
+        star: yes
+
+      - title: Longitude
+        author: Dava Sobel
+
+      - title: Influence
+        author: Robert Cialdini
+
+      - title: Pandora's Star
+        author: Peter Hamilton
+
+      - title: Judas Unchained
+        author: Peter Hamilton
+
+      - title: The Alexandria Link
+        author: Steve Berry
+
+      - title: The Templar Legacy
+        author: Steve Berry
+
+      - title: The Assassin's Apprentice
+        author: Robin Hobb
+
+      - title: To Sell is Human
+        author: Daniel Pink
+        link: https://openlibrary.org/isbn/1594631905
+      
+      - title: Digital Fortress
+        author: Dan Brown
+        link: https://openlibrary.org/isbn/1439565775
+
+      - title: Superforcasting
+        author: Tetlock and Gardener
+        link: https://openlibrary.org/isbn/1847947158
+
+      - title: The Big Change
+        author: Frederick Allen
+        link: https://openlibrary.org/isbn/0786101016
+
+      - title: China, A History
+        author: John Keay
+        link: https://openlibrary.org/isbn/0465025188
+
+      - title: Early Riser
+        author: Jasper Fforde
+        link: https://openlibrary.org/isbn/0670025038
+
+      - title: Down Under
+        author: Bill Bryson
+        link: https://openlibrary.org/isbn/038540817X
+
+      - title: Sources of Power
+        author: Gary Klein
+        link: https://openlibrary.org/isbn/0262611465
+
+      - title: Never Let Me Go
+        author: Kazuo Ishiguro
+        link: https://openlibrary.org/isbn/0307740994
+        star: yes
+
+      - title: Our Mathematical Universe
+        author: Max Tegmark
+        link: https://openlibrary.org/isbn/0307599809
+
+      - title: Darkdawn
+        author: Jay Kristoff
+        link: https://openlibrary.org/isbn/0008180083
+
+      - title: Godsgrave
+        author: Jay Kristoff
+        link: https://openlibrary.org/isbn/0008180032
+
+      - title: Nevernight
+        author: Jay Kristoff
+        link: https://openlibrary.org/isbn/0008179980
+
+      - title: The Choice
+        author: Edith Eger
+        link: https://openlibrary.org/isbn/1846045126
+
+      - title: So Good They Can't Ignore You
+        author: Cal Newport
+        link: https://openlibrary.org/isbn/0349420219
+
+      - title: A Man on the Moon
+        author: Andrew Chaikin
+        link: https://openlibrary.org/isbn/014311235X
+        
+      - title: Snow Crash
+        author: Neal Stephenson
+        link: https://openlibrary.org/isbn/0553380958
+
+      - title: Exhalation
+        author: Ted Chiang
+        link: https://openlibrary.org/isbn/1101947888
+
+      - title: The Idea Factory
+        author: Jon Gertner
+        link: https://openlibrary.org/isbn/1594203288
+        year: 2012
+        pub: Penguin Random House
+
+      - title: Excession
+        author: Iain M Banks
+        link: https://openlibrary.org/isbn/185723457X
+
+      - title: The Almanack of Naval Ravikant
+        author: Eric Jorgenson
+        link: https://openlibrary.org/isbn/1544514212
+        year: 2020
+        pub: Magrathea Publishing
+
+      - title: The Enigma of Reason
+        author: Mercier and Sperber
+        link: https://openlibrary.org/isbn/0674368304
+        year: 2017
+        pub: Penguin Random House
+
+      - title: Gödel, Escher, Bach
+        author: Douglas Hofstadter
+        link: https://openlibrary.org/isbn/0394745027
+        year: 1979
+        pub: Basic Books
+
+      - title: Metamorphosis and Other Stories
+        author: Franz Kafka
+        link: https://openlibrary.org/isbn/0143105248
+
+      - title: Piranesi
+        author: Susanna Clarke
+        link: https://openlibrary.org/isbn/163557563X
+        star: yes
+
+      - title: Endurance
+        author: Alfred Lansing
+        link: https://openlibrary.org/isbn/078670621X
+        star: yes
+        year: 1959
+        pub: Carroll & Graf Publishers
+
+      - title: The Lessons of History
+        author: Will and Ariel Durant
+        link: https://openlibrary.org/isbn/143914995X
+        year: 1968
+        pub: Simon & Schuster
+
+      - title: The Wise Man's Fear
+        author: Patrick Rothfuss
+        link: https://openlibrary.org/isbn/0756407915
+
+      - title: The Elephant in the Brain
+        author: Simler and Hanson
+        link: https://openlibrary.org/isbn/0190495995
+        year: 2017
+        pub: Ofxord University Press
+        star: yes
+
+      - title: The Name of the Wind
+        author: Patrick Rothfuss
+        link: https://openlibrary.org/isbn/0756404746
+
+      - title: The Making of the Atomic Bomb
+        author: Richard Rhoades
+        link: https://openlibrary.org/isbn/0671441337
+
+  - year: "2020"
+    books:
+      - title: Stories of Your Life and Others
+        author: Ted Chaing
+        link: https://openlibrary.org/isbn/076530418X
+
+      - title: The House on Mango Street
+        author: Sandra Cisneros
+        link: https://openlibrary.org/isbn/0679734775
+
+      - title: Invisible Cities
+        author: Italo Calvino
+        link: https://openlibrary.org/isbn/0156453800
+
+      - title: How To Talk About Books You Haven't Read
+        author: Pierre Bayard
+        link: https://openlibrary.org/isbn/1596915439
+
+      - title: The Man Who Solved the Market
+        author: Gregory Zuckerman
+        link: https://openlibrary.org/isbn/073521798X
+
+      - title: Slaughterhouse Five
+        author: Kurt Vonnegut
+        link: https://openlibrary.org/isbn/0812988523
+
+      - title: Antifragile
+        author: Nassim Taleb
+        link: https://openlibrary.org/isbn/0812979680
+
+      - title: Fooled By Randomness
+        author: Nassim Taleb
+        link: https://openlibrary.org/isbn/158799190X
+
+      - title: The Saints of Salvation
+        author: Peter Hamilton
+        link: https://openlibrary.org/isbn/1509844635
+
+      - title: Salvation Lost
+        author: Peter Hamilton
+        link: https://openlibrary.org/isbn/1447281365
+
+      - title: Salvation
+        author: Peter Hamilton
+        link: https://openlibrary.org/isbn/0399178767
+
+      - title: Human Transit
+        author: Jarrett Walker
+        link: https://openlibrary.org/isbn/1597269727
+        year: 2011
+        pub: Island Press
+
+      - title: Atomic Habits
+        author: James Clear
+        link: https://openlibrary.org/isbn/1847941834
+        year: 2018
+        pub: Penguin Random House
+
+      - title: Cat's Cradle
+        author: Kurt Vonnegut
+        link: https://openlibrary.org/isbn/0440111498
+
+      - title: Fermat's Last Theorem
+        author: Amir Aczel
+        link: https://openlibrary.org/isbn/1568583605
+
+      - title: The Spy Who Came In From The Cold
+        author: John Le Carré
+        link: https://openlibrary.org/isbn/0905712315
+
+      - title: The Body
+        author: Bill Bryson
+        link: https://openlibrary.org/isbn/0552779903
+
+      - title: The Two Lost Mountains
+        author: Matthew Reilly
+        link: https://openlibrary.org/isbn/1760559083
+
+      - title: Wolf Hall
+        author: Hilary Mantel
+        link: https://openlibrary.org/isbn/161664365X
+
+      - title: Alchemy
+        author: Rory Sutherland
+        link: https://www.amazon.com.au/Alchemy-Surprising-Power-Ideas-Sense-ebook/dp/B01F1HOAWA
+        year: 2019
+        pub: Ebury Publishing
+        star: yes
+
+      - title: Idea Makers
+        author: Stephen Wolfram
+        link: https://www.amazon.com.au/Idea-Makers-Personal-Perspectives-Notable/dp/1579550037
+        year: 2016
+        pub: Wolfram Media
+
+      - title: Exhalation
+        author: Ted Chiang
+        link: https://www.amazon.com.au/Exhalation-Stories-Ted-Chiang/dp/1101947888
+
+      - title: The Psychology of Money
+        author: Morgan Housel
+        link: https://www.amazon.com/Psychology-Money-Timeless-lessons-happiness/dp/0857197681
+        year: 2020
+        pub: Harriman House
+
+      - title: Metaphors We Live By
+        author: George Lakoff
+        link: https://www.amazon.com/Metaphors-We-Live-George-Lakoff/dp/0226468011
+
+      - title: Unfinished Business
+        author: Vivian Gornick
+        link: https://www.amazon.com/Unfinished-Business-Notes-Chronic-Re-reader/dp/0374282153
+
+      - title: Dune
+        author: Frank Herbert
+        link: https://www.amazon.com.au/Dune-Frank-Herbert/dp/0441172717
+
+      - title: The Baron in the Trees
+        author: Italo Calvino
+        link: https://www.amazon.com.au/Baron-Trees-Italo-Calvino/dp/0156106809
+
+      - title: The Way We Eat Now
+        author: Bee Wilson
+        link: https://www.amazon.com.au/Way-Eat-Now-Revolution-Transformed/dp/0465093973
+        star: yes
+        year: 2019
+        pub: Fourth Estate
+
+      - title: The Left Hand of Darkness
+        author: Ursula Le Guin
+        link: https://openlibrary.org/works/OL59864W/The_Left_Hand_of_Darkness
+
+      - title: If on a Winter's Night a Traveller
+        author: Italo Calvino
+        link: https://openlibrary.org/works/OL15358W/Se_una_notte_d'inverno_un_viaggiatore
+        star: yes
+
+      - title: Ficciones
+        author: Jorge Borges
+        link: https://www.amazon.com.au/Ficciones-Jorge-Luis-Borges/dp/0802130305
+
+      - title: On The Move
+        author: Oliver Sacks
+        link: https://www.amazon.com.au/Move-Life-Oliver-Sacks-ebook/dp/B00TCI0P24
+        year: 2015
+        pub: Vintage
+
+      - title: The Dark Forest
+        author: Liu Cixin
+        link: https://www.amazon.com/Dark-Forest-Remembrance-Earths-Past/dp/0765386690
+
+      - title: Bad Blood
+        author: John Carreyrou
+        link: https://www.amazon.com.au/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X
+
+      - title: The Count of Monte Cristo
+        author: Alexandre Dumas
+        link: https://www.amazon.com/Count-Monte-Cristo-Penguin-Classics/dp/0140449264
+
+      - title: The Anarchy
+        author: William Dalrymple
+        link: https://www.amazon.com.au/Anarchy-Rise-Fall-India-Company/dp/1635573955
+
+      - title: Ventus
+        author: Karl Schroeder
+        link: https://www.amazon.com/Ventus-Karl-Schroeder/dp/0812576357
+
+      - title: The Design of Everyday Things
+        author: Don Norman
+        link: https://www.amazon.com.au/Design-Everyday-Things-Revised-Expanded/dp/0465050654
+
+      - title: The Forever War
+        author: Joe Haldeman
+        link: https://www.amazon.com.au/Forever-War-Joe-Haldeman/dp/0312536631
+
+      - title: Short Story Collection
+        author: Philip K Dick
+        link:
+
+      - title: The Little Prince
+        author: Antoine de Saint-Exupéry
+        link: https://www.amazon.com/Little-Prince-Antoine-Saint-Exup%C3%A9ry/dp/0156012197
+        star: yes
+
+      - title: The Information
+        author: James Gleick
+        link: https://www.amazon.com/Information-History-Theory-Flood/dp/1400096235
+
+      - title: The Professor and the Madman
+        author: Simon Winchester
+        link: https://www.amazon.com/Professor-Madman-Insanity-English-Dictionary-ebook/dp/B000FCKM7E
+
+      - title: The Man in the High Castle
+        author: Philip K Dick
+        link: https://www.amazon.com.au/Man-High-Castle-Philip-Dick/dp/0547572484
+
+      - title: Foucault's Pendulum
+        author: Umberto Eco
+        link: https://www.amazon.com.au/Foucaults-Pendulum-Umberto-Eco/dp/015603297X
+
+      - title: Nudge
+        author: Thaler and Sunstein
+        link: https://www.amazon.com.au/Nudge-Improving-Decisions-Health-Happiness/dp/014311526X
+
+      - title: Grass For His Pillow
+        author: Lian Hearn
+        link: https://www.amazon.com.au/Across-Nightingale-Floor-Tales-Otori-ebook/dp/B00JG6HRBO
+
+      - title: Across the Nightingale Floor
+        author: Lian Hearn
+        link: https://www.amazon.com.au/Across-Nightingale-Floor-Tales-Otori-ebook/dp/B00JG6HRBO
+
+      - title: Factfulness
+        author: Hans Rosling
+        link: https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814
+        star: yes
+
+      - title: Salvation Lost
+        author: Peter F Hamilton
+        link: https://www.amazon.com/Salvation-Lost-Peter-F-Hamilton/dp/0399178856
