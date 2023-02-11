@@ -223,9 +223,6 @@ gor:
   imagefolder: /assets/gor
   thumb: GOR-thumb.jpeg
   images:
-  - name: GOR-1.jpg
-    thumb: GOR-1.jpg
-    text: Heading off
   - name: GOR-2.jpg
     thumb: GOR-2.jpg
     text: Torquay surf patrol
