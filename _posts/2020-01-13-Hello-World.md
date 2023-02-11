@@ -3,7 +3,7 @@ layout: post
 title: Hello World
 description: Hello World
 summary: A short intro for my website
-tags: [hi]
+tags: [site]
 blurb: Welcome to my website.
 ---
 

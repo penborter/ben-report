@@ -40,4 +40,4 @@ I'm still not sure. I'll write up a more in-depth post about data prep and detai
    caption="Player logos that include numbers. Weirdly, they're mostly point guards."
 %}
 
-[^1]: Clockwise from top left: Damian Lillard, Penny Hardaway, Tracy McGrady, Kyrie Irving, Stephen Curry, Chris Paul, Allen Iverson, and Kawhi Leonard.
+[^1]: From top left to bottom right: Damian Lillard (0), Penny Hardaway (1), Tracy McGrady (1), Kawhi Leonard (2), Kyrie Irving (2 or 11), Allen Iverson (3), Chris Paul (3), Stephen Curry (30).

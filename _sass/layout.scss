@@ -585,7 +585,7 @@ img {
 
 .pic-wide {
   width: calc(100% * #{$pic-wide});
-  margin: 2em 0 2em calc(100% * (1 - #{$pic-wide}) / 2);
+  //margin: 2em 0 2em calc(100% * (1 - #{$pic-wide}) / 2);
 }
 
 .caption-wide {
