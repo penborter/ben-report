@@ -97,6 +97,8 @@ nav_secondary:
   url: /tags
 - title: Notes
   url: /books/reviews
+- title: Feed
+  url: /feed.xml
 - title: Twitter
   url: https://twitter.com/penborter
 - title: Github

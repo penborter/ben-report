@@ -27,7 +27,6 @@ $light-transparent: scale-color($light, $alpha: -50%);
 // 2.2 CSS Variables
 // Converting sass variable colours to CSS variables for the dark / light theme switcher
 // The theme sets which of the two input colours is --fg (foreground) and which is --bg (background)
-// The CSS variables are then what's renderered
 
 :root {
 
@@ -591,6 +590,33 @@ img {
 .caption-wide {
   width: calc(100% * #{$caption-wide});
   margin-left: calc(50em * (1 - #{$caption-wide}) / 2);
+}
+
+// Tables
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border: 1px solid;
+
+  thead tr {
+    background: var(--fg);
+    color: var(--bg);
+  }
+}
+
+tr {
+  height: 35px;
+  background: var(--bg-accent-2);
+
+  &:hover:not(thead tr) {
+    filter: brightness(110%);
+  }
+}
+
+tr:nth-child(even) {
+  background: var(--bg);
 }
 
 // Table of Contents

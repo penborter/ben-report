@@ -18,7 +18,7 @@ Explore below:
 
 Dark / light theme switch --> {% include theme_switch.html %}
 
-This site is a constant work in progress, based on the [Stretch](https://stretch.penborter.com/) Jekyll theme.
+This site is a constant work in progress, based on the [Stretch](https://stretch.ben.report/) Jekyll theme.
 I'm also other on places around the internet, normally as *penborter* : 
 
 - [Twitter](https://twitter.com/penborter)
