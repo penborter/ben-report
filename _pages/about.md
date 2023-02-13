@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: Home
 permalink: /
 ---
@@ -24,3 +24,5 @@ I'm also other on places around the internet, normally as *penborter* :
 - [Twitter](https://twitter.com/penborter)
 - [Instagram](https://www.instagram.com/penborter/)
 - [Github](https://github.com/penborter)
+
+The old design of this site is [here](https://old.ben.report).

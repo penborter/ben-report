@@ -114,6 +114,10 @@ $light-transparent: scale-color($light, $alpha: -50%);
   top: -2.89rem;
 }
 
+.mb-2 {
+  margin-bottom: 2em;
+}
+
 .upper {
   text-transform: uppercase;
 }
@@ -178,6 +182,14 @@ body {
   }
 }
 
+article>ul, ol {
+  padding-left: 1em;
+
+  li {
+    padding-left: 0.5em;
+  }
+}
+
 article {
   grid-column: 2;
   padding-bottom: 7em;
@@ -226,6 +238,10 @@ nav {
 
     li {
       margin-bottom: 0.6rem;
+
+      a {
+        font-weight: 600;
+      }
     }
   }
 
@@ -329,6 +345,13 @@ li::marker {
 }
 
 // Post Footer Elements
+
+a.footnote {
+  text-underline-offset: 1px;
+  font-weight: 600;
+  font-size: 0.85em;
+  color: var(--fg-accent-2);
+}
 
 .footnotes {
   border-top: 1px solid var(--bg-accent-1);
@@ -444,7 +467,6 @@ footer {
   bottom: 3em;
   padding-left: 4.5em;
 }
-
 
 // "Lists" Layout
 
@@ -576,7 +598,7 @@ figcaption {
   //border-top: 1px solid var(--bg-accent-1);
 }
 
-img {
+img, .video {
   width: 100%;
   box-shadow: 0px 0px 6px 2px var(--shadow-color);
   border-radius: 3px;
@@ -760,6 +782,10 @@ mark {
     }
   }
 
+  .no-grid {
+    display: block;
+  }
+
   article {
     box-shadow: none;
     border: none;
@@ -767,6 +793,10 @@ mark {
 
     padding: 0em var(--narrow-padding);
     padding-bottom: 7em;
+  }
+
+  .nav-wrapper {
+    border: none;
   }
 
   nav {
@@ -930,10 +960,6 @@ mark {
       padding: 0;
       font-size: 26px;
     }
-  }
-
-  .light-icon, .dark-icon {
-    display: none;
   }
 }
 
