@@ -35,7 +35,7 @@ h1, h2, h3, nav, .post-footer, .post-nav, footer {
 }
 
 h1, h2, h3, .post-nav {
-  text-shadow: 0px 0px 1px #888;
+  text-shadow: 0px 0px 1px var(--fg);
   font-weight: 600;
 }
 

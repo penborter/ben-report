@@ -11,15 +11,16 @@ $pic-wide: 1.3; // overflow amount for wide pictures
 $caption-wide: calc(1 / #{$pic-wide}); // fits the caption back to normal content width
 
 // 1.2 Main colours
-$dark: #237a82;
-$light: #fff3ec;
+$dark: hsl(185, 60%, 25%);
+//$dark: hsl(185, 45, 25);
+$light: hsl(22, 70, 97);
 
 // 2 Calculated Variables
 // 2.1 Main colours and accents
-$dark_accent_1: lighten($dark,35%);
-$dark_accent_2: lighten($dark,8%);
+$dark_accent_1: lighten($dark,30%);
+$dark_accent_2: lighten($dark,10%);
 $light_accent_1: darken($light, 20%);
-$light_accent_2: darken($light, 4%);
+$light_accent_2: darken($light, 6%);
 
 $dark-transparent: scale-color($dark, $alpha: -50%);
 $light-transparent: scale-color($light, $alpha: -50%);
@@ -46,7 +47,7 @@ $light-transparent: scale-color($light, $alpha: -50%);
   --nav-color: #{$dark_accent_1};
   --bg-transparent: #{$light-transparent};
 
-  --shadow-color: rgba(0, 0, 0, 0.05);
+  --shadow-color: rgba(0, 0, 0, 0.03);
 }
 
 [data-theme="dark"] {
@@ -62,7 +63,7 @@ $light-transparent: scale-color($light, $alpha: -50%);
   --nav-color: #{$dark};
   --bg-transparent: #{$dark-transparent};
 
-  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.05);
 
   .tag:hover {
     filter: brightness(120%);
@@ -170,14 +171,17 @@ body {
 
   a {
     color: var(--fg);
-    //font-weight: 500;
     text-underline-offset: 2px;
     text-decoration-color: var(--bg-accent-1);
     text-decoration-thickness: 2px;
 
 
     &:not(nav a, .tag, .card):hover {
-      color: var(--bg-accent-1);
+      //color: var(--bg-accent-1);
+      border-radius: 3px;
+      padding: 0 0.1em;
+      margin: auto -0.1em;
+      background: var(--bg-accent-2);
     }
   }
 }
@@ -198,7 +202,10 @@ article {
 
 .nav-wrapper {
   grid-column: 1;
-  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.05), 2px 0px 5px 0px rgba(0, 0, 0, 0.02), 4px 0px 5px 1px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 2px 2px var(--shadow-color), 
+               0 4px 4px var(--shadow-color), 
+               0 8px 8px var(--shadow-color), 
+               0 16px 16px var(--shadow-color);
   border-right: 1px solid var(--bg-accent-1);
 }
 
@@ -287,13 +294,10 @@ nav {
     text-align: center;
 
     padding: 0.5em 0.8em;
-    border-radius: 5px;
 
     &:hover {
 
       text-decoration: none !important;
-      //box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08),
-      //            0px 4px 6px 0px rgba(60, 60, 60, 0.3);
 
       .navNameBefore {
         display: none;
@@ -405,8 +409,10 @@ blockquote {
   margin: 1.2em 0;
   padding: 1em 1em 1.1em 1em;
 
-  border-top: 1px solid var(--bg-accent-1);
-  box-shadow: 0px -2px 5px -2px var(--shadow-color);
+  border-radius: 3px;
+  box-shadow: 0 2px 2px var(--shadow-color), 
+               0 4px 4px var(--shadow-color), 
+               0 8px 8px var(--shadow-color);
 
   font-size: 0.9em;
   line-height: 1.5;
@@ -432,7 +438,6 @@ blockquote {
   margin: 0;
   padding: 1em;
 
-  //border: 1px solid var(--bg-accent-1);
   border-radius: 3px;
 
   line-height: 1em;
@@ -497,8 +502,7 @@ footer {
   display: block;
 
   a {
-    //text-decoration-color: var(--bg-accent-2);
-    text-decoration-thickness: 1px;
+    text-decoration: none;
   }
 }
 
@@ -548,7 +552,7 @@ footer {
 
 // "Book" Layout
 .book-intro {
-  margin: 4em 0;
+  margin: 4.5rem 0;
 
   h1 {
     margin: 0;
@@ -563,10 +567,7 @@ footer {
   font-size: 0.85em;
   font-weight: 500;
   padding-left: 0.1em;
-}
-
-.reading-list a {
-  text-decoration-thickness: 1px;
+  margin-left: -0.1em;
 }
 
 .starred {
@@ -600,7 +601,9 @@ figcaption {
 
 img, .video {
   width: 100%;
-  box-shadow: 0px 0px 6px 2px var(--shadow-color);
+  box-shadow: 0 2px 2px var(--shadow-color), 
+               0 4px 4px var(--shadow-color), 
+               0 8px 8px var(--shadow-color);
   border-radius: 3px;
 }
 
@@ -727,7 +730,9 @@ tr:nth-child(even) {
     margin: 0 4px;
     background: var(--bg-accent-2);
     border-radius: 3px;
-    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 2px var(--shadow-color), 
+                0 4px 4px var(--shadow-color), 
+                0 8px 8px var(--shadow-color);
   }
 }
 
@@ -797,23 +802,34 @@ mark {
 
   .nav-wrapper {
     border: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--bg-accent-1);
   }
 
   nav {
-    margin: auto 0;
-    //justify-self: left;
-    //top: 0;
-    //position: relative;
-
+    margin: auto;
+    width: 100%;
     font-size: 16px;
-
+    height: 80px;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-around;
+    
     padding: 1em var(--narrow-padding);
+
+    .card {
+      margin: 0 1em 0 0;
+    }
 
     .nav-main {
       display: inline-flex;
+      margin: 0;
 
-      * {
-        font-weight: 600;
+      li {
+        margin-bottom: 0;
+        padding: 0 0.8em;
       }
     }
 
@@ -822,7 +838,7 @@ mark {
     }
 
     button {
-      margin-left: 0;
+      margin: 0 0.5em;
       position: relative;
       top: 0.1em;
     }
@@ -938,27 +954,43 @@ mark {
     font-size: 16px;
   }
 
-  nav .card {
-    background: none;
-    padding: 0;
-    display: inline;
-    box-shadow: none;
+  nav {
 
-    &:hover {
-      .navNameAfter {
-        display: none;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .nav-main {
+      li {
+        margin-bottom: 0;
+        padding: 0 0.5em;
       }
     }
 
-    .navNameBefore {
-      display: none;
-    }
-
-    .home-icon {
-      display: inline-block;
-      margin: 0;
+    .card {
+      background: none;
       padding: 0;
-      font-size: 26px;
+      display: inline;
+      box-shadow: none;
+
+      &:hover {
+        .navNameAfter {
+          display: none;
+        }
+      }
+
+      .navNameBefore {
+        display: none;
+      }
+
+      .home-icon {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        font-size: 26px;
+      }
     }
   }
 }
@@ -988,5 +1020,3 @@ p button {
 .light-icon {
   display: none;
 }
-
-

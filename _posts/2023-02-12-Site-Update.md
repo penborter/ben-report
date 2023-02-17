@@ -9,7 +9,7 @@ photoloc: /assets/posts/layout/
 Firstly, you might note that the url of this website has changed, from `penborter.com` to `ben.report`. Fewer characters, maybe a bit more anonymous, definitely more fun. The old url will redirect to here from now on. All of the content is the same as before, and the source of the website itself is still available on [github](https://github.com/penborter/ben_report). The RSS feed is now available [here](/feed.xml).
 
 ## Redesign
-I spent the summer break working on a Jekyll theme to eventually convert my website to. The theme is called Stretch - an example is [available online](https://stretch.ben.report). I've finally gotten around to moving the existing site over to the new theme. I'll make the old theme available at a subdomain when I have the time. Below are some before and after screenshots.
+I spent the summer break working on a Jekyll theme to eventually convert my website to. The theme is called Stretch––an example is [available online](https://stretch.ben.report). I've finally gotten around to moving the existing site over to the new theme. The old version of the website is at: [`old.ben.report`](https://old.ben.report). Below are some before and after screenshots.
 
 **Before:**
 {% include picture.html

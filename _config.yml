@@ -95,7 +95,7 @@ nav_header:
 nav_secondary:
 - title: Tags
   url: /tags
-- title: Notes
+- title: Reviews
   url: /books/reviews
 - title: Feed
   url: /feed.xml
