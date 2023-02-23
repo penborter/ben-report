@@ -21,8 +21,8 @@ main_columns: col-2
 
   {% for image in gallery.images %}
     <div class="image-wrapper">
-
-      <a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" title="{{ image.text}}">
+      <a href="{{ gallery.imagefolder }}/{{ image.name }}"  title="{{ image.text}}">
+        <div class="image-caption">{{ image.text }}</div>
         <img class="img-gallery" src="{{ gallery.imagefolder }}/{{ image.thumb }}" alt="{{ image.text }}" loading="lazy">
       </a>
 

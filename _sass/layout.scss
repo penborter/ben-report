@@ -4,16 +4,16 @@
 // 1. Input Variables
 // 1.1 Layout
 $content-width: 650px; // width of main content column
-$sidebar-width: 220px; // width of sidebar
+$sidebar-width: 200px; // width of sidebar
 $sidebar-margin: 3.5rem; // the gap between the sidebar content and main content
 
 $pic-wide: 1.3; // overflow amount for wide pictures
 $caption-wide: calc(1 / #{$pic-wide}); // fits the caption back to normal content width
 
 // 1.2 Main colours
-$dark: hsl(185, 60%, 25%);
+$dark: hsl(165, 25%, 20%);
 //$dark: hsl(185, 45, 25);
-$light: hsl(22, 70, 97);
+$light: hsl(160, 30%, 97%);
 
 // 2 Calculated Variables
 // 2.1 Main colours and accents
@@ -176,7 +176,7 @@ body {
     text-decoration-thickness: 2px;
 
 
-    &:not(nav a, .tag, .card):hover {
+    &:not(nav a, .tag, .card, figure a, .image-wrapper a):hover {
       //color: var(--bg-accent-1);
       border-radius: 3px;
       padding: 0 0.1em;
@@ -206,7 +206,7 @@ article {
                0 4px 4px var(--shadow-color), 
                0 8px 8px var(--shadow-color), 
                0 16px 16px var(--shadow-color);
-  border-right: 1px solid var(--bg-accent-1);
+  border-right: 3px solid var(--bg-accent-2);
 }
 
 nav {
@@ -214,11 +214,11 @@ nav {
   position: sticky;
   top: 4.7em;
   width: fit-content;
-  margin: 4rem auto;
+  margin: 0 auto;
   font-size: 18px;
 
   * {
-    padding-left: 0.6em;
+    padding-left: 0.4em;
   }
 
   .card {
@@ -240,11 +240,12 @@ nav {
   }
 
   .nav-main {
-    margin: 1.6em 0;
+    margin: 2em 0;
     line-height: 1.2em;
 
     li {
       margin-bottom: 0.6rem;
+      //padding-left: 0;
 
       a {
         font-weight: 600;
@@ -259,6 +260,7 @@ nav {
 
     li {
       margin-bottom: 0.3rem;
+      //padding-left: 0;
     }
   }
 
@@ -290,10 +292,11 @@ nav {
   }
 
   .navName {
-    font-weight: 700;
-    text-align: center;
-
-    padding: 0.5em 0.8em;
+    font-weight: 600;
+    padding: 0.4em 0.5em;
+    border-radius: 2px;
+    background: var(--fg-accent-1);
+    color: var(--bg);
 
     &:hover {
 
@@ -320,22 +323,17 @@ nav {
 
 main {
   display: grid;
-  //grid-template-columns: $sidebar-width
-  //                       600px
-  //                       minmax(calc(1000px - #{$content-width} - #{$sidebar-width}), 500px)
-  //                       1fr;
-  //min-height: 100vh;
-  //position: relative;
 }
 
 .col-2 {
-  //display: grid;
+  // Two column layout - set in layout front matter
   grid-template-columns: $sidebar-width 
                          1fr;
   height: 100%;
 }
 
 .col-3 {
+  // Three column layout - set in layout front matter
   grid-template-columns: $sidebar-width
                           $content-width
                           minmax(calc(1000px - #{$content-width} - #{$sidebar-width}), 500px)
@@ -733,6 +731,30 @@ tr:nth-child(even) {
     box-shadow: 0 2px 2px var(--shadow-color), 
                 0 4px 4px var(--shadow-color), 
                 0 8px 8px var(--shadow-color);
+
+    a {
+      position: relative;
+    }
+
+    .image-caption {
+      position: absolute;
+      left: 2em;
+      bottom: 1.5em;
+      display: none;
+
+      backdrop-filter: blur(5px);
+      color: #eee;
+      background: rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.4);
+
+    }
+
+    &:hover {
+      .image-caption {
+        display: block;
+        //background: var(--shadow-color);
+      }
+    }
   }
 }
 
@@ -999,11 +1021,11 @@ mark {
 // Theme Switch
 
 button {
-  padding: 0.5em;
+  //padding: 0;
   border-radius: 50px;
   border: none;
   margin-left: 0.15em;
-  margin-top: 1em;
+  margin-top: 1.5em;
   cursor: pointer;
   background: none;
 }

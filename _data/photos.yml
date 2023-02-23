@@ -9,7 +9,7 @@ euro:
     text: Metallic tower of Fourvière, Lyon
   - name: euro-2.jpeg
     thumb: euro-2.jpeg
-    text: Saint Antoine market place, Lyon
+    text: Saint Antoine marketplace, Lyon
   - name: euro-3.jpeg
     thumb: euro-3.jpeg
     text: Hotel view, Lyon
@@ -69,13 +69,13 @@ sydney:
     text: Lighthouse (in Wollongong, not Sydney)
   - name: Sydney-3.jpg
     thumb: Sydney-3.jpg
-    text: Street Exit, Wynyard 
+    text: Fire escape, Wynyard 
   - name: Sydney-4.jpg
     thumb: Sydney-4.jpg
-    text: Personal transport, Darling Harbour
+    text: Commuting, Pyrmont
   - name: Sydney-5.jpg
     thumb: Sydney-5.jpg
-    text: Rat run, Darling Harbout
+    text: Rat run, Darling Harbour
   - name: Sydney-6.jpg
     thumb: Sydney-6.jpg
     text: Madonna's bra, Pyrmont
@@ -105,16 +105,16 @@ sydney:
     text: Carousel, Luna Park
   - name: Sydney-15.jpg
     thumb: Sydney-15.jpg
-    text: Candid conversation, the Rocks
+    text: Candid, the Rocks
   - name: Sydney-16.jpg
     thumb: Sydney-16.jpg
-    text: In the shadows of International Towers, Barangaroo
+    text: International Towers, Barangaroo
   - name: Sydney-17.jpg
     thumb: Sydney-17.jpg
     text: Palisade Hotel, Millers Point
   - name: Sydney-18.jpg
     thumb: Sydney-18.jpg
-    text: Don't look down, Barangaroo
+    text: Construction, Barangaroo
   - name: Sydney-19.jpg
     thumb: Sydney-19.jpg
     text: Start of the Wynard Walk, Barangaroo
@@ -123,13 +123,13 @@ sydney:
     text: Couples baggage, Haymarket
   - name: Sydney-21.jpg
     thumb: Sydney-21.jpg
-    text: Admiring the other bridge, Pyrmont
+    text: Anzac onlookers, Pyrmont
   - name: Sydney-22.jpg
     thumb: Sydney-22.jpg
-    text: Watching the pacific, Valcluse
+    text: Watching the pacific, Vaucluse
   - name: Sydney-23.jpg
     thumb: Sydney-23.jpg
-    text: Hornby Lighthouse, Watson's Bay
+    text: Hornby Lighthouse, Watsons Bay
   - name: Sydney-24.jpg
     thumb: Sydney-24.jpg
     text: North of the harbour, Waverton
@@ -147,34 +147,34 @@ nz:
   images:
   - name: nz-1.jpg
     thumb: nz-1.jpg
-    text: Mountains off Lindis Pass
+    text: Stacked up, Lindis Pass
   - name: nz-2.jpg
     thumb: nz-2.jpg
-    text: Floating near Mt Pisa
+    text: Floating away, Mt Pisa
   - name: nz-3.jpg
     thumb: nz-3.jpg
-    text: Dunedin cycle club
+    text: Cycle club, Dunedin
   - name: nz-4.jpg
     thumb: nz-4.jpg
-    text: View from Lindis Pass viewpoint
+    text: Lindis Pass viewpoint
   - name: nz-5.jpg
     thumb: nz-5.jpg
-    text: Setting off - near Tekapo
+    text: Setting off, Tekapo
   - name: nz-6.jpg
     thumb: nz-6.jpg
-    text: Lake Tekapo, near the Church
+    text: Across the water, Lake Tekapo
   - name: nz-7.jpg
     thumb: nz-7.jpg
-    text: Somewhere between Wanaka and Queenstown
+    text: Somewhere between Wanaka and Queenstown, I
   - name: nz-8.jpg
     thumb: nz-8.jpg
-    text: Somewhere between Wanaka and Queenstown, pt 2
+    text: Somewhere between Wanaka and Queenstown, II
   - name: nz-9.jpg
     thumb: nz-9.jpg
-    text: Exploring Larnach Castle, Dunedin
+    text: Larnach Castle, Dunedin
   - name: nz-10.jpg
     thumb: nz-10.jpg
-    text: Christchurch construction work
+    text: Repairs, Christchurch
 usa:
   title: USA
   blurb: "A collection from two trips to the USA"
@@ -270,13 +270,13 @@ gee:
     text: Clifton Springs digger
   - name: gee-4.jpg
     thumb: gee-4.jpg
-    text: Country Club Dr
+    text: Country Club Drive
   - name: gee-5.jpg
     thumb: gee-5.jpg
-    text: Fishing in Corio Bay
+    text: Fishing in Corio Bay, I
   - name: gee-6.jpg
     thumb: gee-6.jpg
-    text: Fishing in Corio Bay, pt 2
+    text: Fishing in Corio Bay, II
   - name: gee-7.jpg
     thumb: gee-7.jpg
     text: Geelong architecture
