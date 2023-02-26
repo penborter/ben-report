@@ -22,10 +22,12 @@ layout: default
 
     {% for item in site[page.display_collection] %}
 
-      <!-- Allows the item titles to be sourced from a front-matter entry in each of the collection items.
+      {% comment %}
+      Allows the item titles to be sourced from a front-matter entry in each of the collection items.
            Set *category* in the front matter of the list.html page for the front matter key to be referenced.
-           All collection items with that front matter key will use the matching value as their link title. 
-      -->
+           All collection items with that front matter key will use the matching value as their link title.
+      {% endcomment %}
+      
       {% if page.category and item[page.category] %}
         {% assign item_title = item[page.category] %}
       {% else %}

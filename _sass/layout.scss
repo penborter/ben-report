@@ -4,8 +4,8 @@
 // 1. Input Variables
 // 1.1 Layout
 $content-width: 650px; // width of main content column
-$sidebar-width: 200px; // width of sidebar
-$sidebar-margin: 3.5rem; // the gap between the sidebar content and main content
+$sidebar-width: 170px; // width of sidebar
+$sidebar-margin: 5.5rem; // the gap between the sidebar content and main content
 
 $pic-wide: 1.3; // overflow amount for wide pictures
 $caption-wide: calc(1 / #{$pic-wide}); // fits the caption back to normal content width
@@ -48,6 +48,7 @@ $light-transparent: scale-color($light, $alpha: -50%);
   --bg-transparent: #{$light-transparent};
 
   --shadow-color: rgba(0, 0, 0, 0.03);
+  --border-color: var(--fg-accent-1);
 }
 
 [data-theme="dark"] {
@@ -64,10 +65,7 @@ $light-transparent: scale-color($light, $alpha: -50%);
   --bg-transparent: #{$dark-transparent};
 
   --shadow-color: rgba(0, 0, 0, 0.05);
-
-  .tag:hover {
-    filter: brightness(120%);
-  }
+  --border-color: var(--bg-accent-1);
 
   // Theme switch button
   .dark-icon {
@@ -79,7 +77,7 @@ $light-transparent: scale-color($light, $alpha: -50%);
   }
 
   div.highlighter-rouge {
-    border: 1px solid var(--bg-accent-1);
+    border: 1px solid var(--fg-accent-1);
   }
 }
 
@@ -94,12 +92,12 @@ $light-transparent: scale-color($light, $alpha: -50%);
 }
 
 .border-top {
-  border-top: 1px solid var(--bg-accent-1);
+  border-top: 1px solid var(--border-color);
   padding-top: 0.5em;
 }
 
 .border-bottom {
-  border-bottom: 1px solid var(--bg-accent-1);
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 1em;
 }
 
@@ -126,13 +124,18 @@ $light-transparent: scale-color($light, $alpha: -50%);
 .card {
 
   background: var(--fg-accent-2);
-  border-radius: 3px;
+  //border-radius: 3px;
+  border: 1px solid var(--fg-accent-1);
   color: var(--bg);
 
-  box-shadow: 0px 4px 6px 1px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 2px var(--shadow-color), 
+               0 4px 4px var(--shadow-color);
+
+  transition: 0.2s ease;
 
   &:hover {
-    filter: brightness(120%);
+    border-radius: 5px;
+    transform: scale(1.02);
   }
 }
 
@@ -169,6 +172,8 @@ body {
 
   margin: 0;
 
+  transition: 0.2s ease;
+
   a {
     color: var(--fg);
     text-underline-offset: 2px;
@@ -176,8 +181,7 @@ body {
     text-decoration-thickness: 2px;
 
 
-    &:not(nav a, .tag, .card, figure a, .image-wrapper a):hover {
-      //color: var(--bg-accent-1);
+    &:not(nav a, .tag, .card, .list-cat-link, figure a, .image-wrapper a):hover {
       border-radius: 3px;
       padding: 0 0.1em;
       margin: auto -0.1em;
@@ -206,33 +210,18 @@ article {
                0 4px 4px var(--shadow-color), 
                0 8px 8px var(--shadow-color), 
                0 16px 16px var(--shadow-color);
-  border-right: 3px solid var(--bg-accent-2);
+  border-right: 1px solid var(--border-color);
 }
 
 nav {
-
   position: sticky;
-  top: 4.7em;
-  width: fit-content;
+  top: 0em;
+  //width: fit-content;
   margin: 0 auto;
   font-size: 18px;
 
-  * {
-    padding-left: 0.4em;
-  }
-
-  .card {
-    margin-bottom: 1.6rem;
-    padding: 0.5em 0.6em;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
   ul {
-
-    padding: 0;
+    padding: 0 2.4rem;
 
     li {
       display: block;
@@ -240,16 +229,11 @@ nav {
   }
 
   .nav-main {
-    margin: 2em 0;
+    margin: 2em 0 1em 0;
     line-height: 1.2em;
 
     li {
       margin-bottom: 0.6rem;
-      //padding-left: 0;
-
-      a {
-        font-weight: 600;
-      }
     }
   }
 
@@ -271,15 +255,18 @@ nav {
 
     &:hover {
       text-decoration: underline;
-      text-underline-offset: 2px;
-      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+      text-decoration-color: var(--bg-accent-1);
     }
   }
 
   .active {
     text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+
+    a {
+      text-decoration-color: var(--fg-accent-1);
+    }
   }
 
   .navNameAfter {
@@ -293,14 +280,22 @@ nav {
 
   .navName {
     font-weight: 600;
-    padding: 0.4em 0.5em;
-    border-radius: 2px;
-    background: var(--fg-accent-1);
-    color: var(--bg);
+    padding: 0.6em 0;
+    //border-radius: 2px;
+    //background: var(--bg-accent-2);
+    //color: var(--fg-accent-2);
+    width: 100%;
+    display: block;
+    text-align: center;
+
+    border-bottom: 1px solid var(--border-color);
+    transition: 0.2s ease;
 
     &:hover {
 
       text-decoration: none !important;
+      background: var(--fg-accent-1);
+      color: var(--bg);
 
       .navNameBefore {
         display: none;
@@ -357,7 +352,7 @@ a.footnote {
 
 .footnotes {
   border-top: 1px solid var(--bg-accent-1);
-  border-bottom: 1px solid var(--bg-accent-1);
+  //border-bottom: 1px solid var(--bg-accent-1);
   font-size: 0.9em;
 }
 
@@ -370,6 +365,7 @@ a.footnote {
 .post-footer {
   border-top: 1px solid var(--bg-accent-1);
   padding-top: 0.5em;
+  //margin-top: 4em;
 }
 
 .post-nav {
@@ -377,8 +373,8 @@ a.footnote {
 }
 
 div + .post-nav {
-  margin-top: 0;
-  padding-top: 0.9em;
+  margin-top: 2em;
+  //padding-top: 0.9em;
 }
 
 .post-nav-arrow {
@@ -396,6 +392,14 @@ div + .post-nav {
 
 .next-page {
   text-align: right;
+  
+  p {
+    padding-left: 0.5em;
+  }
+}
+
+.prev-page p {
+  padding-right: 0.5em;
 }
 
 .post-publish {
@@ -407,10 +411,10 @@ blockquote {
   margin: 1.2em 0;
   padding: 1em 1em 1.1em 1em;
 
-  border-radius: 3px;
+  border: 1px solid var(--bg-accent-1);
+  //border-radius: 3px;
   box-shadow: 0 2px 2px var(--shadow-color), 
-               0 4px 4px var(--shadow-color), 
-               0 8px 8px var(--shadow-color);
+               0 4px 4px var(--shadow-color);
 
   font-size: 0.9em;
   line-height: 1.5;
@@ -447,12 +451,17 @@ blockquote {
 .tag {
   text-decoration: none;
   padding: 0.3em 0.5em;
-  border-radius: 3px;
+  border-radius: 1px;
 
   background-color: var(--bg-accent-2);
+  border: 1px solid var(--bg-accent-1);
+
+  transition: 0.2s ease;
 
   &:hover {
-    filter: brightness(110%);
+    background-color: var(--bg);
+    border: 1px solid var(--fg-accent-1);
+    border-radius: 5px;
   }
 }
 
@@ -475,7 +484,7 @@ footer {
 
 .list-cat {
   position: relative;
-  left: calc(#{$content-width} - 50px);
+  left: calc(#{$content-width} - 80px);
 
   font-size: 20px;
   color: var(--bg-accent-1);
@@ -499,7 +508,7 @@ footer {
   margin-top: 0.5rem;
   display: block;
 
-  a {
+  a:not(.book-link) {
     text-decoration: none;
   }
 }
@@ -545,6 +554,7 @@ footer {
 
   li {
     display: block;
+    padding-left: 0;
   }
 }
 
@@ -590,11 +600,8 @@ figure {
 }
 
 figcaption {
-  //color: var(--fg-accent-1);
   font-size: 0.85em;
   margin-top: 1em;
-  //padding: 1em;
-  //border-top: 1px solid var(--bg-accent-1);
 }
 
 img, .video {
@@ -605,14 +612,17 @@ img, .video {
   border-radius: 3px;
 }
 
+.video {
+  margin: 1em 0 2em 0;
+}
+
 .pic-wide {
   width: calc(100% * #{$pic-wide});
-  //margin: 2em 0 2em calc(100% * (1 - #{$pic-wide}) / 2);
 }
 
 .caption-wide {
   width: calc(100% * #{$caption-wide});
-  margin-left: calc(50em * (1 - #{$caption-wide}) / 2);
+  //margin-left: calc(50em * (1 - #{$caption-wide}) / 2);
 }
 
 // Tables
@@ -654,14 +664,12 @@ tr:nth-child(even) {
   margin-top: 11rem;
   backdrop-filter: blur(5px);
   padding: 0.8em;
-  //max-width: 200px;
   font-weight: 600;
   overflow: hidden;
   
   border: 1px solid var(--bg);
   border-radius: 3px;
   background: var(--bg-transparent);
-  //color: var(--bg-accent-1);
 
   &:hover * {
     color: var(--bg-accent-1) !important;
@@ -670,8 +678,6 @@ tr:nth-child(even) {
   * {
     padding: 0;
     margin: 0;
-    //white-space: nowrap;
-    //overflow: hidden;
     text-overflow: ellipsis;
     color: var(--bg-accent-2);
   }
@@ -697,7 +703,6 @@ tr:nth-child(even) {
     margin-bottom: 1em;
 
     ul {
-      //padding-left: 1em;
       font-size: 0.8em;
       padding: 0.4em 0 0 0.4em;
       font-weight: 600;
@@ -744,15 +749,14 @@ tr:nth-child(even) {
 
       backdrop-filter: blur(5px);
       color: #eee;
-      background: rgba(0, 0, 0, 0.4);
-      box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.4);
-
+      background: rgba(0, 0, 0, 0.5);
+      //border-radius: 2px;
+      padding: 0.2em 0.3em;
     }
 
     &:hover {
       .image-caption {
         display: block;
-        //background: var(--shadow-color);
       }
     }
   }
@@ -792,15 +796,16 @@ mark {
 }
 
 // Responsiveness
-// Main breakpoint @ 1050px from multi-column to single column
+// Main breakpoint @ 1000px from multi-column to single column
 // Comfortable until about 450px wide, then large nav icons disappear
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1000px) {
   body {
     font-size: 18px;
   }
 
   main {
+    display: block;
     grid-template-rows: 85px 1fr;
     grid-template-columns: 1fr !important;
 
@@ -824,30 +829,36 @@ mark {
 
   .nav-wrapper {
     border: none;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    border-bottom: 1px solid var(--bg-accent-1);
+    margin: auto 0;
+    //width: 100%;
+    height: 60px;
+    border-bottom: 1px solid var(--fg-accent-1);
   }
 
   nav {
     margin: auto;
     width: 100%;
     font-size: 16px;
-    height: 80px;
-    //display: flex;
+    height: 100%;
+    display: flex;
     //align-items: center;
-    //justify-content: space-around;
+    justify-content: left;
     
-    padding: 1em var(--narrow-padding);
+    padding: 0 var(--narrow-padding) 0 0;
 
-    .card {
-      margin: 0 1em 0 0;
+    .navName {
+      width: auto;
+      display: flex;
+      align-items: center;
+      //text-align: center;
+      padding: 0 1em;
+      border-right: 1px solid var(--fg-accent-1);
     }
 
     .nav-main {
       display: inline-flex;
-      margin: 0;
+      margin: auto 0;
+      padding: 0 0.6rem;
 
       li {
         margin-bottom: 0;
@@ -860,7 +871,8 @@ mark {
     }
 
     button {
-      margin: 0 0.5em;
+      margin: auto;
+      margin-right: 0;
       position: relative;
       top: 0.1em;
     }
@@ -971,7 +983,7 @@ mark {
 }
 
 // Removing nav elements at really narrow widths
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 450px) {
   body {
     font-size: 16px;
   }
@@ -991,9 +1003,9 @@ mark {
       }
     }
 
-    .card {
+    .navName {
       background: none;
-      padding: 0;
+      padding: 0 1em;
       display: inline;
       box-shadow: none;
 
@@ -1024,8 +1036,8 @@ button {
   //padding: 0;
   border-radius: 50px;
   border: none;
-  margin-left: 0.15em;
-  margin-top: 1.5em;
+  margin-left: 2.4rem;
+  margin-top: 2rem;
   cursor: pointer;
   background: none;
 }

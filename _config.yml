@@ -99,7 +99,5 @@ nav_secondary:
   url: /books/reviews
 - title: Feed
   url: /feed.xml
-- title: Twitter
-  url: https://twitter.com/penborter
 - title: Github
   url: https://github.com/penborter

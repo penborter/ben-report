@@ -43,3 +43,5 @@ title: Tags
 
 {% endfor %}
 </article>
+
+{% include footer.html %}

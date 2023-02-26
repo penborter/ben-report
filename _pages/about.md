@@ -19,10 +19,10 @@ Explore below:
 Dark / light theme switch --> {% include theme_switch.html %}
 
 This site is a constant work in progress, based on the [Stretch](https://stretch.ben.report/) Jekyll theme.
-I'm also other on places around the internet, normally as *penborter* : 
+I'm also at other on places on the internet, normally as *penborter* : 
 
 - [Twitter](https://twitter.com/penborter)
 - [Instagram](https://www.instagram.com/penborter/)
 - [Github](https://github.com/penborter)
 
-The old design of this site is [here](https://old.ben.report).
+The old design of this site is memorialised [here](https://old.ben.report).

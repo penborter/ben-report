@@ -38,13 +38,14 @@ permalink: /books
           {% endif %}
         {% endfor %}
         
-        {% if has_review %}<a href="{{ book_url }}">{% endif %}
         <li class="list-item strong{% if book.star %} starred{% endif %}">
+          {% if has_review %}<a class="book-link" href="{{ book_url }}">{% endif %}
           {{ book.title }}
           <span class="author"> by {{ book.author }}</span>
+          {% if has_review %}</a>{% endif %}
+          {% endfor %}
         </li>
-        {% if has_review %}</a>{% endif %}
-      {% endfor %}
+
     </ul>
   </div>
 {% endfor %}

@@ -3,7 +3,9 @@
   {% if page.tags %}
 	  <ul class="flexbox">
 		  {% for tag in page.tags %}
-        <li><a href="/tags#{{ tag | downcase }}" class="tag">#{{ tag }}</a></li> 
+        <li>
+          <a href="/tags#{{ tag | downcase }}" class="tag">#{{ tag }}</a>
+        </li>
       {% endfor %}
 	  </ul>
   {% endif %}
