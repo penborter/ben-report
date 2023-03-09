@@ -16,7 +16,8 @@ Explore below:
   <li><a href="/tags">Tags</a></li>
 </ul>
 
-Dark / light theme switch --> {% include theme_switch.html %}
+Dark / light theme switch: 
+<div class="about-button">{% include theme_switch.html %}</div>
 
 This site is a constant work in progress, based on the [Stretch](https://stretch.ben.report/) Jekyll theme.
 I'm also at other on places on the internet, normally as *penborter* : 

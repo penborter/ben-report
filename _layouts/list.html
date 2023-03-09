@@ -27,7 +27,7 @@ layout: default
            Set *category* in the front matter of the list.html page for the front matter key to be referenced.
            All collection items with that front matter key will use the matching value as their link title.
       {% endcomment %}
-      
+
       {% if page.category and item[page.category] %}
         {% assign item_title = item[page.category] %}
       {% else %}
@@ -42,7 +42,7 @@ layout: default
           {% unless forloop.first %}</div>{% endunless %}
             
             <a href="#{{ currentdate }}" class="list-cat-link">
-              <span id="{{ currentdate }}" class="list-cat top-u1">{{ currentdate }}</span>
+              <span id="{{ currentdate }}" class="list-cat">{{ currentdate }}</span>
             </a>
 
             <div class="list-cat-container border-top top-u2">

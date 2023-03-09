@@ -26,7 +26,7 @@ title: Tags
   {% assign posts = tag | last %}
 
 <a href="#{{ t | downcase }}" class="list-cat-link">
-  <span id="{{ t | downcase }}" class="list-cat top-u1">#{{ t }} ({{ posts.size }})</span>
+  <span id="{{ t | downcase }}" class="list-cat">#{{ t }} ({{ posts.size }})</span>
 </a>
 
 <div class="list-cat-container border-top top-u2">

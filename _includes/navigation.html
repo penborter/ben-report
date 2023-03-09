@@ -1,31 +1,31 @@
 <div class="nav-wrapper">
-<nav role="navigation">
-
-  <a class="navName" href="/">
-    <span class="home-icon">🏠</span>
-    <span class="navNameBefore">ben.report</span>
-    <span class="navNameAfter">ben.porter</span>
-  </a>
-
-  <ul class="nav-main">
-    {% for item in site.nav_header %}
-      <li class="block{% if page.url contains item.url %} active{% endif %}">
-        <a href="{{ item.url }}">{{ item.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  {% if site.nav_secondary %}
-  <ul class="nav-secondary">
-    {% for item in site.nav_secondary %}
-      <li class="block">
-        <a href="{{ item.url }}">{{ item.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-  {% endif %}
-
-  {% include theme_switch.html %}
-
-</nav>
-</div>
+  <nav role="navigation">
+  
+    <a class="navName" href="/">
+      <span class="home-icon">🏠</span>
+      <span class="navNameBefore">ben.report</span>
+      <span class="navNameAfter">ben.porter</span>
+    </a>
+  
+    <ul class="nav-main">
+      {% for item in site.nav_header %}
+        <li class="block{% if page.url contains item.url %} active{% endif %}">
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  
+    {% if site.nav_secondary %}
+    <ul class="nav-secondary">
+      {% for item in site.nav_secondary %}
+        <li class="block">
+          <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  
+    {% include theme_switch.html %}
+  
+  </nav>
+  </div>
