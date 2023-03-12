@@ -1,5 +1,4 @@
-<div class="nav-wrapper">
-  <nav role="navigation">
+  <nav role="navigation"{% if include.class %}class="{{ include.class }}"{% endif %}>
   
     <a class="navName" href="/">
       <span class="home-icon">🏠</span>
@@ -28,4 +27,3 @@
     {% include theme_switch.html %}
   
   </nav>
-  </div>

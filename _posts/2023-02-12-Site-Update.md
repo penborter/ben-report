@@ -19,8 +19,13 @@ I spent the summer break working on a Jekyll theme to eventually convert my webs
 
 **After:**
 {% include picture.html
-   class="wide"
-   file="after.png"
+   class="wide light-show"
+   file="after-light.png"
+%}
+
+{% include picture.html
+   class="wide dark-show"
+   file="after-dark.png"
 %}
 
 It includes a couple of fun features, like a `list.html` layout that allows you to easily create landing pages for the [collections](https://jekyllrb.com/docs/collections/) in your site, or a two-colour scheme that automatically generates all of the site colours from two hex codes. I might update the colours I've chosen from time to time, probably moving back towards more neutral choices. For now we're pairing a very light orange `#FFF3EC` with a deep teal `#237A82`. 
