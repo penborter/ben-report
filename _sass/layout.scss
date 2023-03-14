@@ -15,6 +15,7 @@ $dark: hsl(165, 25%, 20%);
 //$dark: hsl(185, 45, 25);
 $light: hsl(160, 30%, 97%);
 
+
 // 2 Calculated Variables
 // 2.1 Main colours and accents
 $dark_accent_1: lighten($dark,30%);
@@ -35,7 +36,7 @@ $light-transparent: scale-color($light, $alpha: -40%);
   --narrow-padding: max(1.5em, calc((100vw - #{$content-width}) / 2));
   --photo-padding: max(10px, calc(100vw / 2000));
 
-  --bg: #{$light};
+  --bg: hsl(50, 70%, 97%);
   --fg: #{$dark};
 
   --bg-accent-1: #{$light_accent_1};
@@ -45,7 +46,7 @@ $light-transparent: scale-color($light, $alpha: -40%);
   --fg-accent-2: #{$dark_accent_2};
 
   --nav-color: #{$dark_accent_1};
-  --bg-transparent: #{$light-transparent};
+  --bg-transparent: hsla(50, 70%, 97%, 0.6);
 
   --shadow-color: rgba(0, 0, 0, 0.03);
   --border-color: var(--fg-accent-1);
@@ -229,6 +230,7 @@ nav {
   transition: 0.2s ease;
 
   &:hover {
+    top: 3.7rem;
     border: 1px solid var(--fg-accent-1);
     box-shadow: 0 2px 2px var(--shadow-color), 
                 0 4px 4px var(--shadow-color), 
@@ -405,8 +407,19 @@ a.footnote {
 }
 
 .footnotes {
-  border-top: 1px solid var(--bg-accent-1);
+  background: var(--bg-accent-2);
+  //border: 1px solid var(--bg-accent-1);
+  //border-bottom: none;
+  border-radius: 10px 10px 0 0;
+
+  margin: 2em -0.8rem 0 -0.8rem;
+  padding: 1em 2em;
+
   font-size: 0.9em;
+}
+
+[id*='fn'] {
+  padding-bottom: 0.6em;
 }
 
 .post-footer, .post-nav {
@@ -416,17 +429,26 @@ a.footnote {
 }
 
 .post-footer {
-  border-top: 1px solid var(--bg-accent-1);
+  //border-top: 1px solid var(--bg-accent-1);
   padding-top: 0.5em;
 }
 
 .post-nav {
-  margin-top: 3em;
+  background: var(--bg-accent-2);
+  //border: 1px solid var(--bg-accent-1);
+  border-radius: 10px;
+  padding: 1em 2em;
+
+  margin: 3em -0.8em 0 -0.8em;
 }
 
 div + .post-nav {
-  margin-top: 2em;
-  //padding-top: 0.9em;
+  //margin-top: 2em;
+  padding-top: 0;
+  margin: 0 -0.8em;
+
+  //border-top: none;
+  border-radius: 0 0 10px 10px;
 }
 
 .post-nav-arrow {
@@ -434,11 +456,12 @@ div + .post-nav {
 
   p {
     padding: 0 0.5rem;
+    margin: 0;
   }
 }
 
 .prev-page, .next-page {
-  text-decoration-color: var(--bg-accent-2);
+  //text-decoration-color: var(--bg-accent-2);
   text-shadow: none;
 }
 
@@ -464,7 +487,7 @@ blockquote {
   padding: 1em 1em 1.1em 1em;
 
   border: 1px solid var(--bg-accent-1);
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0 2px 2px var(--shadow-color), 
                0 4px 4px var(--shadow-color);
 
