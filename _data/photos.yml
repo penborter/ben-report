@@ -129,7 +129,7 @@ sydney:
     text: Watching the pacific, Vaucluse
   - name: Sydney-23.jpg
     thumb: Sydney-23.jpg
-    text: Hornby Lighthouse, Watsons Bay
+    text: Danger signs, Vaucluse
   - name: Sydney-24.jpg
     thumb: Sydney-24.jpg
     text: North of the harbour, Waverton
@@ -139,6 +139,10 @@ sydney:
   - name: Sydney-26.jpg
     thumb: Sydney-26.jpg
     text: Downhill, The Rocks
+  - name: Sydney-27.jpg
+    thumb: Sydney-27.jpg
+    text: Hornby Lighthouse, Watsons Bay
+
 nz:
   title: New Zealand
   blurb: "Roadtrip around New Zealand's South Island"

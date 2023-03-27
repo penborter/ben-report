@@ -6,7 +6,7 @@
 $content-width: 650px; // width of main content column
 $sidebar-width: 200px; // width of sidebar
 $sidebar-margin: 4rem; // the gap between the sidebar content and main content
-$border-radius: 2px; // border radius across the site
+$border-radius: 10px; // border radius across the site
 
 $pic-wide: 1.3; // overflow amount for wide pictures
 $caption-wide: calc(1 / #{$pic-wide}); // fits the caption back to normal content width
@@ -144,7 +144,7 @@ $light-transparent: scale-color($light, $alpha: -40%);
 .card {
 
   background: var(--fg-accent-2);
-  border-radius: 5px;
+  border-radius: $border-radius;
   border: 1px solid var(--fg-accent-1);
   color: var(--bg);
 
@@ -154,7 +154,7 @@ $light-transparent: scale-color($light, $alpha: -40%);
   transition: 0.2s ease;
 
   &:hover {
-    border-radius: 8px;
+    border-radius: calc(#{$border-radius} + 3px);
     transform: scale(1.02);
   }
 }
@@ -194,15 +194,18 @@ body {
 
   a {
     color: var(--fg);
-    text-underline-offset: 4px;
+    text-underline-offset: 3px;
     text-decoration-color: var(--bg-accent-1);
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 2px;
+    transition: 0.2s ease;
 
     &:not(nav a, .tag, .card, .list-cat-link, figure a, .image-wrapper a):hover {
-      border-radius: 3px;
-      padding: 0 0.1em;
-      margin: auto -0.1em;
-      background: var(--bg-accent-2);
+      //border-radius: 3px;
+      //padding: 0 0.1em;
+      //margin: auto -0.1em;
+      //background: var(--bg-accent-2);
+      text-decoration-color: var(--fg-accent-1);
+      text-underline-offset: 2px;
     }
   }
 }
@@ -512,7 +515,7 @@ blockquote {
 }
 
 *:not(pre) > code {
-  border-radius: $border-radius;
+  border-radius: 3px;
   padding: 0.1em 0.3em;
   background-color: var(--bg-accent-2);
 }
@@ -686,7 +689,7 @@ img {
   box-shadow: 0 2px 2px var(--shadow-color), 
                0 4px 4px var(--shadow-color), 
                0 8px 8px var(--shadow-color);
-  border-radius: 5px;
+  border-radius: $border-radius;
   border: 1px solid var(--bg-accent-1);
 }
 
@@ -812,7 +815,7 @@ tr:nth-child(even) {
     height: 100%;
     margin: 0 4px;
     background: var(--bg-accent-2);
-    border-radius: 3px;
+    border-radius: $border-radius;
     box-shadow: 0 2px 2px var(--shadow-color), 
                 0 4px 4px var(--shadow-color), 
                 0 8px 8px var(--shadow-color);
@@ -830,7 +833,7 @@ tr:nth-child(even) {
       backdrop-filter: blur(5px);
       color: #eee;
       background: rgba(0, 0, 0, 0.5);
-      //border-radius: 2px;
+      border-radius: 3px;
       padding: 0.2em 0.3em;
     }
 
