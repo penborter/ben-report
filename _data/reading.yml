@@ -3,16 +3,22 @@ years:
     books:
       - title: Revelation Space
         author: Alastair Reynolds
+
       - title: Tomorrow and Tomorrow and Tomorrow
         author: Gabrielle Zevin
+
       - title: The Keep
         author: Jennifer Egan
+
       - title: There is No Antimimetics Division
         author: Sam Hughes
+
       - title: Ficciones
         author: Jorge Luis Borges
+
       - title: Energy
         author: Richard Rhoades
+        
   - year: "2022"
     books:
       - title: The Pocket Guide to Action
@@ -57,6 +63,9 @@ years:
 
       - title: When We Cease to Understand the World
         author: Benjamin Labatut
+
+      - title: Experiences in Translation
+        author: Umberto Eco
 
       - title: Beyond the Blue Event Horizon
         author: Frederik Pohl
