@@ -705,6 +705,23 @@ img {
   width: calc(100% * #{$caption-wide});
 }
 
+// Hover / swap functionality for posts
+
+.pic-hover-show {
+  display: none;
+}
+
+.hover:hover {
+  .pic-hover-show {
+    display: block;
+  }
+
+  .pic-hover-hide {
+    display: none;
+  }
+}
+
+
 // Tables
 
 table {
