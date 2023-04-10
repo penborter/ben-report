@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Australia's oldest international airport was not its first
+title: Australia's oldest international airport?
 tags: [history]
 photoloc: /assets/posts/airports
 ---
@@ -53,7 +53,7 @@ Below is a photo of the airstrip from a 1943 military aerial survey[^3], showing
 {% include picture.html
    file="parap-2023.png"
    class="hover-show"
-   caption="Parap Aerodrome in 2023, main airstrip highlighted yellow."
+   caption="Ross Smith Avenue in 2023, old airstrip highlighted yellow."
 %}
 </div>
 
