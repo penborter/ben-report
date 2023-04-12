@@ -1,18 +1,22 @@
 ---
 layout: post
-title: Australia's oldest international airport?
-tags: [history]
+title: Australia's oldest international airport is __________________?
+tags: [history, sydney]
 photoloc: /assets/posts/airports
 ---
 
-For this question we need to separate the oldest and the first––several airports / airfields / aerodromes were established in Australia before we'd received an international flight. 
+**TL;DR**: Sydney Airport*
 
-Quick summary, Australia's:
-- oldest (continuously operating) airport is Sydney Airport, established in <mark>1918</mark>, but started international services in <mark>1947</mark>;
-- first international airport is Parap Airfield, which received an international flight from London in 1919; and
-- first international passenger flight left from Brisbane in 1935.
+For this question we need properly define what we mean by "oldest". There was a lot going on around the relevant time period (about 1910-1940), so it's important to know what we're looking for here.
 
-We'll go through these airports and a couple of other relevant ones below.
+We'll need to to separate the *oldest* and the *first*––several airports / airfields / aerodromes were established in Australia before we'd received an international flight, and airports that were involved in the earliest international flights are no longer operating. 
+
+Here's a quick summary. Australia's:
+- **oldest (continuously operating) airport** is Sydney Airport, established in <mark>1918</mark>, but started international services in <mark>1947</mark>;
+- **first international airport** is Parap Airfield, which received an international flight from London in 1919; and
+- **first international passenger flight** left from Brisbane in 1935.
+
+We'll go through these airports and a couple of other relevant / interesting contenders below.
 
 ## Daley Waters Airfield (1928) (??)
 Firstly, let's get Daly Waters Airfield out of the way. It's the top Google search result (at least for me) for the question of Australia's oldest international airport, with its [wikipedia page](https://en.wikipedia.org/wiki/Daly_Waters_Airfield) stating that: 

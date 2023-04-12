@@ -84,10 +84,6 @@ $light-transparent: scale-color($light, $alpha: -40%);
     opacity: 100%;
   }
 
-  div.highlighter-rouge {
-    border: 1px solid var(--fg-accent-1);
-  }
-
   .dark-show {
     display: block;
   }
@@ -528,14 +524,19 @@ blockquote {
   background-color: var(--bg-accent-2);
 }
 
+div.highlighter-rouge {
+  border: 1px solid var(--fg-accent-1);
+  border-radius: #{$border-radius};
+  margin-bottom: 1.5em;
+}
+
 .highlight {
   margin: 0;
-  padding: 1em;
+  padding: 0.7em;
 
-  border-radius: 3px;
+  border-radius: #{$border-radius};
 
-  line-height: 1em;
-  font-size: 0.95em;
+  line-height: 1.3em;
 
   overflow-y: auto;
 }
@@ -585,7 +586,7 @@ footer {
   font-weight: 600;
 }
 
-.list-cat-link, .list-link {
+.list-cat-link {
   text-decoration: none;
 }
 
@@ -1196,6 +1197,11 @@ p button {
 
 .about-button {
   position: relative;
-  top: -4.5em;
-  left: 11em;
+  top: -3em;
+  left: 13.5em;
+  margin: -1em;
+
+  button {
+    margin: 0;
+  }
 }

@@ -101,3 +101,5 @@ nav_secondary:
   url: /feed.xml
 - title: Github
   url: https://github.com/penborter
+- title: Contact
+  url: /contact

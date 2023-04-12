@@ -6,7 +6,7 @@ toc: true
 ---
 
 ## All work is sales
-The prevalence of sales or sales-adjacent skills has increased to a point where everyone is doing of some sort of selling in the work. This can be external, traditional sales, or internal through persuading stakeholders of a project's value. Related to Alex Danco's idea of [worldbuilding](https://alexdanco.com/2021/04/10/world-building/).
+The prevalence of sales or sales-adjacent skills has increased to a point where everyone is doing of some sort of selling in the work. This can be external, traditional sales, or internal through persuading stakeholders of a project's value. Basically the precursor idea to Alex Danco's thesis on [worldbuilding](https://alexdanco.com/2021/04/10/world-building/).
 
 Selling, broadly, is about convincing someone to part with resources now to get benefit for themselves later. Motivation is a form of selling.
 
