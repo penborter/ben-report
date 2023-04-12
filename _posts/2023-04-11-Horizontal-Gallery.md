@@ -13,7 +13,7 @@ I'll split this into two parts:
 1. Using a Jekyll template to populate a gallery
 2. Using CSS to get the populated gallery to behave the way we want
 
-If you're not using Jekyll then I recommend skipping straight to the [CSS section](/posts/horizontal-gallery#css).
+If you're not using Jekyll then I recommend skipping straight to the [CSS section](/posts/horizontal-gallery#css-layout).
 
 
 ## Jekyll Template
@@ -49,10 +49,17 @@ The whole gallery is then wrapped in a div called `horizontal-gallery-wrapper`. 
   {% endfor %}
 </div>
 ```
-## CSS
-For this layout, the `gallery-meta` intro paragraph and `image-wrapper` divs behave basically the same as horizontally scrolling components within the main wrapper.
+## CSS Layout
+Fundamentally, we have a wrapper div––which enables the horizontal scroll––containing a set of divs (or other tags) for each of the images or products or projects we want to display.
 
-Basically, it's a wrapper div––which enables the horizontal scroll––containing a set of divs for each images / products / projects you want to display. The contents of the inner divs is not important, as long as they each have `height: 100%`.
+```html
+<div class="horizontal-gallery-wrapper">
+  <div class="wrapper" id="img-1">
+  <div class="wrapper" id="img-2">
+  ...
+  <div class="wrapper" id="img-N">
+</div>
+```
 
 Firstly the main wrapper, where we set the x-axis overflow to scroll, and we force the content inside not to wrap, i.e. extend as far as needed off to the right of the page. We also add a bit of padding, include a large amount of left padding in this case so that the gallery starts to the right of the menu sidebar.
 
@@ -66,9 +73,9 @@ Firstly the main wrapper, where we set the x-axis overflow to scroll, and we for
 }
 ```
 
-For each image (including the intro paragraph), we want to the height to be capped at 100% of the container, and add a bit of margin between each of the images. This is where we can add rounded borders or a box shadow to each of the images, if we wanted to.
+For each image (including the intro paragraph) we have an `image-wrapper` div. The contents of the inner divs is not important, as long as they each have `height: 100%`. Also note that if you're putting an `<img>` tag inside the `div`, you need to set `height:100%` for that element as well. We can add a bit of margin to leave a gap between each of the images; this is also where we could add rounded borders or a box shadow to each of the images, if we wanted to.
 
-The gallery-meta div needs some addition formatting to constrain its size and allow the text to display and wrap correctly. Width and padding are flexible, but `vertical-align: top` and `white-space: normal` are required.
+I've also included a `gallery-meta` div, which contains the intro paragraph gallery title. Otherwise, it behaves behave basically the same as the `image-wrapper` divs. It does need some additional formatting to constrain its size, and to allow the text to display and wrap correctly. Width and padding are flexible, but `vertical-align: top` and `white-space: normal` are required. 
 
 ```scss
 .image-wrapper, .gallery-meta {
@@ -85,7 +92,7 @@ The gallery-meta div needs some addition formatting to constrain its size and al
 }
 ```
 
-If we want to include a caption for each image (which we did in the HTML above), we will need to format that too. This bottom css rule means that the caption is hidden by default, and appears whenever the image itself is hovered over. As shown below captions should always appear in the bottom left of the screen, and are not tied to the location of the associated image. If you want them to move with the image, you can add `position: relative` to their parent element, in this case the `<a>` tag actually linking to the image.
+If we want to include a caption for each image (which we did in the HTML in [section 1](/posts/horizontal-gallery#jekyll-template)), we will need to format that too. The below css rules hide the caption by default, revealing it whenever the image itself is hovered over. In this arrangement, captions will always appear in the bottom left of the screen, and aren't tied to the location of the associated image. If you want them to move with the image, you can add `position: relative` to their parent element, in this case the `<a>` tag actually linking to the image.
 
 ```scss
 .image-caption {
@@ -106,8 +113,24 @@ If we want to include a caption for each image (which we did in the HTML above),
 }
 ```
 
-That's all there is to it! No JS required, just forcing the page contents to extend off to the right and allowing the page to scroll. This effect works well with a static sidebar, where the photos will scroll under the sidebar and off the screen to the left. 
+## Narrow Screens
 
-Other touches include: adding a page footer into the `gallery-meta` div, and including a `{{ content }}` tag in that same div to allow for a custom blurb for each gallery. 
+For narrow screen widths or vertically oriented screens, obviously the horizontal scroll doesn't make sense. In those circumstances I just revert `horizontal-gallery-wrapper` to a column-direction flex box. 
 
-See some live examples [here](https://ben.report/photos), or at the **PHOTOS** link in the navbar.
+```css
+@media screen and (max-width: 1000px)
+.horizontal-gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+}
+```
+
+## Wrapping Up
+
+That's all there is to it! No JS required, just forcing the page contents to extend off to the right and telling the page to scroll in that direction. This effect works well with a static sidebar, where the photos can scroll under the sidebar and off the screen to the left. 
+
+Other finishing touches could include: adding a page footer into the `gallery-meta` div, and including a `{{ content }}` tag in that same div to allow for a custom blurb for each gallery. 
+
+See some live examples [here](https://ben.report/photos), or at the **PHOTOS** link in the navbar <span class="narrow-remove">on the left.</span><span class="narrow-show">up top.</span>

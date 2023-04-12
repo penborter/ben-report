@@ -171,6 +171,10 @@ $light-transparent: scale-color($light, $alpha: -40%);
   text-overflow: ellipsis;
 }
 
+.narrow-show {
+  display: none;
+}
+
 // Defaults
 
 *, *::before, *::after {
@@ -1039,6 +1043,10 @@ mark {
 
   .narrow-remove {
     display: none;
+  }
+
+  .narrow-show {
+    display: block;
   }
 
   ul, ol {
