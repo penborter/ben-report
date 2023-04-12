@@ -131,6 +131,6 @@ For narrow screen widths or vertically oriented screens, obviously the horizonta
 
 That's all there is to it! No JS required, just forcing the page contents to extend off to the right and telling the page to scroll in that direction. This effect works well with a static sidebar, where the photos can scroll under the sidebar and off the screen to the left. 
 
-Other finishing touches could include: adding a page footer into the `gallery-meta` div, and including a `{{ content }}` tag in that same div to allow for a custom blurb for each gallery. 
+Other finishing touches could include: adding a page footer into the `gallery-meta` div, and including a liquid content tag in that same div to allow for a custom blurb for each gallery. 
 
 See some live examples [here](https://ben.report/photos), or at the **PHOTOS** link in the navbar <span class="narrow-remove">on the left.</span><span class="narrow-show">up top.</span>
