@@ -22,11 +22,6 @@ We're using a layout called [`photo.html`](https://github.com/penborter/ben-repo
 
 First we get the data from `photos.yml` in the site's `_data` folder. This will probably be different depending on how your site's data is structured.
 
-```liquid
-{% assign gallery = site.data.photos[page.photo_id] %}
-{% assign gallery_size = gallery.images.size %}
-```
-
 The whole gallery is then wrapped in a div called `horizontal-gallery-wrapper`. Within that div, there are two parts: the initial "meta" paragraph, and then the liquid loop to generate html tags for each image in the gallery. For each image in the gallery, we can fill out an `image-wrapper` div with the url, title, image caption, and alt text.
 
 ```html
@@ -133,4 +128,4 @@ That's all there is to it! No JS required, just forcing the page contents to ext
 
 Other finishing touches could include: adding a page footer into the `gallery-meta` div, and including a liquid content tag in that same div to allow for a custom blurb for each gallery. 
 
-See some live examples [here](https://ben.report/photos), or at the **PHOTOS** link in the navbar <span class="narrow-remove">on the left.</span><span class="narrow-show">up top.</span>
+See some live examples [here](https://ben.report/photos), or at the **PHOTOS** link in the navbar <span class="narrow-remove">on the left.</span><span class="narrow-show-inline">up top.</span>

@@ -1012,17 +1012,9 @@ mark {
     }
   }
 
-  .photo-nav-wide {
-    display: none;
-  }
-  
-  .photo-nav-narrow {
-    display: flex;
-
-    button .light-icon, .dark-icon {
-      top: 2.7em; // why is this required??
-      margin-left: 0;
-    }
+  .about-button {
+    top: -3.2em !important;
+    left: 14em !important;
   }
 
   h1 {
@@ -1051,6 +1043,10 @@ mark {
 
   .narrow-show {
     display: block;
+  }
+
+  .narrow-show-inline {
+    display: inline;
   }
 
   ul, ol {
