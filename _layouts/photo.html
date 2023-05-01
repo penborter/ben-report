@@ -6,7 +6,7 @@ main_columns: col-2
 {% assign gallery = site.data.photos[page.photo_id] %}
 {% assign gallery_size = gallery.images.size %}
 
-{% include navigation.html class="photo-nav-narrow" %}
+{% include navigation.html %}
 
 <div class="horizontal-gallery-wrapper">
 
@@ -29,6 +29,4 @@ main_columns: col-2
     </div>
   {% endfor %}
 </div>
-
-{% include navigation.html class="photo-nav-wide" %}
 

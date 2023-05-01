@@ -3,32 +3,32 @@
 
 // 1. Input Variables
 // 1.1 Layout
-$content-width: 650px; // width of main content column
-$sidebar-width: 200px; // width of sidebar
-$sidebar-margin: 4rem; // the gap between the sidebar content and main content
+$content-width: 65ch; // width of main content column
+$sidebar-width: 220px; // width of sidebar
+$sidebar-margin: 2.5em;
 
-$total-sidebar: 2 * #{$sidebar-width} - 2 * #{$sidebar-margin};
+$total-sidebar: 2 * #{$sidebar-width};
 
-$border-radius: 10px; // border radius across the site
+$border-radius: 5px; // border radius across the site
 
 $pic-wide: 1.3; // overflow amount for wide pictures
 $caption-wide: calc(1 / #{$pic-wide}); // fits the caption back to normal content width
 
 // 1.2 Main colours
-$dark: hsl(165, 25%, 20%);
+$dark: hsl(165, 25%, 15%);
 //$dark: hsl(185, 45, 25);
-$light: hsl(160, 30%, 97%);
+$light: hsl(155, 33%, 97%);
 
 
 // 2 Calculated Variables
 // 2.1 Main colours and accents
-$dark_accent_1: lighten($dark,30%);
-$dark_accent_2: lighten($dark,10%);
-$light_accent_1: darken($light, 20%);
+$dark_accent_1: lighten($dark,25%);
+$dark_accent_2: lighten($dark,6%);
+$light_accent_1: darken($light, 25%);
 $light_accent_2: darken($light, 6%);
 
-$dark-transparent: scale-color($dark, $alpha: -40%);
-$light-transparent: scale-color($light, $alpha: -40%);
+$dark-transparent: scale-color($dark_accent_2, $alpha: -40%);
+$light-transparent: scale-color($light_accent_2, $alpha: -40%);
 
 // 2.2 CSS Variables
 // Converting sass variable colours to CSS variables for the dark / light theme switcher
@@ -50,7 +50,7 @@ $light-transparent: scale-color($light, $alpha: -40%);
   --fg-accent-2: #{$dark_accent_2};
 
   --nav-color: #{$dark_accent_1};
-  --bg-transparent: hsla(50, 70%, 97%, 0.6);
+  --bg-transparent: #{$light-transparent};
 
   --shadow-color: rgba(0, 0, 0, 0.03);
   --border-color: var(--fg-accent-1);
@@ -153,7 +153,6 @@ $light-transparent: scale-color($light, $alpha: -40%);
   transition: 0.2s ease;
 
   &:hover {
-    border-radius: calc(#{$border-radius} + 3px);
     transform: scale(1.02);
   }
 }
@@ -191,9 +190,11 @@ html, body {
 
 body {
   color: var(--fg);
-  background-color: var(--bg);
+  background-color: var(--bg-accent-2);
 
   margin: 0;
+
+  transition: background-color 0.2s ease;
 
   a {
     color: var(--fg);
@@ -203,12 +204,7 @@ body {
     transition: 0.2s ease;
 
     &:not(nav a, .tag, .card, .list-cat-link, figure a, .image-wrapper a):hover {
-      //border-radius: 3px;
-      //padding: 0 0.1em;
-      //margin: auto -0.1em;
-      //background: var(--bg-accent-2);
       text-decoration-color: var(--fg-accent-1);
-      //text-underline-offset: 2px;
       text-decoration-thickness: 2px;
     }
   }
@@ -225,27 +221,27 @@ article>ul, ol {
 article {
   grid-column: 2;
   padding-bottom: 7em;
-  padding-left: $sidebar-margin;
 }
 
 nav {
   grid-column: 1;
-  box-shadow: 0 2px 2px var(--shadow-color), 
-               0 4px 4px var(--shadow-color), 
-               0 8px 8px var(--shadow-color);
-  //border-right: 1px solid var(--border-color);
+  width: calc(#{$sidebar-width} - #{$sidebar-margin} - #{$sidebar-margin});
+
+  position: fixed;
+  top: 3.75rem;
+  height: fit-content;
+  margin: 0 $sidebar-margin;
+  font-size: 16px;
+  padding: 1em 0;
+
+  z-index: 1;
+  backdrop-filter: blur(5px);
 
   transition: 0.2s ease;
+  border-radius: $border-radius;
 
   &:hover {
-    top: 3.7rem;
-    border: 1px solid var(--fg-accent-1);
-    box-shadow: 0 2px 2px var(--shadow-color), 
-                0 4px 4px var(--shadow-color), 
-                0 8px 8px var(--shadow-color), 
-                0 16px 16px var(--shadow-color), 
-                0 32px 32px var(--shadow-color),
-                0 64px 64px var(--shadow-color);
+    background: var(--bg-transparent);
 
     a, a:visited {
       color: var(--fg);
@@ -255,18 +251,6 @@ nav {
       fill: var(--fg-accent-1);
     }
   }
-}
-
-nav {
-  position: sticky;
-  top: 3.75rem;
-  height: fit-content;
-  margin: 0 2em;
-  font-size: 16px;
-  padding: 1em 0;
-
-  border: 1px solid var(--bg-accent-1);
-  border-radius: $border-radius;
 
   ul {
     padding: 0 1.8rem;
@@ -277,7 +261,7 @@ nav {
   }
 
   .nav-main {
-    margin: 2em 0 1em 0;
+    margin: 1em 0;
     line-height: 1.2em;
 
     li {
@@ -297,7 +281,6 @@ nav {
 
     li {
       margin-bottom: 0.3rem;
-      //padding-left: 0;
     }
   }
 
@@ -312,12 +295,13 @@ nav {
     &:hover {
       text-decoration: underline;
       text-underline-offset: 4px;
-      text-decoration-color: var(--bg-accent-1);
+      text-decoration-color: var(--fg-accent-1);
     }
   }
 
   .active {
     text-decoration: underline;
+    text-decoration-color: var(--bg-accent-1);
     text-underline-offset: 4px;
   }
 
@@ -332,16 +316,11 @@ nav {
   }
 
   .navName {
-    //font-weight: 600;
     padding: 0.6em 0;
-    //border-radius: 2px;
-    //background: var(--bg-accent-2);
-    //color: var(--fg-accent-2);
     width: 100%;
     display: block;
     text-align: center;
 
-    //border-bottom: 1px solid var(--border-color);
     transition: 0.2s ease;
 
     &:hover {
@@ -384,7 +363,6 @@ main {
   // Three column layout - set in layout front matter
   grid-template-columns: $sidebar-width
                           $content-width
-                          minmax(calc(1000px - #{$content-width} - #{$sidebar-width}), 500px)
                           1fr;
   min-height: 100vh;
   position: relative;
@@ -415,7 +393,6 @@ a.footnote {
 }
 
 .footnotes {
-  //background: var(--bg-accent-2);
   border: 1px solid var(--bg-accent-1);
   border-bottom: none;
   border-radius: $border-radius $border-radius 0 0;
@@ -445,12 +422,10 @@ a.footnote {
 }
 
 .post-footer {
-  //border-top: 1px solid var(--bg-accent-1);
   padding-top: 0.5em;
 }
 
 .post-nav {
-  //background: var(--bg-accent-2);
   border-radius: $border-radius;
   border: 1px solid var(--bg-accent-1);
   padding: 1em 2em;
@@ -463,7 +438,6 @@ a.footnote {
 }
 
 div + .post-nav {
-  //margin-top: 2em;
   padding-top: 0;
   margin: 0 -0.8em;
 
@@ -481,7 +455,6 @@ div + .post-nav {
 }
 
 .prev-page, .next-page {
-  //text-decoration-color: var(--bg-accent-2);
   text-shadow: none;
 }
 
@@ -502,7 +475,7 @@ div + .post-nav {
 }
 
 blockquote {
-  background: var(--bg-accent-2);
+  background: var(--bg);
   margin: 1.2em -0.8em;
   padding: 1em 1em 1.1em 1em;
 
@@ -528,12 +501,12 @@ blockquote {
 *:not(pre) > code {
   border-radius: 3px;
   padding: 0.1em 0.3em;
-  background-color: var(--bg-accent-2);
+  background-color: var(--bg);
 }
 
 div.highlighter-rouge {
-  border: 1px solid var(--fg-accent-1);
-  border-radius: #{$border-radius};
+  border: 1px solid var(--bg-accent-1);
+  border-radius: $border-radius;
   margin-bottom: 1.5em;
 }
 
@@ -541,7 +514,7 @@ div.highlighter-rouge {
   margin: 0;
   padding: 0.7em;
 
-  border-radius: #{$border-radius};
+  border-radius: $border-radius;
 
   line-height: 1.3em;
 
@@ -559,7 +532,6 @@ div.highlighter-rouge {
   transition: 0.2s ease;
 
   &:hover {
-    //background-color: var(--bg);
     border: 1px solid var(--fg-accent-1);
     box-shadow: 0 2px 2px var(--shadow-color),
                 0 4px 4px var(--shadow-color),
@@ -570,7 +542,7 @@ div.highlighter-rouge {
 footer {
   font-size: 14px;
   color: var(--bg-accent-1);
-  margin: 2em 0 2em $sidebar-margin;
+  margin: 2em 0;
   grid-column: 2;
   position: absolute;
   bottom: 0;
@@ -717,12 +689,11 @@ img {
 }
 
 .pic-wide {
-  //width: calc(100% * #{$pic-wide});
   width: calc(100vw - #{$total-sidebar});
 }
 
 .caption-wide {
-  width: calc(100% * #{$caption-wide});
+  font-style: italic;
 }
 
 // Hover / swap functionality for posts
@@ -772,35 +743,37 @@ tr:nth-child(even) {
 // Table of Contents
 
 .toc {
-  position: sticky;
-  top: 4em;
-  grid-column: 3;
-  height: fit-content;
-  width: fit-content;
-  margin: auto;
-  margin-top: 11rem;
-  backdrop-filter: blur(5px);
-  padding: 0.8em;
-  font-weight: 600;
-  overflow: hidden;
-  
-  border: 1px solid var(--bg);
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  max-width: calc(100vw - #{$sidebar-width} - #{$content-width} - 8em); // leave a buffer if some headings are too long
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: right;
+
+  padding: 0.5em;
   border-radius: $border-radius;
-  background: var(--bg-transparent);
+
+  &:hover {
+    background: var(--bg-transparent);
+    backdrop-filter: blur(5px);
+  }
 
   &:hover * {
-    color: var(--bg-accent-1) !important;
+    color: var(--fg-accent-1) !important;
   }
 
   * {
     padding: 0;
     margin: 0;
     text-overflow: ellipsis;
-    color: var(--bg-accent-2);
+    color: transparent;
   }
 
-  h2 {
-    margin-bottom: 0.5em;
+  .toc-return {
+    color: var(--bg-accent-1);
   }
 
   li {
@@ -820,9 +793,10 @@ tr:nth-child(even) {
     margin-bottom: 1em;
 
     ul {
-      font-size: 0.8em;
-      padding: 0.4em 0 0 0.4em;
-      font-weight: 600;
+      font-weight: 400;
+      line-height: 1.2;
+      margin-top: 0.3em;
+      margin-bottom: 0.8em;
     }
   }
 }
@@ -838,7 +812,7 @@ tr:nth-child(even) {
   overflow-y: hidden;
   white-space: nowrap;
   padding: var(--photo-padding) 0;
-  padding-left: 13em;
+  padding-left: $sidebar-width;
   -webkit-overflow-scrolling: touch;
 
   grid-column: 1 / 3;
@@ -895,7 +869,7 @@ tr:nth-child(even) {
 
   vertical-align: top;
   white-space: normal;
-  padding: calc(4.5rem - 10px) 3rem 0 3.5rem;
+  padding: calc(4.5rem - 10px) 3rem 0 0;
   height: 100%;
   
 
@@ -911,7 +885,7 @@ tr:nth-child(even) {
 
 .photo-nav-wide {
   position: absolute;
-  background: var(--bg-transparent);
+  //background: var(--bg-transparent);
   backdrop-filter: blur(5px);
   width: 136px;
 }
@@ -975,6 +949,8 @@ mark {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    width: auto;
     
     border: none;
     border-bottom: 1px solid var(--bg-accent-1);

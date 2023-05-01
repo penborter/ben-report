@@ -6,7 +6,7 @@ permalink: /contact
 
 The best place to reach me is by email:
 
-> ben @ ben . report
+`ben @ ben . report`
 
 My CV is [here](). Otherwise, I'm elsewhere on the internet, normally as **penborter**: 
 

@@ -7,12 +7,10 @@
 //  font-style: normal;
 //}
 
-//@font-face {
-//  font-family: "Inter";
-//  src: url("/assets/fonts/Inter-Medium.woff2") format("woff2");
-//  font-weight: 600;
-//  font-style: normal;
-//}
+@font-face {
+  font-family: "Charter";
+  src: url("/assets/fonts/charter/charter_regular.woff2") format("woff2");
+}
 
 body {
   line-height: 1.5;
@@ -20,7 +18,6 @@ body {
   
   font-family: "Inter", "Helvetica", sans-serif;
   font-size: 16px;
-  //font-feature-settings: "tnum";
 
   letter-spacing: -0.01px;
 }
@@ -54,6 +51,9 @@ h2, h3 {
 h2 {
   font-size: 1.4em;
   border-top: 1px solid var(--fg-accent-1);
+  //padding-top: 0.3em;
+  //margin-left: -0.4em;
+  //margin-right: -0.4em;
   padding-top: 0.3em;
 }
 

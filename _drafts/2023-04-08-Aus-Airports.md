@@ -3,13 +3,20 @@ layout: post
 title: Australia's oldest international airport is __________________?
 tags: [history, sydney]
 photoloc: /assets/posts/airports
+toc: true
 ---
 
 **TL;DR**: Sydney Airport*
 
-For this question we need properly define what we mean by "oldest". There was a lot going on around the relevant time period (about 1910-1940), so it's important to know what we're looking for here.
+*\*Depending on what we mean by "oldest" and "international airport"*. 
 
-We'll need to to separate the *oldest* and the *first*––several airports / airfields / aerodromes were established in Australia before we'd received an international flight, and airports that were involved in the earliest international flights are no longer operating. 
+A simple question that I couldn't find a satisfying answer to led me down this little rabbit hole. There were a lot of firsts going in aviation at the time (around 1910-1940). In this case, I think that the definition of first is simple enough, but to be *oldest* the airport has to be continually operating. This lines up with a similar idea for the [oldest companies in the world](https://en.wikipedia.org/wiki/List_of_oldest_companies), which states that:
+
+> To be listed, a brand or company name must remain operating, either in whole or in part, since inception.
+
+Adding to this, though, is that a lot of these early airports had been operating for 10 or 20 years before they started servicing international flights. At the time, the term "international airport" didn't really have the same connotations as it did today, and to narrow down the definition to "**a commercial airport servicing flights departing to / arriving from outside of Australia**" brings the date of the *first* up about 15 years. The airport, having 
+
+Part of the murkiness is caused by the fact that several airports, airfields, and aerodromes were established in Australia before we'd received an international flight, and the airports etc. involved in the earliest international flights are no longer operating. 
 
 Here's a quick summary. Australia's:
 - **oldest (continuously operating) airport** is Sydney Airport, established in <mark>1918</mark>, but started international services in <mark>1947</mark>;
@@ -18,8 +25,8 @@ Here's a quick summary. Australia's:
 
 We'll go through these airports and a couple of other relevant / interesting contenders below.
 
-## Daley Waters Airfield (1928) (??)
-Firstly, let's get Daly Waters Airfield out of the way. It's the top Google search result (at least for me) for the question of Australia's oldest international airport, with its [wikipedia page](https://en.wikipedia.org/wiki/Daly_Waters_Airfield) stating that: 
+## Daley Waters Airfield (1928)
+Firstly, let's get Daly Waters Airfield out of the way. It's the top Google search result (at least for me) for the question of Australia's oldest international airport, with its [Wikipedia page](https://en.wikipedia.org/wiki/Daly_Waters_Airfield) stating that: 
 
 > Daly Waters was Australia's first international airfield.<sup>[*citation needed*]</sup>
 
