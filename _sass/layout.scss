@@ -558,7 +558,7 @@ footer {
 
 .list-cat {
   position: relative;
-  left: calc(#{$content-width} - 60px);
+  left: calc(#{$content-width} - #{$sidebar-width} + 20px);
 
   font-size: 20px;
   color: var(--border-color);
@@ -745,7 +745,7 @@ tr:nth-child(even) {
 .toc {
   position: fixed;
   bottom: 3em;
-  right: 3em;
+  right: 4em;
   max-width: calc(100vw - #{$sidebar-width} - #{$content-width} - 8em); // leave a buffer if some headings are too long
 
   font-weight: 700;
@@ -799,10 +799,6 @@ tr:nth-child(even) {
       margin-bottom: 0.8em;
     }
   }
-}
-
-.mt-15-5 {
-  margin-top: 15.5rem !important;
 }
 
 // Gallery Page

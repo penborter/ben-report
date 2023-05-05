@@ -1,5 +1,6 @@
 ---
 layout: default
+toc: true
 ---
 
 {% include navigation.html %}
@@ -29,9 +30,7 @@ layout: default
 
 {% include footer.html %}
 
-{% if page.toc == true %}
-  <div class="toc narrow-remove mt-15-5">
-    {% include toc.html html=content h_min=2 %}
-    <a href="#"> ^ Return to top</a>
-  </div>
-{% endif%}
+<div class="toc narrow-remove">
+  {% include toc.html html=content h_min=2 %}
+  <a href="#" class="toc-return"> ^ Return to top</a>
+</div>
