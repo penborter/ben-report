@@ -1,0 +1,62 @@
+<script type="text/javascript">
+
+  // Select the container element and array of all photos
+  var container = document.querySelector('.horizontal-gallery-wrapper');
+  var photos = document.querySelectorAll('.image-wrapper');
+
+  // Set the current photo index to 0
+  let currentPhotoIndex = 0;
+  let lastKeyDirection = "R";
+
+  // Add an event listener to the document to listen for key presses
+  document.addEventListener('keydown', function(event) {
+    console.log('Key pressed:', event.key);
+
+    // If the user presses the right arrow key, scroll to the next photo
+    if (event.code === 'ArrowRight') {
+     
+      event.preventDefault();
+      currentPhotoIndex++;
+
+      // If the current photo index is greater than the number of photos in the gallery, wrap around to the first photo
+      if (currentPhotoIndex >= photos.length) {
+        currentPhotoIndex = 0;
+      }
+
+      // Calculate the scroll position to align the right edge of the photo with the right edge of the container
+      var containerWidth = container.clientWidth;
+      var photoWidth = photos[currentPhotoIndex].clientWidth;
+      var scrollLeft = photos[currentPhotoIndex].offsetLeft + photoWidth - containerWidth + 10;
+      // Scroll the container to the calculated position
+      container.scrollTo({
+        left: scrollLeft,
+        behavior: 'smooth'
+      });
+    }
+
+    // If the user presses the left arrow key, scroll to the previous photo
+    if (event.code === 'ArrowLeft') {
+
+      event.preventDefault();
+      currentPhotoIndex--;
+
+      // If the current photo index is less than 0, wrap around to the last photo
+      if (currentPhotoIndex < 0) {
+        currentPhotoIndex = photos.length - 1;
+      }
+
+      // Calculate the scroll position to align the right edge of the previous photo with the right edge of the container
+      var containerWidth = container.clientWidth;
+      //var photoWidth = photos[currentPhotoIndex].clientWidth;
+      var previousPhotoWidth = photos[(currentPhotoIndex) % photos.length].clientWidth;
+      var previousPhotoRightEdge = photos[(currentPhotoIndex) % photos.length].offsetLeft + previousPhotoWidth;
+      var scrollLeft = previousPhotoRightEdge - containerWidth + 10;
+      // Scroll the container to the calculated position
+      container.scrollTo({
+        left: scrollLeft,
+        behavior: 'smooth'
+      });
+    }
+  });
+  
+</script>

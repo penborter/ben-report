@@ -558,7 +558,7 @@ footer {
 
 .list-cat {
   position: relative;
-  left: calc(#{$content-width} - #{$sidebar-width} + 20px);
+  left: calc(#{$content-width} - #{$sidebar-width} + 10px);
 
   font-size: 20px;
   color: var(--border-color);

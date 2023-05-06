@@ -11,10 +11,17 @@
       {{ content }}
 
     </main>
-  </body>
+
+
+  {% if page.url contains "/photos/" %}
+    {% include gallery_scroll_js.html %}
+  {% endif %}
 
   {% include theme_switch_js.html %}
-  
+
+  </body>
+
+
 </html>
 
 
