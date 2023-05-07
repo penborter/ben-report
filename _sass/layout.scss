@@ -3,7 +3,7 @@
 
 // 1. Input Variables
 // 1.1 Layout
-$content-width: 65ch; // width of main content column
+$content-width: 650px; // width of main content column
 $sidebar-width: 220px; // width of sidebar
 $sidebar-margin: 2.5em;
 
@@ -54,6 +54,9 @@ $light-transparent: scale-color($light_accent_2, $alpha: -40%);
 
   --shadow-color: rgba(0, 0, 0, 0.03);
   --border-color: var(--fg-accent-1);
+
+  --sidenote-width: 30ch;
+  --sidenote-margin: 2em;
 }
 
 [data-theme="dark"] {
@@ -196,6 +199,8 @@ body {
 
   transition: background-color 0.2s ease;
 
+  counter-reset: sidenote; // Initialise sidenote counter
+
   a {
     color: var(--fg);
     text-underline-offset: 3px;
@@ -305,38 +310,11 @@ nav {
     text-underline-offset: 4px;
   }
 
-  .navNameAfter {
-    display: none;
-    padding: 0;
-    color: var(--bg);
-  }
-
-  .navNameBefore {
-    padding: 0;
-  }
-
   .navName {
     padding: 0.6em 0;
     width: 100%;
     display: block;
     text-align: center;
-
-    transition: 0.2s ease;
-
-    &:hover {
-
-      text-decoration: none !important;
-      background: var(--fg-accent-1);
-      color: var(--bg);
-
-      .navNameBefore {
-        display: none;
-      }
-
-      .navNameAfter {
-        display: inline;
-      }
-    }
   }
 
   .home-icon {
@@ -558,7 +536,7 @@ footer {
 
 .list-cat {
   position: relative;
-  left: calc(#{$content-width} - #{$sidebar-width} + 10px);
+  left: calc(#{$content-width} + 5px);
 
   font-size: 20px;
   color: var(--border-color);
@@ -630,6 +608,7 @@ footer {
 }
 
 // "Book" Layout
+
 .book-intro {
   margin: 4.5rem 0;
 
@@ -712,6 +691,83 @@ img {
   }
 }
 
+// Sidenotes
+
+.sidenote {
+  counter-increment: sidenote;
+}
+
+.sidenote_content-parenthesis {
+  position: absolute;
+  left: -99999px;
+  top: auto;
+}
+
+.sidenote_content {
+  display: block;
+  position: relative;
+  float: left;
+  left: $content-width;
+  //margin-top: calc(-1.5*var(--text-size)); // Align sidenote top with main text 
+  margin-right: calc(-1 * var(--sidenote-width) - 1 * var(--sidenote-margin));
+  width: var(--sidenote-width);
+  padding: 0 0 0 3rem;
+
+  color: var(--fg-accent-1);
+  font-style: normal;
+
+  &::before {
+    content: counter(sidenote, upper-alpha) ".";
+    margin-left: -1rem;
+    //font-weight: 700;
+  }
+}
+
+.sidenote_button::after {
+  content: counter(sidenote, upper-alpha);
+  display: inline-block;
+
+  font-size: 0.7em;
+  vertical-align: 30%;
+  margin-left: -0.2em;
+}
+
+.sidenote_checkbox {
+  display: none;
+}
+
+@media screen and (max-width: 1120px) {
+
+  .sidenote_checkbox ~ .sidenote_content {
+    // Hidden, but accessible to browsers that don't do CSS (e.g. screenreaders, Pocket)
+    position: absolute;
+    left: -99999px;
+    top: auto;
+  }
+
+  .sidenote_checkbox:checked ~ .sidenote_content {
+    position: relative;
+    left: auto; 
+    float: left;
+    min-width: 100%;
+
+    display: block;
+    margin: 0.8rem 0;
+    padding: 0 1rem;
+  }
+
+  .sidenote_button {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 3px;
+    cursor: pointer;
+  }
+
+  .sidenote_checkbox:checked ~ .sidenote_button::after {
+    content: none;
+  }
+}
+
 
 // Tables
 
@@ -746,7 +802,7 @@ tr:nth-child(even) {
   position: fixed;
   bottom: 3em;
   right: 4em;
-  max-width: calc(100vw - #{$sidebar-width} - #{$content-width} - 8em); // leave a buffer if some headings are too long
+  max-width: calc(100vw - #{$sidebar-width} - #{$content-width}); // leave a buffer if some headings are too long
 
   font-weight: 700;
   font-size: 15px;
@@ -1138,23 +1194,16 @@ mark {
     .navName {
       margin-right: 0;
 
-      &:hover {
-        .navNameAfter {
-          display: none;
-          background: none;
-        }
-      }
-
-      .navNameBefore {
-        display: none;
-      }
-
       .home-icon {
         display: block;
         margin: -0.3em 0;
         padding: 0;
         font-size: 26px;
       }
+    }
+
+    .name-mix {
+      display: none;
     }
 
     .light-icon, .dark-icon {
@@ -1193,6 +1242,10 @@ p button {
   }
 }
 
+.about-button svg {
+  fill: var(--fg-accent-1);
+}
+
 .light-icon {
   opacity: 0%;
 }
@@ -1209,5 +1262,54 @@ p button {
 
   button {
     margin: 0;
+  }
+}
+
+
+// Report -> Porter
+
+.name-mix {
+  border-bottom: 1.5px solid transparent;
+}
+
+.navName {
+  * {
+    margin: 0 -0.13em;
+    padding: 0;
+    //position: relative;
+    display: inline-block;
+
+    transition: translate 0.5s ease;
+  }
+
+  &:hover {
+
+    .name-mix {
+      border-bottom: 1.5px solid var(--fg-accent-1);
+    }
+
+    #r1 {
+      translate: 40.5px;
+    }
+
+    #e {
+      translate: 25px;
+    }
+
+    #p {
+      translate: -16px;
+    }
+
+    #o {
+      translate: -16px;
+    }
+
+    #r2 {
+      translate: -16px;
+    }
+    
+    #t {
+      translate: -16px;
+    }
   }
 }
