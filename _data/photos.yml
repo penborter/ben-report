@@ -293,3 +293,45 @@ gee:
   - name: gee-10.jpg
     thumb: gee-10.jpg
     text: The old Bellarine railway
+hawaii:
+  title: Hawaii 2023
+  blurb: "Hawaii trip pics"
+  imagefolder: /assets/hawaii
+  thumb: hawaii-thumb.jpg
+  images:
+  - name: hawaii-1.jpg
+    thumb: hawaii-1.jpg
+    text: How's the view?
+  - name: hawaii-2.jpg
+    thumb: hawaii-2.jpg
+    text: USS Arizona Memorial - 1
+  - name: hawaii-3.jpg
+    thumb: hawaii-3.jpg
+    text: USS Arizona Memorial - 1
+  - name: hawaii-4.jpg
+    thumb: hawaii-4.jpg
+    text: US Army Museum of Hawaii
+  - name: hawaii-5.jpg
+    thumb: hawaii-5.jpg
+    text: Fire rescue
+  - name: hawaii-6.jpg
+    thumb: hawaii-6.jpg
+    text: Don Ho Street
+  - name: hawaii-7.jpg
+    thumb: hawaii-7.jpg
+    text: The Pacific
+  - name: hawaii-8.jpg
+    thumb: hawaii-8.jpg
+    text: Pearl Harbour Memorial
+  - name: hawaii-9.jpg
+    thumb: hawaii-9.jpg
+    text: Interstate H-1
+  - name: hawaii-10.jpg
+    thumb: hawaii-10.jpg
+    text: Fit check
+  - name: hawaii-11.jpg
+    thumb: hawaii-11.jpg
+    text: Backstreets
+  - name: hawaii-12.jpg
+    thumb: hawaii-12.jpg
+    text: Lobby
