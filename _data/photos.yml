@@ -301,16 +301,16 @@ hawaii:
   images:
   - name: hawaii-1.jpg
     thumb: hawaii-1.jpg
-    text: How's the view?
+    text: Resort view
   - name: hawaii-2.jpg
     thumb: hawaii-2.jpg
     text: USS Arizona Memorial - 1
   - name: hawaii-3.jpg
     thumb: hawaii-3.jpg
-    text: USS Arizona Memorial - 1
+    text: USS Arizona Memorial - 2
   - name: hawaii-4.jpg
     thumb: hawaii-4.jpg
-    text: US Army Museum of Hawaii
+    text: U.S. Army Museum of Hawaii
   - name: hawaii-5.jpg
     thumb: hawaii-5.jpg
     text: Fire rescue
@@ -319,19 +319,25 @@ hawaii:
     text: Don Ho Street
   - name: hawaii-7.jpg
     thumb: hawaii-7.jpg
-    text: The Pacific
+    text: Not the beachfront
   - name: hawaii-8.jpg
     thumb: hawaii-8.jpg
-    text: Pearl Harbour Memorial
+    text: Waikiki Walkway
   - name: hawaii-9.jpg
     thumb: hawaii-9.jpg
-    text: Interstate H-1
+    text: Pearl Harbour Memorial
   - name: hawaii-10.jpg
     thumb: hawaii-10.jpg
-    text: Fit check
+    text: Interstate H-1
   - name: hawaii-11.jpg
     thumb: hawaii-11.jpg
-    text: Backstreets
+    text: Hotel morning
   - name: hawaii-12.jpg
     thumb: hawaii-12.jpg
-    text: Lobby
+    text: Fit check
+  - name: hawaii-13.jpg
+    thumb: hawaii-13.jpg
+    text: Signs point to lobby
+  - name: hawaii-14.jpg
+    thumb: hawaii-14.jpg
+    text: Holokai Catamaran
