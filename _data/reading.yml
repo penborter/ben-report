@@ -1,6 +1,69 @@
 years:
   - year: "2023"
     books:
+      - title: Seven Surrenders
+        author: Ava Palmer
+        
+      - title: The Internationalists
+        author: Oona Hathaway & Scott Shapiro
+        
+      - title: This is How You Lose the Time War
+        author: Amal El-Mohtar
+        
+      - title: Too Like the Lightning
+        author: Ava Palmer
+        
+      - title: Let My People Go Surfing
+        author: Yvon Chouinard
+        
+      - title: Travels in Hyperreality
+        author: Umberto Eco
+        
+      - title: The Gospel According to Jesus Christ
+        author: José Saramago
+        
+      - title: 1177 BC
+        author: Eric Cline
+        
+      - title: Assassin's Fate
+        author: Robin Hobb
+
+      - title: Fool's Quest
+        author: Robin Hobb
+        
+      - title: Fool's Assassin
+        author: Robin Hobb
+        
+      - title: Blood of Dragons
+        author: Robin Hobb
+        
+      - title: City of Dragons
+        author: Robin Hobb
+        
+      - title: Dragon Haven
+        author: Robin Hobb
+
+      - title: Dragon Keeper
+        author: Robin Hobb
+
+      - title: Ritual and its Consequences
+        author: Adam Seligman
+
+      - title: First Light
+        author: Richard Preston
+
+      - title: Perdido Street Station
+        author: China Miéville
+
+      - title: Shorefall
+        author: Robert Jackson Bennett
+    
+      - title: Foundryside
+        author: Robert Jackson Bennett
+
+      - title: Redemption Ark
+        author: Alastair Reynolds
+
       - title: Revelation Space
         author: Alastair Reynolds
 

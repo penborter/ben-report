@@ -1,6 +1,6 @@
   <nav role="navigation"{% if include.class %}class="{{ include.class }}"{% endif %}>
   
-    <a class="navName" href="/">
+    <a class="navName"{% if page.url contains "photos" %} id="photos"{% endif %} href="/">
       <span class="home-icon">🏠</span>
       <div class="name-mix">
         <span>ben.</span>
@@ -15,21 +15,11 @@
   
     <ul class="nav-main">
       {% for item in site.nav_header %}
-        <li class="block{% if page.url contains item.url %} active{% endif %}">
+        <li class="{% if page.url contains item.url %} active{% endif %}">
           <a href="{{ item.url }}">{{ item.title }}</a>
         </li>
       {% endfor %}
     </ul>
-  
-    {% if site.nav_secondary %}
-    <ul class="nav-secondary">
-      {% for item in site.nav_secondary %}
-        <li class="block">
-          <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
   
     {% include theme_switch.html %}
   

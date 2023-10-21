@@ -33,27 +33,30 @@ euro:
     text: Towards the Gulf of Trieste, Trieste
   - name: euro-10.jpeg
     thumb: euro-10.jpeg
-    text: Santuario di Monte Grisa, Trieste
+    text: The good ship X, Trieste
   - name: euro-11.jpeg
     thumb: euro-11.jpeg
-    text: Enjoying the Santuario sun, Trieste
+    text: Santuario di Monte Grisa, Trieste
   - name: euro-12.jpeg
     thumb: euro-12.jpeg
-    text: Bled Castle, Bled
+    text: Enjoying the Santuario sun, Trieste
   - name: euro-13.jpeg
     thumb: euro-13.jpeg
-    text: On the lake, Bled
+    text: Bled Castle, Bled
   - name: euro-14.jpeg
     thumb: euro-14.jpeg
-    text: Watching the Place du Trocadéro, Paris
+    text: On the lake, Bled
   - name: euro-15.jpeg
     thumb: euro-15.jpeg
-    text: Park gates, Paris
+    text: Watching the Place du Trocadéro, Paris
   - name: euro-16.jpeg
     thumb: euro-16.jpeg
-    text: Museé de l'Orangerie, Paris
+    text: Park gates, Paris
   - name: euro-17.jpeg
     thumb: euro-17.jpeg
+    text: Museé de l'Orangerie, Paris
+  - name: euro-18.jpeg
+    thumb: euro-18.jpeg
     text: University town, Edinburgh
 sydney:
   title: Sydney

@@ -1,44 +1,30 @@
 ---
 layout: post
-title: Australia's oldest international airport is __________________?
+title: Where is Australia's oldest international airport?
 tags: [history, sydney]
 photoloc: /assets/posts/airports
 toc: true
 ---
 
-<div class="name-mix">
-   <span id="r1">r</span>
-   <span id="e">e</span>
-   <span id="p">p</span>
-   <span id="o">o</span>
-   <span id="r2">r</span>
-   <span id="t">t</span>
-</div>
-
 **TL;DR**: Sydney Airport*
 
-*\*Depending on {% include sidenote.html 
-   label = "what we mean"
-   content = "This feels very pedantic, but at the time these definitions had different meanings to today. Not that the meanings today are super strict, anyway." %} by "oldest" and "international airport"*.
+*\*Depending on what we mean by: "oldest", and: "international airport"*
  
 
 A simple question that I couldn't find a satisfying answer to led me down this little rabbit hole. There were a lot of firsts going in aviation at the time (around 1910-1940). In this case, I think that the definition of first is simple enough, but to be *oldest* the airport has to be continually operating. This lines up with a similar idea for the [oldest companies in the world](https://en.wikipedia.org/wiki/List_of_oldest_companies), which states that:
 
 > To be listed, a brand or company name must remain operating, either in whole or in part, since inception.
 
-Adding to this, though, is that a lot of these early airports had been operating for 10 or 20 years before they started servicing international flights. At the time, the term "international airport" didn't really have the same connotations as it did today, and to narrow down the definition to "**a commercial airport servicing flights departing to / arriving from outside of Australia**" brings the date of the *first* up about 15 years. The airport, having 
+Adding to this, though, is that a lot of these early airports had been operating for 10 or 20 years before they started servicing international flights. At the time, the term "international airport" didn't really have the same connotations as it did today, and to narrow down the definition to "**a commercial airport servicing flights departing to / arriving from outside of Australia**" brings the date of the *first* up about 15 years.
 
-Part of the murkiness is caused by the fact that several airports, airfields, and aerodromes were established in Australia before we'd received an international flight, and the airports etc. involved in the earliest international flights are {% include sidenote.html 
-label = "no longer operating"
-content = "Continuous operation is a key factor here."
-%}. 
+Part of the murkiness is caused by the fact that several airports, airfields, and aerodromes were established in Australia before we'd received an international flight, and the airports etc. involved in the earliest international flights are no longer operating.
 
 Here's a quick summary. Australia's:
 - **oldest (continuously operating) airport** is Sydney Airport, established in <mark>1918</mark>, but started international services in <mark>1947</mark>;
 - **first international airport** is Parap Airfield, which received an international flight from London in 1919; and
 - **first international passenger flight** left from Brisbane in 1935.
 
-We'll go through these airports and a couple of other relevant / interesting contenders below.
+We'll go through these airports, and a couple of other interesting contenders below.
 
 ## Daley Waters Airfield (1928)
 Firstly, let's get Daly Waters Airfield out of the way. It's the top Google search result (at least for me) for the question of Australia's oldest international airport, with its [Wikipedia page](https://en.wikipedia.org/wiki/Daly_Waters_Airfield) stating that: 
@@ -53,13 +39,13 @@ author="National Archives of Australia" title="A1 1927/1017"
 link="https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/DetailsReports/ItemDetail.aspx?Barcode=44277&isAv=N"
 %}
 
-There is basically no information (again, that I could find) on whether an airfield existed before this exchange––if so, it would have to have been established before 1919 to beat Sydney Airport and have received an international flight before 1919 to beat Parap Aerodrome. 
+There is basically no information (again, that I could find) on whether an airfield existed before this exchange. If so, it must have been established before 1919 to beat Sydney Airport *and* have received an international flight that same year to beat Parap Aerodrome. 
 
 ## Parap Aerodrome (1919)
   
-Parap Aerodrome, at the time just outside of Darwin, was the final destination for Ross and Keith Smith on their winning trip in the [1919 London to Sydney air race](https://en.wikipedia.org/wiki/1919_England_to_Australia_flight)[^2]. As far as I can tell, this is the first internal flight to or from Australia. Even though the Smith brothers were paid for this flight, it wasn't a commercial flight as there were no passengers or cargo––only crew on the plane. 
+Parap Aerodrome, at the time just outside of Darwin, was the final destination for Ross and Keith Smith on their winning trip in the [1919 London to Sydney air race](https://en.wikipedia.org/wiki/1919_England_to_Australia_flight)[^2]. This appears to be the first internal flight into or out of Australia. Even though the Smith brothers were paid for their troubles (through prize money), it wasn't a commercial flight as there were no passengers or cargo. Only room for crew on this flight. 
 
-The bulk of sources I could find (all of which are like pre-SEO-era Darwin tourist websites) contain substantially the same text without citations. [An example is here](https://www.australiaforeveryone.com.au/files/darwin/old-qantas-hangar.html#:~:text=Qantas%20Empire%20Airways%20used%20the%20aerodrome%20as%20their%20Australian%20departure%20point%20and%20landfall%20for%20the%20long%20Timor%20Sea%20crossing.); they all note that Qantas used Parap Aerodrome as the Australian end of the Timor sea crossing, although the Qantas hangar on site (still there today) appears to have been built later on in 1934.
+The bulk of the available sources (all of which are like pre-SEO-era Darwin tourist websites) contain substantially the same text, without citations. [An example is here](https://www.australiaforeveryone.com.au/files/darwin/old-qantas-hangar.html#:~:text=Qantas%20Empire%20Airways%20used%20the%20aerodrome%20as%20their%20Australian%20departure%20point%20and%20landfall%20for%20the%20long%20Timor%20Sea%20crossing.); they all note that Qantas used Parap Aerodrome as the Australian end of the Timor sea crossing, although the Qantas hangar on site (still there today) appears to have been built later, around 1934.
 
 {% include quote.html 
 content="The ‘NT’ in Qantas represented their ambition to fly overseas via Darwin in the Northern Territory as the main aerial port of entry at the time."

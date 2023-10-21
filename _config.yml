@@ -82,6 +82,9 @@ collections:
   reviews:
     output: true
     permalink: /books/:slug
+  notes:
+    output: true
+    permalink: /notes/:slug
 
 # 7. Site Navigation
 nav_header:
