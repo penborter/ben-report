@@ -5,6 +5,9 @@ tags: [site]
 photoloc: /assets/posts/layout/
 ---
 
+## Update 21/10/23
+I went back to the original design. Kept the new features though, which should make adding / updating the site a bit smoother going forward. 
+
 ## New URL
 Firstly, you might note that the url of this website has changed, from `penborter.com` to `ben.report`. Fewer characters, maybe a bit more anonymous, definitely more fun. The old url will redirect to here from now on. All of the content is the same as before, and the source of the website itself is still available on [github](https://github.com/penborter/ben_report). The RSS feed is now available [here](/feed.xml).
 
