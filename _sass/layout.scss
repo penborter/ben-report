@@ -294,6 +294,10 @@ nav {
     li:not(:last-child) {
       padding-right: 1em;
     }
+
+    * {
+      transition: 0.25s ease color;
+    }
   }
 
   .nav-secondary {
@@ -332,6 +336,8 @@ nav {
     padding: 0.4em 1.1em;
 
     font-weight: 600;
+
+    transition: 0.3s ease background;
 
     //background: var(--navName-color); // #4d7359
     //color: var(--bg) !important;
@@ -489,7 +495,7 @@ blockquote, .footnotes {
 
 div.highlighter-rouge {
   border: 1px solid var(--bg-accent-1);
-  border-radius: $border-radius;
+  //border-radius: $border-radius;
   margin-bottom: 1.5em;
 }
 
@@ -497,7 +503,7 @@ div.highlighter-rouge {
   margin: 0;
   padding: 0.7em;
 
-  border-radius: $border-radius;
+  //border-radius: $border-radius;
 
   line-height: 1.3em;
 
@@ -540,6 +546,126 @@ footer {
   bottom: 3em;
   padding-left: 4.5em;
 }
+
+// Bookshelf
+
+.horizontal-reading {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  overflow-x: scroll;
+  align-items: end;
+  
+  width: 100vw;
+  margin-left: calc(325px - 50vw);
+  padding-left: calc(50vw - 325px - 121px);
+  padding-bottom: 2em;
+
+  // To hide the TOC behind the bookshelf
+  position: sticky;
+  z-index: 2;
+  background-color: var(--bg);
+}
+
+.horizontal-book {
+  --padding-top: calc(50px + 1px * var(--random));
+  align-items: end;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+
+  padding: var(--padding-top) 1em 2em 1em;
+
+  min-width: calc(0.25px * var(--pages));
+  width: max-content;
+  min-height: calc(18em + var(--padding-top));
+
+  text-decoration: none;
+
+  * {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    max-height: 12em;
+    font-size: 1.1em;
+  }
+
+  .title {
+    font-weight: 600;
+  }
+}
+
+.horizontal-meta {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--bg-accent-1);
+  padding-right: 1em;
+  white-space: nowrap;
+
+  &:not(:first-child) {
+    padding-left: 2.5em; 
+  }
+
+  * {
+    display: inline;
+  }
+}
+
+// Book Colors
+.color-0 {
+  background: var(--fg);
+  color: var(--bg);
+}
+.color-1 {
+  background: #eb8919;
+  color: #eff2e3;
+}
+.color-5 {
+  background: #b2e6d8;
+  color: #334d42;
+}
+.color-3 {
+  background: var(--bg-accent-3); //#e9ebae
+}
+.color-2 {
+  background: #f7c8a8;
+  color: #334d42;
+}
+.color-4 {
+  background: #313131;
+  color: #eff2e3;
+}
+
+.book-cat-wrap {
+  display: grid;
+  grid-template-columns: 1fr $content-width;
+  margin-left: -10em;
+
+  .list-cat {
+    position: inherit;
+    font-size: 1.75em;
+    padding-top: 0.4em;
+
+    div {
+      position: sticky;
+      top: 1em;
+      text-align: right;
+      padding-right: 1.8em;
+    }
+
+    .number {
+      position: inherit;
+      top: auto;
+      display: block;
+      font-weight: 400;
+    }
+  }
+
+  .list-cat-container h2:first-child {
+    margin-left: -10rem;
+    padding-left: 10rem;
+  }
+}
+
 
 // "Lists" Layout
 
@@ -655,17 +781,17 @@ footer {
   font-weight: 550;
 }
 
-.author {
+.list-cat-container .author {
   //font-size: 0.85em;
   font-weight: 350;
-  padding-left: 0.1em;
-  margin-left: -0.1em;
+  margin: -1em 0;
+  margin-bottom: 1em;
 }
 
 .starred {
   list-style-type: "★";
-  margin-left: -0.3em;
-  padding-left: 0.3em;
+  //margin-left: -0.3em;
+  //padding-left: 0.3em;
   display: list-item;
 
   &::marker {
@@ -731,83 +857,6 @@ iframe {
   }
 }
 
-// Sidenotes
-
-.sidenote {
-  counter-increment: sidenote;
-}
-
-.sidenote_content-parenthesis {
-  position: absolute;
-  left: -99999px;
-  top: auto;
-}
-
-.sidenote_content {
-  display: block;
-  position: relative;
-  float: left;
-  left: $content-width;
-  //margin-top: calc(-1.5*var(--text-size)); // Align sidenote top with main text 
-  margin-right: calc(-1 * var(--sidenote-width) - 1 * var(--sidenote-margin));
-  width: var(--sidenote-width);
-  padding: 0 0 0 3rem;
-
-  color: var(--fg-accent-1);
-  font-style: normal;
-
-  &::before {
-    content: counter(sidenote, upper-alpha) ".";
-    margin-left: -1rem;
-    //font-weight: 700;
-  }
-}
-
-.sidenote_button::after {
-  content: counter(sidenote, upper-alpha);
-  display: inline-block;
-
-  font-size: 0.7em;
-  vertical-align: 30%;
-  margin-left: -0.2em;
-}
-
-.sidenote_checkbox {
-  display: none;
-}
-
-@media screen and (max-width: 1120px) {
-
-  .sidenote_checkbox ~ .sidenote_content {
-    // Hidden, but accessible to browsers that don't do CSS (e.g. screenreaders, Pocket)
-    position: absolute;
-    left: -99999px;
-    top: auto;
-  }
-
-  .sidenote_checkbox:checked ~ .sidenote_content {
-    position: relative;
-    left: auto; 
-    float: left;
-    min-width: 100%;
-
-    display: block;
-    margin: 0.8rem 0;
-    padding: 0 1rem;
-  }
-
-  .sidenote_button {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    text-underline-offset: 3px;
-    cursor: pointer;
-  }
-
-  .sidenote_checkbox:checked ~ .sidenote_button::after {
-    content: none;
-  }
-}
-
 
 // Tables
 
@@ -851,6 +900,8 @@ tr:nth-child(even) {
 
   padding: 0.5em;
   border-radius: $border-radius;
+
+  transition: 0.3s ease;
 
   &:hover {
     background: var(--bg-transparent);
@@ -966,7 +1017,7 @@ tr:nth-child(even) {
 
   vertical-align: top;
   white-space: normal;
-  padding: calc(4.5rem + #{$navbar-height}) 3rem 0 0;
+  padding: calc(4rem + #{$navbar-height} - 11px) 3rem 0 0;
   height: 100%;
   
 
@@ -1087,6 +1138,37 @@ mark {
 
     &:after {
       content: ")"
+    }
+  }
+
+  .book-cat-wrap {
+    display: block;
+    margin-left: 0;
+
+    .list-cat {
+      font-size: 1.5em;
+
+      div {
+        text-align: left;
+      }
+
+      .number {
+        display: inline;
+      }
+    }
+
+    .list-cat-container h2:first-child {
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+
+  .starred {
+    display: block;
+
+    &::after {
+      content: "★";
+      color: var(--bg-accent-1);
     }
   }
 

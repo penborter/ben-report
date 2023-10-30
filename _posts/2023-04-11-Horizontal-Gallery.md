@@ -7,20 +7,20 @@ render_with_liquid: false
 toc: true
 ---
 
-I wanted to put together a quick guide for the horizontal photo gallery layout I use for the galleries on this site (e.g. [Europe 2022](https://ben.report/photos/euro)). It comes baked in to the [Stretch](https://stretch.ben.report/) jekyll theme, too.
+I wanted to put together a quick guide for the horizontally-scrolling layout I use for the galleries on this site (e.g. [Europe 2022](https://ben.report/photos/euro)). This is definitely not the most efficient way to do this, but it works and is fairly straightforward. Please [let me know](/contact) if you come up with any improvements. It comes baked in to the [Stretch](https://stretch.ben.report/) jekyll theme, too.
 
 I'll split this into two parts:
 1. Using a Jekyll template to populate a gallery
 2. Using CSS to get the populated gallery to behave the way we want
 
-If you're not using Jekyll then I recommend skipping straight to the [CSS section](/posts/horizontal-gallery#css-layout).
+If you're not using Jekyll then I recommend skipping straight to the [CSS section](/posts/horizontal-gallery#css-layout), assuming that you have a set of `div` tags for each image, containing another `div` for the caption, and an `img` tag for the picture itself. 
 
 
 ## Jekyll Template
 
-We're using a layout called [`photo.html`](https://github.com/penborter/ben-report/blob/main/_layouts/photo.html), which is a basic liquid template that loops through the photos in the gallery, pulls out the URL, caption, and alt text. It allows you to include an intro paragraph at the start of the gallery, which scrolls the same way. 
+We're using a layout called [`photo.html`](https://github.com/penborter/ben-report/blob/main/_layouts/photo.html), which is a liquid template that loops through the photos in the gallery, pulls out the URL, caption, and alt text. It allows you to include an intro paragraph at the start of the gallery, which scrolls the same way. 
 
-First we get the data from `photos.yml` in the site's `_data` folder. This will probably be different depending on how your site's data is structured.
+The gallery data is stored in `photos.yml` in the site's `_data` folder. Wherever your data source is, 
 
 The whole gallery is then wrapped in a div called `horizontal-gallery-wrapper`. Within that div, there are two parts: the initial "meta" paragraph, and then the liquid loop to generate html tags for each image in the gallery. For each image in the gallery, we can fill out an `image-wrapper` div with the url, title, image caption, and alt text.
 

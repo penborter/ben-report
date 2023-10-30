@@ -12,43 +12,87 @@ permalink: /books
   <h1>Bookshelf</h1>
 
 <div class="reading-meta">
+  <p>
+    A list of books I've read since 2020. I'm working back through to add a short review for each book; for now some have <a href="{{ site.baseurl }}/books/reviews">pre-existing longer reviews</a> linked. 
+    Layout is shamelessly stolen from the online bookshelves of <a href="https://christophlabacher.com/notes/bookshelf">Christof Labacher</a> and <a href="https://johannesklingebiel.de/wiki/Bookshelf/">Johannes Klingebiel</a>.
+    Excellent books have a star. Last updated {{ page.updated }}.
+  </p>
+</div>
 
-<p>A list of books I've read over the last few years. Books that have notes are underlined; a list of only the books that I've written up notes for is <a href="{{ site.baseurl }}/books/reviews">here</a>. Excellent books have a star.
-<p>Last updated {{ page.updated }}.</p>
+<div class="horizontal-reading narrow-remove">
+  {% for entry in site.data.reading.years %}
+  
+    <div class="horizontal-meta">
+      <span>{{ entry.year }} &raquo;</span>
+    </div>
 
-</p>
+    {% for book in entry.books %}
+
+    {% assign random_num = 'now' | date: "%N" | modulo: 100000 | divided_by: 5000 %}
+    {% assign random_num_2 = 'now' | date: "%N" | modulo: 100000 | divided_by: 5000 %}
+    {% assign random_height = random_num | times: random_num_2 | modulo: 60 %}
+    {% assign color = random_height | divided_by: 2 | modulo: 6 %}
+
+    {% assign has_review = false %}
+    {% assign book_url = book.link %}
+    
+    {% for review in site.reviews %}
+      {% if review.book == book.title %}
+        {% assign book_url = review.url %}
+        {% assign has_review = true %}
+      {% endif %}
+    {% endfor %}
+
+    <a 
+      class="horizontal-book color-{{ color }}" 
+      style="--random: {{ random_height }};{% if book.pages %} --pages: {{ book.pages }}{% endif %};"
+      href="{% if has_review %}{{ book_url }}{% else %}{{page.url}}#{{ book.title | replace: ' ', '_' }}{% endif %}"
+    >
+      <span class="title">{{ book.title }}{% if book.star %} ★{% endif %}</span>
+      <span class="author">{{ book.author }}</span>
+    </a>
+    {% endfor %}
+
+  {% endfor %}
 </div>
 
 {% for entry in site.data.reading.years %}
+<div class="book-cat-wrap">
   <div class="list-cat">
-        <span>{{ entry.year }}</span>
-        <span class="number">{{ entry.books | size }} books</span>
+    <div>
+      <span>{{ entry.year }}</span>
+      <span class="number">{{ entry.books | size }} books</span>
+    </div>
   </div>
-  <div class="list-cat-container border-top top-u2">
-    <ul class="reading-list">
-      {% for book in entry.books %}
-        
-        {% assign has_review = false %}
-        {% assign book_url = book.link %}
-        
-        {% for review in site.reviews %}
-          {% if review.book == book.title %}
-            {% assign book_url = review.url %}
-            {% assign has_review = true %}
-          {% endif %}
-        {% endfor %}
-        
-        <li class="list-item strong{% if book.star %} starred{% endif %}">
-          {% if has_review %}<a class="book-link" href="{{ book_url }}">{% endif %}
-          {{ book.title }}
-          <span class="author"> by {{ book.author }}</span>
-          {% if has_review %}</a>{% endif %}
-          {% endfor %}
-        </li>
-
-    </ul>
+  <div class="list-cat-container">
+    {% for book in entry.books %}
+      
+      {% assign has_review = false %}
+      {% assign book_url = book.link %}
+      
+      {% for review in site.reviews %}
+        {% if review.book == book.title %}
+          {% assign book_url = review.url %}
+          {% assign has_review = true %}
+        {% endif %}
+      {% endfor %}
+      
+      <h2 class="list-item strong{% if book.star %} starred{% endif %}" id="{{ book.title | replace: ' ', '_' }}">
+        {% if has_review %}<a class="book-link" href="{{ book_url }}">{% endif %}
+        {{ book.title }}
+        {% if has_review %}</a>{% endif %}
+      </h2>
+      <h3 class="author"> by {{ book.author }}</h3>
+      {% if book.review %}<p>{{ book.review | markdownify }}</p>{% endif %}
+    {% endfor %}  
   </div>
+</div>
 {% endfor %}
 </article>
 
 {% include footer.html %}
+
+<div class="toc narrow-remove">
+  {% include toc.html html=content h_min=2 %}
+  <a href="#" class="toc-return"> ^ Return to top</a>
+</div>

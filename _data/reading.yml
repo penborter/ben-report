@@ -3,84 +3,114 @@ years:
     books:
       - title: Seven Surrenders
         author: Ava Palmer
+        pages: 480
         
       - title: The Internationalists
         author: Oona Hathaway & Scott Shapiro
+        pages: 562
+        star: yes
+        review: "Really interesting book, exemplifying the adage that *the past is a different country*. An exploration of the Kellogg-Briand pact, signed in 1928, which aimed to outlaw war. Obviously, WWII started less than 10 years later, but the authors argue (successfully, I think) that the pact impacted countries' behaviour during the war––particularly the USA––and especially affected the aftermath."
         
       - title: This is How You Lose the Time War
         author: Amal El-Mohtar
+        pages: 209
+        review: "Quick, easy read. It was fairly light-on, and maybe could have been even shorter––even short story length––but was still enjoyable."
         
       - title: Too Like the Lightning
         author: Ava Palmer
+        pages: 433
         
       - title: Let My People Go Surfing
         author: Yvon Chouinard
+        pages: 277
         
       - title: Travels in Hyperreality
         author: Umberto Eco
+        pages: 324
         
       - title: The Gospel According to Jesus Christ
         author: José Saramago
+        pages: 325
         
       - title: 1177 BC
         author: Eric Cline
+        pages: 304
         
       - title: Assassin's Fate
         author: Robin Hobb
+        pages: 865
 
       - title: Fool's Quest
         author: Robin Hobb
+        pages: 769
         
       - title: Fool's Assassin
         author: Robin Hobb
+        pages: 641
         
       - title: Blood of Dragons
         author: Robin Hobb
+        pages: 448
         
       - title: City of Dragons
         author: Robin Hobb
+        pages: 401
         
       - title: Dragon Haven
         author: Robin Hobb
+        pages: 526
 
       - title: Dragon Keeper
         author: Robin Hobb
+        pages: 500
 
       - title: Ritual and its Consequences
         author: Adam Seligman
+        pages: 250
 
       - title: First Light
         author: Richard Preston
+        pages: 300
 
       - title: Perdido Street Station
         author: China Miéville
+        pages: 753
 
       - title: Shorefall
         author: Robert Jackson Bennett
+        pages: 515
     
       - title: Foundryside
         author: Robert Jackson Bennett
+        pages: 515
 
       - title: Redemption Ark
         author: Alastair Reynolds
+        pages: 700
 
       - title: Revelation Space
         author: Alastair Reynolds
+        pages: 600
 
       - title: Tomorrow and Tomorrow and Tomorrow
         author: Gabrielle Zevin
+        pages: 420
 
       - title: The Keep
         author: Jennifer Egan
+        pages: 275
 
       - title: There is No Antimimetics Division
         author: Sam Hughes
+        pages: 230
 
       - title: Ficciones
         author: Jorge Luis Borges
+        pages: 200
 
       - title: Energy
         author: Richard Rhoades
+        pages: 481
         
   - year: "2022"
     books:
