@@ -1,10 +1,10 @@
 ---
 layout: page
-title: 👋 Hi, I'm Ben
+title: Hi, I'm Ben
 permalink: /
 ---
 
-I'm a consultant from Sydney, focusing on capital-intensive projects in transport, energy, and water. This site is here to host some of my data analysis and [visualisation]({{ site.base }}/tags#data), design, [photography]({{ site.base }}/photos) and [reading list]({{ site.base }}/books)––my contact details are also available [here]({{ site.base }}/contact). 
+A consultant from Sydney, focusing on capital-intensive projects in transport, energy, and water. This site is here to host some of my data analysis and [visualisation]({{ site.base }}/tags#data), design, [photography]({{ site.base }}/photos) and [reading list]({{ site.base }}/books)––my contact details are also available [here]({{ site.base }}/contact). 
 Explore below:
 
 <ul class="nav-about">

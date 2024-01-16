@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to make a horizontal gallery layout with CSS
+title: How to make a horizontal gallery layout without Javascript
 tags: [site, learning, photography]
 photoloc: /assets/posts/horizontal
 render_with_liquid: false
@@ -30,22 +30,27 @@ The whole gallery is then wrapped in a div called `horizontal-gallery-wrapper`. 
   <div class="gallery-meta">
     <div>
       <h1>{{ page.title }}</h1>
-      <p>There are {{ gallery_size }} photos in this set. Photos scroll horizontally (hold Shift and scroll with a mousewheel). 👉</p>
+      <p>Insert gallery blurb here...</p>
     </div>
   </div>
 
   {% for image in gallery.images %}
     <div class="image-wrapper">
-      <a href="{{ gallery.imagefolder }}/{{ image.name }}"  title="{{ image.text}}">
+      <a href="{{ gallery.imagefolder }}/{{ image.name }}"  
+         title="{{ image.text}}">
+        
         <div class="image-caption">{{ image.text }}</div>
-        <img class="img-gallery" src="{{ gallery.imagefolder }}/{{ image.thumb }}" alt="{{ image.text }}" loading="lazy">
+        
+        <img class="img-gallery" 
+             src="{{ gallery.imagefolder }}/{{ image.thumb }}" 
+             alt="{{ image.text }}" loading="lazy">
       </a>
     </div>
   {% endfor %}
 </div>
 ```
 ## CSS Layout
-Fundamentally, we have a wrapper div––which enables the horizontal scroll––containing a set of divs (or other tags) for each of the images or products or projects we want to display.
+Fundamentally, we have a wrapper div—which enables the horizontal scroll—containing a set of divs (or other tags) for each of the images or products or projects we want to display.
 
 ```html
 <div class="horizontal-gallery-wrapper">
@@ -122,10 +127,13 @@ For narrow screen widths or vertically oriented screens, obviously the horizonta
 }
 ```
 
+## Optional Javascript
+Last section, to be written up. Basically just allows for key presses to navigate through the gallery.
+
 ## Wrapping Up
 
 That's all there is to it! No JS required, just forcing the page contents to extend off to the right and telling the page to scroll in that direction. This effect works well with a static sidebar, where the photos can scroll under the sidebar and off the screen to the left. 
 
 Other finishing touches could include: adding a page footer into the `gallery-meta` div, and including a liquid content tag in that same div to allow for a custom blurb for each gallery. 
 
-See some live examples [here](https://ben.report/photos), or at the **PHOTOS** link in the navbar <span class="narrow-remove">on the left.</span><span class="narrow-show-inline">up top.</span>
+See some live examples [here](https://ben.report/photos), or at the **PHOTOS** link in the navbar up top.

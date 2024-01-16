@@ -1,6 +1,47 @@
 years:
+  - year: "2024"
+    books:
+      - title: Book of the New Sun
+        author: Gene Wolfe
   - year: "2023"
     books:
+      - title: Why Read the Classics
+        author: Italo Calvino
+
+      - title: Skunk Works
+        author: Ben Rich
+
+      - title: Rose/House
+        author: Arkady Martine
+
+      - title: The Character of Physical Law
+        author: Richard Feynman
+
+      - title: The Adventure of English
+        author: Melvyn Bragg
+
+      - title: The Return of the King
+        author: J.R.R. Tolkien
+        pages: 800
+
+      - title: The Two Towers
+        author: J.R.R. Tolkien
+        pages: 750
+
+      - title: The Fellowship of the Ring
+        author: J.R.R. Tolkien
+        pages: 700
+
+      - title: Only Forward
+        author: Michael Marshall Smith
+
+      - title: The Emigrants
+        author: W.G. Sebald
+
+      - title: The Rings of Saturn
+        author: W.G. Sebald
+        pages: 300
+
       - title: Seven Surrenders
         author: Ava Palmer
         pages: 480
@@ -9,12 +50,12 @@ years:
         author: Oona Hathaway & Scott Shapiro
         pages: 562
         star: yes
-        review: "Really interesting book, exemplifying the adage that *the past is a different country*. An exploration of the Kellogg-Briand pact, signed in 1928, which aimed to outlaw war. Obviously, WWII started less than 10 years later, but the authors argue (successfully, I think) that the pact impacted countries' behaviour during the war––particularly the USA––and especially affected the aftermath."
+        review: "Really interesting book—the past really was a different country. An exploration of the Kellogg-Briand pact, signed in 1928, which aimed to outlaw war. Obviously, WWII started less than 10 years later, but the authors argue (successfully, I think) that the pact impacted countries' behaviour during the war––particularly the USA––and especially affected the aftermath."
         
       - title: This is How You Lose the Time War
         author: Amal El-Mohtar
         pages: 209
-        review: "Quick, easy read. It was fairly light-on, and maybe could have been even shorter––even short story length––but was still enjoyable."
+        review: "Quick, easy read. It was fairly light-on, and maybe could have been even shorter––novella? short story, even?––but was still enjoyable."
         
       - title: Too Like the Lightning
         author: Ava Palmer
@@ -31,6 +72,7 @@ years:
       - title: The Gospel According to Jesus Christ
         author: José Saramago
         pages: 325
+        review: "The title spells out the premise: A story about a much more human Jesus than is represented in the gospels, an unwilling accomplice who tries––and fails––to thwart God's plan. Great, compelling prose. Honestly just a pleasure to read, and it makes me want to read more Saramago (and learn Spanish so I can read it in the original language, along with Borges). I read the translation by by Giovanni Pontiero and Margaret Jull Costa, part of *The Collected Novels of José Saramago*."
         
       - title: 1177 BC
         author: Eric Cline
@@ -39,30 +81,37 @@ years:
       - title: Assassin's Fate
         author: Robin Hobb
         pages: 865
+        review: "As with the other series, I read the *The Fitz and the Fool Trilogy* as one book. A fitting end to the entire sixteen-book saga. I'll definitely work my way through the whole thing again, but not soon––I need to process this ending first."
 
       - title: Fool's Quest
         author: Robin Hobb
         pages: 769
+        review: "See the review for *Assassin's Fate* above."
         
       - title: Fool's Assassin
         author: Robin Hobb
         pages: 641
+        review: "See the review for *Assassin's Fate* above."
         
       - title: Blood of Dragons
         author: Robin Hobb
         pages: 448
+        review: "I read the combined version of the *Rain Wild Chronicles*, so *Dragon Keeper*, *Dragon Haven*, *City of Dragons*, and this one just felt like one huge book. Still great, maybe stretched a bit more thin than other trilogies in the series. Serves its purpose in properly tying all of the threads together."
         
       - title: City of Dragons
         author: Robin Hobb
         pages: 401
+        review: "See the review for *Blood of Dragons* above."
         
       - title: Dragon Haven
         author: Robin Hobb
         pages: 526
+        review: "See the review for *Blood of Dragons* above."
 
       - title: Dragon Keeper
         author: Robin Hobb
         pages: 500
+        review: "See the review for *Blood of Dragons* above."
 
       - title: Ritual and its Consequences
         author: Adam Seligman
