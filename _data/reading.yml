@@ -1,18 +1,30 @@
 years:
   - year: "2024"
     books:
+      - title: All the Names
+        author: Jose Saramago
+        review: "I'm a sucker for really long lists—for example, the page-long exploration of gravestones presented to Jose in the cemetery when he visits. Great book, probably not as good as *The Gospel According to Jesus Christ*. Somehow Jose (the narrator) comes across as both ignorant and canny, relatable and pretentious; Jose (the character) is pathetic but very likeable. The writing is so good you don't even notice the lack of punctuation, or that we're told only one character's proper name."
+      - title: Sea People
+        author: Christina Thompson
+        review: "Originally recommended in [this review](https://www.thepsmiths.com/p/review-sea-people-by-christina-thompson). Really a book about the philosophy and the history of science, exploring Western understanding of how basically a single group of people—the Polynesians—settled the huge area between Hawaii, New Zealand, and Easter Island. Thorough and constantly interesting, peeling back the layers as we work through the chronology from European discovery of Polynesia to the present day. Particularly interesting are the parts about 'two ways of thinking', where Europeans struggled to rectify assumptions in their way of thinking with those of the Polynesians."
+
       - title: Book of the New Sun
         author: Gene Wolfe
+        star: yes
+        review: "Excellent, mysterious, dense. I can see why the endless discussion about this book has continued online basically since it was released. Fantasy or sci-fi, depending on how much you're paying attention."
+
   - year: "2023"
     books:
       - title: Why Read the Classics
         author: Italo Calvino
+        review: 'A collection of essays about "the classics" and about key Western authors. Key quote: "*A classic is something that tends to relegate the concerns of the moment to the status of background noise, but at the same time this background noise is something we cannot do without.*"'
 
       - title: Skunk Works
         author: Ben Rich
 
       - title: Rose/House
         author: Arkady Martine
+        review: 'Little novella about a house and the consciousness that inhabits it. It was fine; not as engaging as her other two novels.'
 
       - title: The Character of Physical Law
         author: Richard Feynman
