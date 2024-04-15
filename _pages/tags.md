@@ -25,11 +25,11 @@ title: Tags
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
 
-<a href="#{{ t | downcase }}" class="list-cat-link">
-  <span id="{{ t | downcase }}" class="list-cat">#{{ t }} ({{ posts.size }})</span>
+<a href="#{{ t | downcase }}" class="list-cat-link border-top full-width">
+  <span id="{{ t | downcase }}" class="list-cat aligned">#{{ t }} ({{ posts.size }})</span>
 </a>
 
-<div class="list-cat-container border-top top-u2">
+<div class="list-cat-container">
 {% for post in posts %}
   {% if post.tags contains t %}
 

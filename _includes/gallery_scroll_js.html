@@ -4,8 +4,10 @@
   var container = document.querySelector('.horizontal-gallery-wrapper');
   var photos = document.querySelectorAll('.image-wrapper');
 
-  // Set the current photo index to 0
-  let currentPhotoIndex = 0;
+  console.log(photos.length);
+
+  // Set the current photo index to 1
+  let currentPhotoIndex = 1;
   let lastKeyDirection = "R";
 
   // Add an event listener to the document to listen for key presses
@@ -18,13 +20,18 @@
       event.preventDefault();
       currentPhotoIndex++;
 
+      console.log(currentPhotoIndex);
+
       // If the current photo index is greater than the number of photos in the gallery, wrap around to the first photo
-      if (currentPhotoIndex >= photos.length) {
-        currentPhotoIndex = 0;
+      if (currentPhotoIndex > photos.length) {
+        currentPhotoIndex = 1;
+        console.log("Reset");
+        console.log(currentPhotoIndex);
       }
 
       // Calculate the scroll position to align the right edge of the photo with the right edge of the container
       var containerWidth = container.clientWidth;
+      
       var photoWidth = photos[currentPhotoIndex].clientWidth;
       var scrollLeft = photos[currentPhotoIndex].offsetLeft + photoWidth - containerWidth + 10;
       // Scroll the container to the calculated position
@@ -40,9 +47,11 @@
       event.preventDefault();
       currentPhotoIndex--;
 
+      console.log(currentPhotoIndex);
+
       // If the current photo index is less than 0, wrap around to the last photo
       if (currentPhotoIndex < 0) {
-        currentPhotoIndex = photos.length - 1;
+        currentPhotoIndex = photos.length;
       }
 
       // Calculate the scroll position to align the right edge of the previous photo with the right edge of the container

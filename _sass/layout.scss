@@ -3,9 +3,9 @@
 
 // 1. Input Variables
 // 1.1 Layout
-$content-width: 650px; // width of main content column
+$content-width: 600px; // width of main content column
 $navbar-height: 90px; // side of navbar
-$sidebar-width: 220px; // width of sidebar
+$sidebar-width: 12rem; // width of sidebar
 $sidebar-margin: 2.5em;
 
 //$total-sidebar: 2 * #{$sidebar-width};
@@ -15,7 +15,7 @@ $pic-wide: 200px; // margin amount for extra wide pictures
 $caption-wide: calc(1 / #{$pic-wide}); // fits the caption back to normal content width
 
 // 1.2 Main colours
-$light: hsl(70, 35%, 92%);
+$light: hsl(70, 25%, 95%);
 $dark: hsl(155, 20%, 25%);
 
 //$dark: hsl(155, 25%, 15%);
@@ -26,10 +26,10 @@ $dark: hsl(155, 20%, 25%);
 // 2 Calculated Variables
 // 2.1 Main colours and accents
 $dark_accent_1: hsl(150, 25%, 45%);
-$dark_accent_2: hsl(150, 15%, 30%);
+$dark_accent_2: hsl(150, 15%, 32%);
 $dark_accent_3: hsl(150, 25%, 35%);
 $light_accent_1: hsl(150, 15%, 60%);
-$light_accent_2: hsl(70, 15%, 95%);
+$light_accent_2: hsl(70, 15%, 97%);
 $light_accent_3: hsl(150, 15%, 80%);
 
 $dark-transparent-1: scale-color($dark, $alpha: -55%);
@@ -64,6 +64,7 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
   --border-color: var(--fg-accent-1);
 
   --navName-color: #3f6d56;
+  --red: #f05d5e;
 }
 
 [data-theme="dark"] {
@@ -113,6 +114,12 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
 
 .dark-show {
   display: none
+}
+
+.full-width {
+  margin-top: 2em;
+  display: block;
+  width: 100%;
 }
 
 .mb3 {
@@ -182,6 +189,17 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
   text-overflow: ellipsis;
 }
 
+.card .truncate {
+  position: relative;
+  top: -2.5em;
+  left: -2.5em;
+  background: var(--bg);
+  color: var(--fg);
+  width: fit-content;
+  padding: 0.2em 0.5em;
+  border-radius: 0 0 10px 0;
+}
+
 .narrow-show {
   display: none;
 }
@@ -222,6 +240,10 @@ body {
 main {
   position: relative;
   min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: $sidebar-width $content-width 1fr;
+  grid-template-rows: $navbar-height 1fr;
 }
 
 article>ul, ol {
@@ -233,21 +255,26 @@ article>ul, ol {
 }
 
 article {
-  margin: auto;
+  //margin: auto;
   width: $content-width;
   padding-bottom: 7em;
+  grid-column: 2;
 }
 
 nav {
   font-size: 16px;
+  font-weight: 500;
   position: relative;
   z-index: 1;
   
   margin: 0 auto;
   height: $navbar-height;
   display: grid;
-  grid-template-columns: 1fr $content-width 1fr;
+  width: 100%;
+  grid-template-columns: $sidebar-width $content-width 1fr;
   align-items: center;
+
+  grid-column: 1 / -1;
 
   &:hover {
 
@@ -283,9 +310,9 @@ nav {
 
   .nav-main {
     width: fit-content;
-    padding: 0.4em 1.2em;
-    margin: 0;
-    margin-left: -1em;
+    padding: 0.3em 1.1em;
+    margin: 0 -1.1em;
+    //margin-left: -1em;
 
     border-radius: calc(#{$border-radius} * 2);
     border: 1px solid transparent;
@@ -313,7 +340,7 @@ nav {
   a, a:visited {
     padding: 0;
     text-decoration: none;
-    font-weight: 500;
+    //font-weight: 500;
     color: var(--bg-accent-1);
 
     &:hover {
@@ -331,8 +358,8 @@ nav {
 
   .navName {
     width: fit-content;
-    margin-right: 2.5em;
-    justify-self: right;
+    //margin-right: 2.5em;
+    justify-self: center;
     padding: 0.4em 1.1em;
 
     font-weight: 600;
@@ -375,6 +402,7 @@ sup {
 
   .footnote {
     font-size: 10px;
+    text-decoration: none;
   }
 }
 
@@ -412,14 +440,14 @@ a.footnote {
 
 .post-footer {
   padding-top: 0.5em;
+  border-top: 1px solid var(--bg-accent-1);
 }
 
 .post-nav {
   //border-radius: $border-radius;
-  border-top: 1px solid var(--bg-accent-1);
+  
   padding: 1em;
-
-  margin: 0 -1em 1em -0.8em;
+  margin: 0 -1em;
 
   * {
     color: var(--fg-accent-2);
@@ -461,25 +489,32 @@ a.footnote {
 
 .post-publish {
   color: var(--bg-accent-1);
+
+  p {
+    text-align: right;
+    margin: 0;
+  }
 }
 
 blockquote, .footnotes {
   background: var(--bg-accent-2);
-  margin: 1.2em -1rem;
-  padding: 1rem;
+  margin: 1.2em -1.2em;
+  padding: 1.2em;
 
-  border: 1px solid var(--bg-accent-3);
+  //border: 1px solid var(--bg-accent-3);
   border-radius: $border-radius;
 
-  &:hover {
-    box-shadow: 0 2px 2px var(--shadow-color), 
-                0 4px 4px var(--shadow-color), 
-                0 8px 8px var(--shadow-color);
-  }
+  box-shadow: 0 2px 2px var(--shadow-color), 
+              0 4px 4px var(--shadow-color), 
+              0 8px 8px var(--shadow-color);
  
   p {
     margin: 0;
   }
+}
+
+blockquote {
+  font-size: 0.9em;
 }
 
 .quote-meta {
@@ -488,22 +523,25 @@ blockquote, .footnotes {
 }
 
 *:not(pre) > code {
-  border-radius: 3px;
-  padding: 0.1em 0.3em;
-  background-color: var(--bg-accent-2);
+  //border-radius: 3px;
+  //padding: 0.1em 0.3em;
+  //background-color: var(--bg-accent-2);
+  font-weight: 600;
+  letter-spacing: -0.015rem;
 }
 
 div.highlighter-rouge {
-  border: 1px solid var(--bg-accent-1);
-  //border-radius: $border-radius;
+  //border: 1px solid var(--bg-accent-1);
+  border-radius: $border-radius;
+  margin: 0 -1.2em;
   margin-bottom: 1.5em;
 }
 
-.highlight {
+.highlight:not(pre) {
   margin: 0;
-  padding: 0.7em;
+  padding: 0.7em 1.2em;
 
-  //border-radius: $border-radius;
+  border-radius: $border-radius;
 
   line-height: 1.3em;
 
@@ -512,13 +550,17 @@ div.highlighter-rouge {
 
 .tag {
   text-decoration: none;
-  padding: 0.3em 0.5em;
+  padding: 0.3em 0.7em;
   border-radius: calc(#{$border-radius} * 2);
 
   background-color: var(--bg);
+  color: var(--bg-accent-1);
   border: 1px solid var(--bg-accent-1);
 
+  transition: 0.1s ease;
+
   &:hover {
+    color: var(--fg);
     border: 1px solid var(--fg-accent-1);
     box-shadow: 0 2px 2px var(--shadow-color),
                 0 4px 4px var(--shadow-color),
@@ -534,7 +576,12 @@ footer {
   
   position: absolute;
   bottom: 0;
-  left: calc(50vw - 325px);
+  left: $sidebar-width;
+  
+  a {
+    color: var(--bg-accent-1);
+    text-decoration-color: var(--bg-accent-1);
+  }
 }
 
 .gallery-meta footer {
@@ -557,8 +604,8 @@ footer {
   align-items: end;
   
   width: 100vw;
-  margin-left: calc(325px - 50vw);
-  padding-left: calc(50vw - 325px - 121px);
+  margin-left: calc(-1 * #{$sidebar-width});
+  padding-left: $sidebar-width;
   padding-bottom: 2em;
 
   // To hide the TOC behind the bookshelf
@@ -591,11 +638,12 @@ footer {
 
   .title {
     font-weight: 600;
+    font-size: 20px;
   }
 }
 
 .horizontal-meta {
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--bg-accent-1);
   padding-right: 1em;
@@ -642,8 +690,8 @@ footer {
 
   .list-cat {
     position: inherit;
-    font-size: 1.75em;
-    padding-top: 0.4em;
+    font-size: 1.5rem;
+    padding-top: calc(0.3em + 0.5rem);
 
     div {
       position: sticky;
@@ -661,8 +709,8 @@ footer {
   }
 
   .list-cat-container h2:first-child {
-    margin-left: -10rem;
-    padding-left: 10rem;
+    margin-left: calc(-8.5 / 12 * #{$sidebar-width});
+    padding-left: calc(8.5 / 12 * #{$sidebar-width});
   }
 }
 
@@ -718,6 +766,10 @@ footer {
   }
 }
 
+.aligned {
+  position: inherit;
+}
+
 .tag-date {
   font-weight: 500;
   margin-left: 0.5em;
@@ -727,11 +779,13 @@ footer {
 
 .card-collection {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1em;
+  width: calc(100vw - 2 * #{$sidebar-width});
 
   .card {
     padding: 2em;
+    //border-radius: 10px;
   }
 
   a {
@@ -812,6 +866,8 @@ figure {
 figcaption {
   font-size: 0.85em;
   margin-top: 1em;
+  
+  grid-column: 1 / -1;
 }
 
 img {
@@ -821,6 +877,10 @@ img {
                0 8px 8px var(--shadow-color);
   //border-radius: $border-radius;
   //border: 1px solid var(--fg-accent-1);
+}
+
+img:not(.img-gallery) {
+  display: block;
 }
 
 .video {
@@ -833,13 +893,22 @@ iframe {
 }
 
 .pic-wide {
-  width: calc(100vw - 2 * #{$pic-wide});
-  margin-left: calc(#{$content-width} / 2 - 50vw + #{$pic-wide})
+  width: calc(100vw - 2 * #{$sidebar-width});
+  margin-right: calc(#{$content-width} / 2 - 50vw + #{$sidebar-width});
+
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-column-gap: 1em;
+
+  figure {
+    margin: 0;
+  }
 }
 
-.caption-wide {
-  font-style: italic;
+.gallery + .gallery {
+  margin-top: 1em;
 }
+
 
 // Hover / swap functionality for posts
 
@@ -917,6 +986,8 @@ tr:nth-child(even) {
     margin: 0;
     text-overflow: ellipsis;
     color: transparent;
+
+    transition: 0.2s ease-in-out;
   }
 
   .toc-return {
@@ -955,10 +1026,10 @@ tr:nth-child(even) {
   overflow-y: hidden;
   white-space: nowrap;
   padding: 11px 0;
-  padding-left: calc(50vw - #{$content-width} / 2);
+  padding-left: $sidebar-width;
   -webkit-overflow-scrolling: touch;
 
-  //grid-column: 1 / 3;
+  grid-column: 1 / -1;
 
   margin-top: calc(-1 * #{$navbar-height});
   height: 100vh;
@@ -971,7 +1042,7 @@ tr:nth-child(even) {
     display: inline;
     //height: 100%;
     margin: 0 4px;
-    background: var(--bg-accent-2);
+    //background: var(--bg-accent-2);
     //border-radius: $border-radius;
     //box-shadow: 0 2px 2px var(--shadow-color), 
     //            0 4px 4px var(--shadow-color), 
@@ -991,8 +1062,8 @@ tr:nth-child(even) {
       backdrop-filter: blur(5px);
       color: #eee;
       background: rgba(0, 0, 0, 0.5);
-      border-radius: 3px;
-      padding: 0.2em 0.3em;
+      border-radius: 50px;
+      padding: 0.3em 0.8em;
     }
 
     &:hover {
@@ -1092,6 +1163,7 @@ mark {
   nav {
 
     padding: 0 var(--narrow-padding);
+    grid-template-columns: 3rem 1fr;
 
     a, a:visited {
       color: var(--fg-accent-1);
@@ -1102,6 +1174,8 @@ mark {
       background: none;
       border: none;
       padding: 0;
+
+      justify-self: left;
 
       &:hover {
         box-shadow: none;
@@ -1171,79 +1245,6 @@ mark {
       color: var(--bg-accent-1);
     }
   }
-
-  //nav {
-    //margin: 0;
-    //padding: 1em 1.5em;
-    //position: static;
-    //font-size: 16px;
-    //display: flex;
-    //align-items: center;
-    //justify-content: space-between;
-
-    //height: 60px;
-
-    //width: auto;
-    
-    //border: none;
-    //border-bottom: 1px solid var(--bg-accent-1);
-    //border-radius: 0;
-
-    //a, a:visited {
-    //  color: var(--fg-accent-1);
-    //}
-
-    //&:hover {
-
-    //  border: none;
-    //  border-bottom: 1px solid var(--fg-accent-1);
-
-    //  a, a:visited {
-    //    color: var(--fg-accent-1);
-    //  }
-    //}
-
-    //.navName {
-    //  width: auto;
-    //  padding: 0;
-    //  margin-right: 0;
-    //}
-
-    //.nav-main {
-    //  display: inline-flex;
-    //  margin: auto 0;
-    //  padding: 0 0.6rem;
-
-    //  li {
-    //    margin-bottom: 0;
-    //    padding: 0 0.6em;
-    //  }
-    //}
-
-    //.nav-secondary {
-    //  display: none;
-    //}
-
-    //button {
-    //  background: none;
-    //  margin: 0;
-    //  width: 80px;
-    //}
-    
-    //svg * {
-    //  fill: var(--fg-accent-1) !important;
-    //}
-
-    //.light-icon, .dark-icon {
-    //  top: 1.5em;
-    //  margin-left: 1em;
-    //  padding: 0;
-    //}
-
-    //* {
-    //  padding-left: 0.9em;
-    //}
-  //}
 
   .about-button {
     top: -2.6em !important;
@@ -1374,9 +1375,9 @@ mark {
 // Theme Switch
 
 button {
-  position: relative;
-  left: -20px;
-  top: -10px;
+  position: absolute;
+  right: calc(4rem + 20px);
+  top: 40px;
   width: fit-content;
 
   border: none;
@@ -1423,7 +1424,7 @@ p button {
 
 .navName {
   * {
-    margin: -0.1em -0.13em;
+    margin: 0;
     padding: 0;
     //position: relative;
     display: inline-block;
@@ -1431,7 +1432,33 @@ p button {
     //transition: translate 0.2s ease;
   }
 
+  span:not(#hover, #normal) {
+    //margin-left: -0.2em;
+  }
+
+  span#hover, span#normal {
+    margin-left: -0.6em;
+    margin-right: -0.2em;
+  }
+
+  span#normal {
+    margin-right: calc(0.27px - 0.2em);
+  }
+
+  span#hover {
+    display: none;
+  }
+
   &:hover {
+
+    #normal {
+      display: none;
+    }
+
+    #hover {
+      display: inline-block;
+    }
+
     #r1 {
       translate: 39.1px;
     }

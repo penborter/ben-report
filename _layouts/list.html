@@ -56,9 +56,7 @@ layout: default
 
                   <a class="{{ item_class }}" href="{{ item.url }}"
                     {% if item.thumb %}
-                      style="background-image: linear-gradient(to right, var(--fg), transparent),
-                      url({{ item.thumb }});
-                      background-size: cover;"
+                      style="background-image: url({{ item.thumb }}); background-size: cover;"
                     {% endif %}>
                     <li class="truncate">{{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                   </a>

@@ -4,18 +4,27 @@ Pass the folder_name attribute into the post metadata and use as folder_name=pag
 Other attributes can be used as needed, requires:
 - folder
 - file
-- caption
 Optional:
 - class, defaults to "normal"
-- gallery, deaults to "post-gallery"
+    - wide: full-width picture
+    - double: full height, two pictures side-by-side sharing a caption
+- caption
+- title
 
 {% endcomment %}
 
-<figure class="pic-{{ include.class | default: "normal" }}">
-    <a href="{{ page.photoloc }}/{{ include.file }}" title="{{ include.caption }}">
-        <img src="{{ page.photoloc }}/{{ include.file }}" alt="{{ include.caption }}" loading="lazy">
-    </a>
+{% assign filenames = include.file | split: "; " %}
+{% assign titles = include.title | split: "; " %}
+{% assign columns = filenames | size %}
+
+<div class="gallery pic-{{ include.class | default: "normal" }}" style="--columns: {{ columns | default: 1 }}">
+    {% for file in filenames %}
+    <figure>
+        <img src="{{ page.photoloc }}/{{ file }}" alt="{{ titles[forloop.index] }}" loading="lazy">
+    </figure>
+    {% endfor %}
+
     {% if include.caption %}
-    <figcaption {% if include.class == "wide" %}class="caption-wide"{% endif %}>{{ include.caption }}</figcaption>
+    <figcaption class="caption-{{ include.class | default: "normal" }}">{{ include.caption | markdownify }}</figcaption>
     {% endif %}
-</figure>
+</div>

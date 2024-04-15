@@ -11,7 +11,7 @@ toc: true
 *\*Depending on what we mean by: "oldest", and: "international airport"*
  
 
-A simple question that I couldn't find a satisfying answer to led me down this little rabbit hole. There were a lot of firsts going in aviation at the time (around 1910-1940). In this case, I think that the definition of first is simple enough, but to be *oldest* the airport has to be continually operating. This lines up with a similar idea for the [oldest companies in the world](https://en.wikipedia.org/wiki/List_of_oldest_companies), which states that:
+A simple question that I couldn't find a satisfying answer to led me down this rabbit hole. In this case, I think that the definition of *first* is simple enough, but to be *oldest* the airport has to be continually operating. This lines up with a similar idea for the [oldest companies in the world](https://en.wikipedia.org/wiki/List_of_oldest_companies), which states that:
 
 > To be listed, a brand or company name must remain operating, either in whole or in part, since inception.
 
@@ -71,9 +71,9 @@ Below is a photo of the airstrip from a 1943 military aerial survey[^3], showing
 
 ## Sydney Airport (1920)
 
-Flights had been taking off in Sydney only a couple of years after the Wright brothers' first flight, and at Mascot from at least 1911. The airfield at Mascot was officially opened in 1920 (although the first flight was in 1919), and has continuously operated since then.
+Flights had been taking off in Sydney only a couple of years after the Wright brothers' first flight, and at Mascot from at least 1911. The airfield at Mascot was officially opened in 1920 (although the first flight was in 1919), and has continuously operated since then. Sydney Airport actually markets itself as the "world's oldest continually operating international airport", but to be clear it wasn't operating as an international airport—in the way we'd understand today—that whole time.
 
-Although it turns out that Sydney Airport wasn't even the first airport in Sydney to offer international services––that honour is reserved for the Rose Bay Water Airport.
+Although, it turns out that Sydney Airport wasn't even the first airport in Sydney to offer international services. That honour is reserved for the Rose Bay Water Airport.
 
 ## Rose Bay Water Airport (1938) 
 
@@ -83,7 +83,7 @@ author="Qantas" title="Qantas Celebrates 80 Years of International Services"
 link="https://www.qantasnewsroom.com.au/media-releases/qantas-celebrates-80-years-of-international-services"
 %}
 
-The flying boats offered the first international services out of Sydney, and were the primary international service basically until WWII when they were paused for the war. By the time the war had finished the flying boats had been overtaken by the land-based planes. Seaplanes still run out of Rose Bay today, but only as far as Berowra Waters (about a half hour flight). 
+The flying boats offered the first international services out of Sydney, and were the primary international service basically until WWII when they were paused for the war. By the time the war had finished the flying boats had been succeeded by the land-based planes. Seaplanes still run out of Rose Bay today, but only as far as Berowra Waters (about a half hour flight; still in Australia).
 
 {% include quote.html 
 content="Before World War II, flying boats had handled most of the world's air passenger traffic. They were expected to continue their growth, development and dominance of air passenger transport after the war, however this did not happen as the military on both sides made major advancements in the design and performance of land-based military aircraft during the war years ... resulting in a new breed of land-based aircraft being purchased by the world's airlines which were larger, faster and more economical than the flying boats."
@@ -93,7 +93,7 @@ link="https://www.visitsydneyaustralia.com.au/sydney-airport.html#:~:text=Before
 
 ## Brisbane Airport (1922)
 
-Brisbane airport was established in 1922, with the first flights taking place that year. In 1928, it was used as the arrival site for the first international flight from the USA to Australia, helmed by Charles Kingford-Smith (namesake of Sydney Airport) in his plane *Southern Cross*. Soon after, it was the base of the first regular international passenger service in Australia. 
+Brisbane airport was established in 1922, with the first flights taking place that year. In 1928, it was used as the arrival site for the first international flight from the USA to Australia, helmed by Charles Kingford-Smith (namesake of Sydney Airport) in his plane *Southern Cross*. Soon after, it was the base of the first regular international passenger service in Australia.
 
 {% include quote.html 
 content="On April 17 1935 Qantas operated Australia’s first international passenger flight from Brisbane to Singapore, carrying two paying customers ... a major in the Queen’s Coldstream Guards and Lady Mountbatten, a glamourous aristocrat who went on to become the last Vicereine of British India."
@@ -106,6 +106,11 @@ link="https://www.qantasnewsroom.com.au/media-releases/qantas-celebrates-80-year
    caption="<strong>Courier Mail, 03/04/1935</strong>: Lady Mountbatten may travel by 'plane from Australia. <a href='https://trove.nla.gov.au/newspaper/article/35880834'>Source</a>"
 %}
 
+## Summary
+
+So, to wrap up:
+- Sydney Airport was Australia's first airport, but was not the first to offer international services.
+- Rose Bay Water Airport was the first to offer international flights
 
 ## Sources / Further Reading
 

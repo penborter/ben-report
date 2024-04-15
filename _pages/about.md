@@ -13,7 +13,7 @@ Explore below:
   <li><a href="/books">Books</a></li>
 </ul>
 
-I'm also at other on places on the internet, normally as *penborter* : 
+I'm also at other on places on the internet, normally as **@penborter**: 
 
 - [Instagram](https://www.instagram.com/penborter/)
 - [Github](https://github.com/penborter)
