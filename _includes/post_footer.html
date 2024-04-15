@@ -11,10 +11,9 @@
   {% endif %}
 
   {% if page.date %}
-    {% capture last_updated %}{% last_modified {{ post.path }} %}{% endcapture %}
     <div class="post-publish narrow-remove">
       <p>First published: <strong>{{ page.date | date: "%Y-%m-%d" }}</strong></p>
-      <p>Last updated: <strong>{{ last_updated | date: "%Y-%m-%d" }}</strong></p>
+      <p>Last updated: <strong>{{ page.date | date: "%Y-%m-%d" }}</strong></p>
     </div>
   {% endif %}
 
