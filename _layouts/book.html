@@ -3,34 +3,10 @@ layout: default
 toc: true
 ---
 
-{% include navigation.html %}
-
-  {% for entry in site.data.reading.years %}
-    {% for book in entry.books %}
-      {% if book.title == page.book %}
-        {% assign book_review = book %}
-        {% break %}
-
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-
 <article role="article">
-
-	<div class="book-intro">
-    <h1>{{ book_review.title }}</h1> 
-    <span>by {{ book_review.author }}</span>
-	</div>
 
 {{ content }}
 
 {% include post_nav.html %}
 
 </article>
-
-{% include footer.html %}
-
-<div class="toc narrow-remove">
-  {% include toc.html html=content h_min=2 %}
-  <a href="#" class="toc-return"> ^ Return to top</a>
-</div>

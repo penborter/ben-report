@@ -1,6 +1,7 @@
 ---
 layout: book
 book: Endurance
+subtitle: by Alfred Lansing
 summary: Ernest Shackleton's incredible voyage on the 1914 Imperial Trans-Antarctic Expedition.
 published: 1 March 2021
 ---

@@ -1,6 +1,7 @@
 ---
 layout: book
 book: Mindwise
+subtitle: by Nicholas Epley
 published: 4 April 2022
 toc: true
 ---

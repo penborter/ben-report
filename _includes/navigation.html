@@ -1,4 +1,4 @@
-  <nav role="navigation">
+  <nav role="navigation" {% if page.url contains 'photos' %}class="locked"{% endif %}>
   
     <a class="navName" href="/">
       <span class="home-icon">🏠</span>
@@ -16,7 +16,5 @@
         </li>
       {% endfor %}
     </ul>
-  
-    {% include theme_switch.html %}
   
   </nav>

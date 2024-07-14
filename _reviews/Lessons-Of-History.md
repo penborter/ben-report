@@ -1,6 +1,7 @@
 ---
 layout: book
 book: The Lessons of History
+subtitle: by Will and Ariel Durant
 published: 1 March 2021
 summary: The Durants' summary of their 5000-year, 10-volume history <i>The Story of Civilisation</i>, collecting trends and cycles in history.
 toc: true

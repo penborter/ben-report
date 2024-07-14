@@ -1,6 +1,7 @@
 ---
 layout: book
 book: On The Move
+subtitle: by Oliver Sacks
 summary: Sacks' second memoir; the most in-depth case study of the mind who produced several famouns books of case studies of his own neurological patients. 
 toc: true
 ---

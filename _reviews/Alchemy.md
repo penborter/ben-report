@@ -1,7 +1,7 @@
 ---
 layout: book
 book: Alchemy
-summary: 
+subtitle: by Rory Sutherland 
 published: 01 November 2020 
 toc: true
 ---

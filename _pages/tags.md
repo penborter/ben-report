@@ -3,10 +3,7 @@ layout: default
 title: Tags
 ---
 
-{% include navigation.html %}
-
 <article>
-<h1>Tags</h1>
 
 {% assign sorted_tags = site.tags | sort %}
 
@@ -43,5 +40,3 @@ title: Tags
 
 {% endfor %}
 </article>
-
-{% include footer.html %}

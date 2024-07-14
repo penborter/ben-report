@@ -1,6 +1,7 @@
 ---
 layout: book
 book: The Big Change
+subtitle: by Frederick Allen
 published: 14 April 2022
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: book
 book: Naming the Mind
+subtitle: by Kurt Danziger
 published: 16 April 2022
 ---
 

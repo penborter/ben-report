@@ -1,6 +1,7 @@
 ---
 layout: book
 book: The Enigma of Reason
+subtitle: by Mercier and Sperber
 published: 25 May 2022
 summary: Why do we reason? Why did it evolve? Why, in some cases, does it seem to work so badly?
 toc: true

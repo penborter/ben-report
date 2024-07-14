@@ -1,6 +1,7 @@
 ---
 layout: book
 book: I Am a Strange Loop
+subtitle: by Douglas Hofstadter
 published: 27 February 2022
 toc: true
 ---

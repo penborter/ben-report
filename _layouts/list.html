@@ -8,11 +8,7 @@ layout: default
   {% assign item_class = "list-item" %}
 {% endif %}
 
-{% include navigation.html %}
-
 <article>
-  <h1>{{ page.display_collection | capitalize }}</h1>
-
     {{ content }}
 
     {% unless page.by_date == true %}
@@ -82,5 +78,3 @@ layout: default
     {% endunless %}
 
 </article>
-
-{% include footer.html %}

@@ -1,6 +1,7 @@
 ---
 layout: book
 book: To Sell is Human
+subtitle: by Daniel Pink
 published: 10 April 2023
 toc: true
 ---

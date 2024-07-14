@@ -1,5 +1,6 @@
 ---
 layout: book
+subtitle: by Oliver Burkeman
 book: Four Thousand Weeks
 published: 29 November 2022
 toc: true

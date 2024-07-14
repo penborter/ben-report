@@ -1,0 +1,40 @@
+<div class="sidebar{% if page.url contains 'photos' %} locked{% endif %}">
+  {% include navigation.html %}
+  
+  <div class="sidebar_titles">
+    {% if page.title %}
+      <h1>{{ page.title }}</h1>
+    {% endif %}
+
+    {% if page.subtitle %}
+      <h2>{{ page.subtitle }}</h2>
+    {% endif %}
+  </div>
+
+  {% if page.layout == "post" %}
+  <div class="post-footer">
+
+    {% if page.tags %}
+      <ul class="flexbox">
+        {% for tag in page.tags %}
+          <li>
+            <a href="/tags#{{ tag | downcase }}" class="tag">#{{ tag }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  
+    {% if page.date %}
+        <p>{{ page.date | date: "%Y-%m-%d" }}</p>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if page.toc == true %}
+    <div class="toc narrow-remove">
+      {% include toc.html html=content h_min=2 %}
+      <a href="#" class="toc-return">Return to top ⤴</a>
+    </div>
+  {% endif%}
+
+</div>

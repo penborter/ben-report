@@ -1,6 +1,8 @@
 ---
 layout: book
 book: How to Talk About Books You Haven't Read
+title: How to Talk About Books You Haven't Read
+subtitle: by Pierre Bayard
 published: 15 March 2023
 ---
 

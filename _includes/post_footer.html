@@ -11,10 +11,7 @@
   {% endif %}
 
   {% if page.date %}
-    <div class="post-publish narrow-remove">
-      <p>First published: <strong>{{ page.date | date: "%Y-%m-%d" }}</strong></p>
-      <p>Last updated: <strong>{{ page.date | date: "%Y-%m-%d" }}</strong></p>
-    </div>
+      <p>{{ page.date | date: "%Y-%m-%d" }}</p>
   {% endif %}
 
 </div>

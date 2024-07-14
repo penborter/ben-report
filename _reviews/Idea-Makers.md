@@ -1,6 +1,7 @@
 ---
 layout: book
 book: Idea Makers
+subtitle: by Stephen Wolfram
 summary: Profiles on Idea Makers who influenced Steven Wolfram personally or connected to his own work in some way.
 published: 03 November 2020 
 toc: true

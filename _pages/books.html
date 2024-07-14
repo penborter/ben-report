@@ -1,30 +1,26 @@
 ---
 layout: default
-title: Books
-updated: January 2024
+title: Bookshelf
+updated: May 2024
 permalink: /books
 ---
 
-{% include navigation.html %}
-
 <article>
-
-  <h1>Bookshelf</h1>
 
 <div class="reading-meta">
   <p>
     A list of books I've read since 2020. I'm working back through to add a short review for each book; for now some have <a href="{{ site.baseurl }}/books/reviews">older, longer reviews</a> linked. Last updated {{ page.updated }}.
-    I'm always happy to chat about books, so <a href="{{ site.baseurl }}/contact/">reach out</a> if you have any thoughts / feelings / concerns.
+  </p>
+  <p>
+    I'm always happy to chat about books, so <a href="{{ site.baseurl }}/contact/">reach out</a>!
   </p>
 </div>
 
 {% for entry in site.data.reading.years %}
 <div class="book-cat-wrap">
   <div class="list-cat">
-    <div>
-      <span>{{ entry.year }}</span>
-      <span class="number">{{ entry.books | size }} books</span>
-    </div>
+    <h1>{{ entry.year }}</h1>
+    <span class="number">{{ entry.books | size }} books</span>
   </div>
   <div class="list-cat-container">
     {% for book in entry.books %}
@@ -39,7 +35,7 @@ permalink: /books
         {% endif %}
       {% endfor %}
 
-      <h2 class="list-item strong{% if book.star %} starred{% endif %}" id="{{ book.title | replace: ' ', '_' }}">
+      <h2 class="list-item {% if book.star %} starred{% endif %}" id="{{ book.title | replace: ' ', '_' }}">
         {% if has_review %}<a class="book-link" href="{{ book_url }}">{% endif %}
         {{ book.title }}
         {% if has_review %}</a>{% endif %}
@@ -51,10 +47,3 @@ permalink: /books
 </div>
 {% endfor %}
 </article>
-
-{% include footer.html %}
-
-<div class="toc narrow-remove">
-  {% include toc.html html=content h_min=2 %}
-  <a href="#" class="toc-return"> ^ Return to top</a>
-</div>

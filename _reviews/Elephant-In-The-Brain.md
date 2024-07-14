@@ -1,6 +1,7 @@
 ---
 layout: book
 book: The Elephant in the Brain
+subtitle: by Simler and Hanson
 published: 1 March 2021
 toc: true
 ---

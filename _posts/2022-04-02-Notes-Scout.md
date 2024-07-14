@@ -1,5 +1,5 @@
 ---
-title: Notes on _The Scout Mindet_ by Julia Galef
+title: Notes on _The Scout Mindset_ by Julia Galef
 layout: redirect
 sitemap: false
 redirect_to:  /books/scout-mindset

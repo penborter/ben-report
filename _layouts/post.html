@@ -2,27 +2,10 @@
 layout: default
 ---
 
-{% include navigation.html %}
-
 <article>
-
-  {% if page.title %}
-    <h1>{{ page.title }}</h1>
-  {% endif %}
 
   {{ content }}
 
   {% include post_nav.html %}
 
-  {% include post_footer.html %}
-
 </article>
-
-{% include footer.html %}
-
-{% if page.toc == true %}
-  <div class="toc narrow-remove">
-    {% include toc.html html=content h_min=2 %}
-    <a href="#" class="toc-return">Return to top ⤴</a>
-  </div>
-{% endif%}
