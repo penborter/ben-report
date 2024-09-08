@@ -18,7 +18,7 @@ $dark: hsl(175, 25%, 22%);
 // 2 Calculated Variables
 // 2.1 Main colours and accents
 $dark_accent_1: hsl(165, 25%, 45%);
-$dark_accent_2: hsl(165, 15%, 32%);
+$dark_accent_2: hsl(166, 15%, 32%);
 $dark_accent_3: hsl(175, 25%, 35%);
 $light_accent_1: hsl(150, 15%, 60%);
 $light_accent_2: hsl(70, 15%, 97%);
@@ -172,6 +172,48 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
   }
 }
 
+.callout {
+  display: block;
+  padding: 1em;
+
+  border-radius: 5px;
+  border: 1px solid var(--color-main);
+  background: var(--color-bg);
+
+  text-decoration: none;
+
+  flex: 1 1 0px;
+  min-width: 145px;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 2px var(--shadow-color),
+                0 4px 4px var(--shadow-color),
+                0 8px 8px var(--shadow-color);;
+  }
+}
+
+.hex-code {
+  padding: 0.2em 0.5em;
+
+  border: 1px solid var(--text);
+  border-radius: 20px;
+
+  background: var(--background);
+  color: var(--text);
+
+  font-family: 'iA Duo', monospace;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
 .truncate {
   white-space: nowrap;
   overflow: hidden;
@@ -246,6 +288,10 @@ article {
   padding-bottom: 7em;
   padding-top: calc(#{$navbar-height} + 4.5em - 0.3em); // height of nav + sidebar margins & padding - nav padding trick
   grid-column: 3;
+
+  &> :first-child {
+    margin-top: 0;
+  }
 
   .reading-meta p:first-child, p:first-child {
     margin-top: 0;
@@ -490,6 +536,7 @@ blockquote, .footnotes {
   padding: 1.5em;
 
   border: 1px solid var(--bg-accent-3);
+  border-radius: 5px;
  
   p {
     margin: 0;
@@ -669,7 +716,8 @@ footer {
 
   .card {
     padding: 2em;
-    border: 1px solid var(--fg);
+    //border: 1px solid var(--fg);
+    border-radius: 10px;
   }
 
   a {
@@ -702,6 +750,14 @@ footer {
 
 #intro-heading {
   margin-top: 0;
+}
+
+#links-about {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 0.5em;
+
+  margin: 1em 0;
 }
 
 // "Book" Layout
@@ -753,10 +809,11 @@ figcaption {
 
 img {
   width: 100%;
-  box-shadow: 0 2px 2px var(--shadow-color), 
-               0 4px 4px var(--shadow-color), 
-               0 8px 8px var(--shadow-color);
-  border: 1px solid var(--fg);
+  //box-shadow: 0 2px 2px var(--shadow-color), 
+  //             0 4px 4px var(--shadow-color), 
+  //             0 8px 8px var(--shadow-color);
+  //border: 1px solid var(--fg);
+  border-radius: 5px;
 }
 
 img:not(.img-gallery) {
@@ -1295,4 +1352,58 @@ p button {
       display: inline-block;
     }
   }
+}
+
+
+// NBA
+
+#moreyball_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-right: 2px dashed var(--bg-accent-1);
+}
+
+.nba_player {
+  display: flex;
+  height: 102px;
+  width: var(--var);
+  border: 1px solid var(--fg);
+  background: var(--bg-accent-1);
+  //padding-top: 0.4em;
+  padding-left: 1em;
+  box-shadow: 0 2px 2px var(--shadow-color), 0 4px 4px var(--shadow-color), 0 8px 8px var(--shadow-color);
+
+  transition: 0.1s ease;
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 2px var(--shadow-color), 
+                0 4px 4px var(--shadow-color), 
+                0 8px 8px var(--shadow-color), 
+                0 16px 16px var(--shadow-color);
+    transform: scale(1.01);
+  }
+
+  img {
+    height: 100px;
+    padding-top: 0.4em;
+    width: fit-content;
+    border: none;
+    box-shadow: none;
+    z-index: 1;
+  }
+}
+
+.ranking {
+  position: relative;
+  left: -9rem;
+  font-size: 8.5em;
+  line-height: 0.75;
+  font-weight: 800;
+  color: var(--bg-transparent);
+  overflow: hidden;
 }

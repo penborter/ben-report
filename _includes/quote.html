@@ -1,5 +1,5 @@
 <blockquote>
-  {{ include.content }}
+  {{ include.content | markdownify }}
   <div class="quote-meta">
     &#x21B3; 
     {% if include.link %}<a href="{{ include.link }}">{% endif %} 

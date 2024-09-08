@@ -1,0 +1,6 @@
+<a class="callout" href="{{ include.link }}" {% if include.color-hsl %}style="--color-main: hsl({{ include.color-hsl }}); --color-bg: hsl({{ include.color-hsl }} / 0.1);"{% endif %}>
+  <div>
+    <h3>{{ include.title }}</h3>
+    {{ include.content | markdownify }}
+  </div>
+</a>

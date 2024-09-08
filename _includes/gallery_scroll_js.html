@@ -1,71 +1,63 @@
 <script type="text/javascript">
 
-  // Select the container element and array of all photos
-  var container = document.querySelector('.horizontal-gallery-wrapper');
-  var photos = document.querySelectorAll('.image-wrapper');
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.horizontal-gallery-wrapper');
+  const photos = document.querySelectorAll('.image-wrapper');
+  let currentPhotoIndex = 0;
 
-  console.log(photos.length);
-
-  // Set the current photo index to 1
-  let currentPhotoIndex = 1;
-  let lastKeyDirection = "R";
-
-  // Add an event listener to the document to listen for key presses
-  document.addEventListener('keydown', function(event) {
-    console.log('Key pressed:', event.key);
-
-    // If the user presses the right arrow key, scroll to the next photo
-    if (event.code === 'ArrowRight') {
-     
-      event.preventDefault();
-      currentPhotoIndex++;
-
-      console.log(currentPhotoIndex);
-
-      // If the current photo index is greater than the number of photos in the gallery, wrap around to the first photo
-      if (currentPhotoIndex > photos.length) {
-        currentPhotoIndex = 1;
-        console.log("Reset");
-        console.log(currentPhotoIndex);
-      }
-
-      // Calculate the scroll position to align the right edge of the photo with the right edge of the container
-      var containerWidth = container.clientWidth;
-      
-      var photoWidth = photos[currentPhotoIndex].clientWidth;
-      var scrollLeft = photos[currentPhotoIndex].offsetLeft + photoWidth - containerWidth + 10;
-      // Scroll the container to the calculated position
-      container.scrollTo({
-        left: scrollLeft,
-        behavior: 'smooth'
-      });
+  function scrollToPhoto(index) {
+    if (index < 0) {
+      index = photos.length - 1;
+    } else if (index >= photos.length) {
+      index = 0;
     }
 
-    // If the user presses the left arrow key, scroll to the previous photo
-    if (event.code === 'ArrowLeft') {
+    currentPhotoIndex = index;
+    const photo = photos[currentPhotoIndex];
+    const containerWidth = container.clientWidth;
+    const photoWidth = photo.clientWidth;
+    const scrollLeft = photo.offsetLeft + photoWidth - containerWidth + 10;
 
+    container.scrollTo({
+      left: scrollLeft,
+      behavior: 'smooth'
+    });
+  }
+
+  function handleKeyDown(event) {
+    if (event.code === 'ArrowRight' || event.code === 'ArrowLeft') {
       event.preventDefault();
-      currentPhotoIndex--;
-
-      console.log(currentPhotoIndex);
-
-      // If the current photo index is less than 0, wrap around to the last photo
-      if (currentPhotoIndex < 0) {
-        currentPhotoIndex = photos.length;
-      }
-
-      // Calculate the scroll position to align the right edge of the previous photo with the right edge of the container
-      var containerWidth = container.clientWidth;
-      //var photoWidth = photos[currentPhotoIndex].clientWidth;
-      var previousPhotoWidth = photos[(currentPhotoIndex) % photos.length].clientWidth;
-      var previousPhotoRightEdge = photos[(currentPhotoIndex) % photos.length].offsetLeft + previousPhotoWidth;
-      var scrollLeft = previousPhotoRightEdge - containerWidth + 10;
-      // Scroll the container to the calculated position
-      container.scrollTo({
-        left: scrollLeft,
-        behavior: 'smooth'
-      });
+      const direction = event.code === 'ArrowRight' ? 1 : -1;
+      scrollToPhoto(currentPhotoIndex + direction);
     }
-  });
+  }
+
+  document.addEventListener('keydown', handleKeyDown);
+
+  // Optional: Add touch swipe support for mobile devices
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  container.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+
+  container.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, false);
+
+  function handleSwipe() {
+    if (touchEndX < touchStartX) {
+      scrollToPhoto(currentPhotoIndex + 1);
+    }
+    if (touchEndX > touchStartX) {
+      scrollToPhoto(currentPhotoIndex - 1);
+    }
+  }
+
+  // Initialize the gallery
+  scrollToPhoto(0);
+});
   
 </script>
