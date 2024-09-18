@@ -1,0 +1,86 @@
+players:
+  - id: 1630573
+    name: 'Sam Hauser'
+    team: BOS
+    mb_pct: 0.942
+  - id: 1629731
+    name: 'Dean Wade'
+    team: CLE
+    mb_pct: 0.941
+  - id: 1629656
+    name: 'Quentin Grimes'
+    team: DET
+    mb_pct: 0.937
+  - id: 1626168
+    name: 'Trey Lyles'
+    team: SAC
+    mb_pct: 0.933
+  - id: 1630241
+    name: 'Sam Merrill'
+    team: CLE
+    mb_pct: 0.933
+  - id: 1626220
+    name: "Royce O'Neale"
+    team: PHX
+    mb_pct: 0.927
+  - id: 1629622
+    name: 'Max Strus'
+    team: CLE
+    mb_pct: 0.924
+  - id: 203926
+    name: 'Doug McDermott'
+    team: IND
+    mb_pct: 0.921
+  - id: 1626192
+    name: 'Pat Connaughton'
+    team: MIL
+    mb_pct: 0.921
+  - id: 1627827
+    name: 'Dorian Finney-Smith'
+    team: BKN
+    mb_pct: 0.920
+  - id: 1629680
+    name: 'Matisse Thybulle'
+    team: POR
+    mb_pct: 0.915
+  - id: 1630577
+    name: 'Julian Champagnie'
+    team: SAS
+    mb_pct: 0.902
+  - id: 1628978
+    name: 'Donte DiVincenzo'
+    team: NYK
+    mb_pct: 0.898
+  - id: 1627884
+    name: 'Derrick Jones Jr.'
+    team: DAL
+    mb_pct: 0.882
+  - id: 1631117
+    name: 'Walker Kessler'
+    team: UTA
+    mb_pct: 0.878
+  - id: 1627741
+    name: 'Buddy Hield'
+    team: PHI
+    mb_pct: 0.877
+  - id: 1630171
+    name: 'Isaac Okoro'
+    team: CLE
+    mb_pct: 0.873
+  - id: 1628449
+    name: 'Chris Boucher'
+    team: TOR
+    mb_pct: 0.872
+  - id: 1630167
+    name: 'Obi Toppin'
+    team: IND
+    mb_pct: 0.87
+  - id: 1628960
+    name: 'Grayson Allen'
+    team: PHX
+    mb_pct: 0.865
+
+
+
+
+

@@ -17,9 +17,11 @@ Font wise, the entire site is set in [Inter](https://rsms.me/inter/), except for
 
 The [Photos](/photos) page is just html and css, with a bit of optional javascript for arrow key scrolling. I have a [write up](/posts/horizontal-gallery) of how the horizontal galleries work.
 
+There is a colour switch button hidden in the footer, to swap between "dark mode" and "light mode".
+
 ## NBA
 
-The [NBA part of the site](https://nba.ben.report) is exactly the same as above, with the addition of [Undefined Medium](https://github.com/andirueckel/undefined-medium) for some of the stats boards.
+The [NBA part of the site](https://nba.ben.report) is exactly the same as above, with the addition of [undefined medium](https://undefined-medium.com/) for some of the stats boards.
 
 The base colours are <span class='hex-code' style='--background:#F2E3D9; --text:#2A4644;'>#F2E3D9</span>, <span class='hex-code' style='--background:#FF8833; --text:#2A4644;'>#FF8833</span> and <span class='hex-code' style='--background:#201813; --text:#F4F5EF;'>#201813</span>.
 
@@ -28,6 +30,6 @@ The base colours are <span class='hex-code' style='--background:#F2E3D9; --text:
 I don't have a better place to include them, so I'm listing here some planned / aspirational additions for the site:
 - ~~a separate NBA section~~ **DONE** -> [NBA.ben.report](https://nba.ben.report)
 - sidenotes
-- finished versions of all of the draft posts
+- finished versions of all of the draft posts (lol)
 - a Jekyll theme based on the current state of the site
 - more efficient integration between site data and the sidebar headers, particularly for book pages
