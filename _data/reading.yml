@@ -1,6 +1,24 @@
 years:
   - year: "2024"
     books:
+      - title: A Perfect Vacuum
+        author: Stanislaw Lem
+      - title: Echopraxia
+        author: Peter Watts
+      - title: Blindsight
+        author: Peter Watts
+      - title: A Fraction of the Whole
+        author: Steve Toltz
+      - title: Contact
+        author: Carl Sagan
+      - title: A History of the Bible
+        author: John Barton
+      - title: Abaddon's Gate
+        author: James S.A. Corey 
+      - title: Caliban's War
+        author: James S.A. Corey 
+      - title: Leviathan Wakes
+        author: James S.A. Corey 
       - title: Genesis
         author: Robert Hazen
       - title: The Name of the Rose
