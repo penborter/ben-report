@@ -6,7 +6,7 @@ photoloc: /assets/posts/airports
 toc: true
 ---
 
-**TL;DR**: Sydney Airport*
+**TL;DR**: Brisbane Airport*
 
 *\*Depending on what we mean by: "oldest", and: "international airport"*
  
@@ -26,12 +26,12 @@ Here's a quick summary. Australia's:
 
 We'll go through these airports, and a couple of other interesting contenders below.
 
-## Daley Waters Airfield (1928)
+## Daly Waters Airfield (1928)
 Firstly, let's get Daly Waters Airfield out of the way. It's the top Google search result (at least for me) for the question of Australia's oldest international airport, with its [Wikipedia page](https://en.wikipedia.org/wiki/Daly_Waters_Airfield) stating that: 
 
 > Daly Waters was Australia's first international airfield.<sup>[*citation needed*]</sup>
 
-Not sure about this one. The earliest mentions of it I could find were from around 1927, in letters between the Chairman of the North Australia Commission[^1] and the Controller of Civil Aviation for the Australian Department of Defense, requesting information on: 
+Not sure about this one. The earliest mentions of it I could find were from around 1927, in letters between the Chairman of the North Australia Commission[^1] and the Controller of Civil Aviation for the Australian Department of Defense, requesting information on (emphasis added): 
 
 {% include quote.html 
 content="establishing air services in North Australia ... [for an] extension of the Queensland Services from Camooweal to <strong>Daly Waters</strong> or alternatively to Katherine."
@@ -53,7 +53,7 @@ author="Qantas" title="Early Years, 1918-1938"
 link="https://www.qantas.com/us/en/about-us/our-company/our-history/early-years-1918-1938.html"
 %}
 
-Below is a photo of the airstrip from a 1943 military aerial survey[^3], showing Parap Aerodrome about 18 months after the first Japanese air raids during WWII. The alignment of the main runway is preserved by Ross Smith Avenue that still runs through Parap. 
+Below is a photo of the airstrip from a 1943 military aerial survey[^3], showing Parap Aerodrome about 18 months after the first Japanese air raids during WWII. Although it isn't still an operating airfield, Parap having succumbed to suburban sprawl, the alignment of the main runway is preserved by Ross Smith Avenue that still runs through Parap. 
 
 <div class="hover">
 {% include picture.html
@@ -71,9 +71,9 @@ Below is a photo of the airstrip from a 1943 military aerial survey[^3], showing
 
 ## Sydney Airport (1920)
 
-Flights had been taking off in Sydney only a couple of years after the Wright brothers' first flight, and at Mascot from at least 1911. The airfield at Mascot was officially opened in 1920 (although the first flight was in 1919), and has continuously operated since then. Sydney Airport actually markets itself as the "world's oldest continually operating international airport", but to be clear it wasn't operating as an international airport—in the way we'd understand today—that whole time.
+Flights had been taking off in Sydney only a couple of years after the Wright brothers' first flight, and at Mascot—still the location of Sydney Airport—from at least 1911. The airfield at Mascot was officially opened in 1920 (although the first flight was in 1919), and has continuously operated since then. Sydney Airport actually markets itself as the "world's oldest continually operating international airport", but to be clear it hasn't been operating as an international airport—in the way we'd understand today—that whole time.
 
-Although, it turns out that Sydney Airport wasn't even the first airport in Sydney to offer international services. That honour is reserved for the Rose Bay Water Airport.
+While Sydney Airport is one of the ten oldest continuously operating airports in the world, among Australian airports, it hasn't been operating international flights the longest. In fact, Sydney Airport wasn't even the first airport in Sydney to offer international services. That honour is reserved for the Rose Bay Water Airport.
 
 ## Rose Bay Water Airport (1938) 
 
@@ -83,7 +83,7 @@ author="Qantas" title="Qantas Celebrates 80 Years of International Services"
 link="https://www.qantasnewsroom.com.au/media-releases/qantas-celebrates-80-years-of-international-services"
 %}
 
-The flying boats offered the first international services out of Sydney, and were the primary international service basically until WWII when they were paused for the war. By the time the war had finished the flying boats had been succeeded by the land-based planes. Seaplanes still run out of Rose Bay today, but only as far as Berowra Waters (about a half hour flight; still in Australia).
+The flying boats offered the first international services out of Sydney, and were the primary international service basically until WWII when they were paused for the war. By the time the war had finished the flying boats had been succeeded by the land-based planes. Seaplanes still run out of Rose Bay today, but only as far as Berowra Waters (about a half hour flight, comfortably within Australia).
 
 {% include quote.html 
 content="Before World War II, flying boats had handled most of the world's air passenger traffic. They were expected to continue their growth, development and dominance of air passenger transport after the war, however this did not happen as the military on both sides made major advancements in the design and performance of land-based military aircraft during the war years ... resulting in a new breed of land-based aircraft being purchased by the world's airlines which were larger, faster and more economical than the flying boats."
@@ -108,9 +108,7 @@ link="https://www.qantasnewsroom.com.au/media-releases/qantas-celebrates-80-year
 
 ## Summary
 
-So, to wrap up:
-- Sydney Airport was Australia's first airport, but was not the first to offer international services.
-- Rose Bay Water Airport was the first to offer international flights
+So, to wrap up: Of Australia's airports, Brisbane has been an *international* airport for the longest, offering passenger services since 1935. Sydney Airport, meanwhile, is Australia's oldest in continuous operation, though it started offering international passenger services after Brisbane[^4].  
 
 ## Sources / Further Reading
 
@@ -126,3 +124,4 @@ So, to wrap up:
 [^1]: The Northern Territory was briefly (from 1927 to 1931) split into two parts, North Australia and Central Australia. 
 [^2]: A more contemporary article can be [found here](http://www.airwaysmuseum.com/Downloads/First%20to%20Australia.pdf).
 [^3]: Sourced from Geoscience Australia's [Historical Aerial Photography Search Application](https://aerialphotography-geoscience-au.hub.arcgis.com/), film no. MAP3202, frame V32.
+[^4]: I'm not exactly sure when from, but when I find out I'll update date it here.
