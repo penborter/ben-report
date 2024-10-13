@@ -145,6 +145,15 @@ sydney:
   - name: Sydney-27.jpg
     thumb: Sydney-27.jpg
     text: Hornby Lighthouse, Watsons Bay
+  - name: Sydney-28.jpg
+    thumb: Sydney-28.jpg
+    text: Looking Out, North Head
+  - name: Sydney-29.jpg
+    thumb: Sydney-29.jpg
+    text: Security, Circular Quay
+  - name: Sydney-30.jpg
+    thumb: Sydney-30.jpg
+    text: Marathon, Hyde Park
 
 nz:
   title: New Zealand

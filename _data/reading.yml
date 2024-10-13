@@ -9,16 +9,19 @@ years:
         author: Peter Watts
       - title: A Fraction of the Whole
         author: Steve Toltz
+        review: "Extremely Australia-coded. It was good but it also felt like a book that you'd be given to study in high school. I'm not sure that's a compliment or not. Weirdly nostalgic for a time and for a Sydney that I didn't really grow up in."
       - title: Contact
         author: Carl Sagan
       - title: A History of the Bible
         author: John Barton
       - title: Abaddon's Gate
-        author: James S.A. Corey 
+        author: James S.A. Corey
+        review: "I had a really strong sense of deja vu reading parts of this, but a strong unfamiliarity with other parts. Not sure what that means, or how helpful a review that it. It's good though, even the parts I'd read before."
       - title: Caliban's War
         author: James S.A. Corey 
       - title: Leviathan Wakes
-        author: James S.A. Corey 
+        author: James S.A. Corey
+        review: "Good, but I think the series doesn't get rolling properly until the sequels. I've seen it described as a 'space opera', but I'm not sure it qualifies with only two main characters."
       - title: Genesis
         author: Robert Hazen
       - title: The Name of the Rose
@@ -29,6 +32,7 @@ years:
         author: Mark Twain
       - title: The Lies of Locke Lamora
         author: Scott Lynch
+        review: "Imagine if Oceans 11 was set in fantasy Venice. Really fun read—I've heard the sequels aren't as good, though, so I've stopped here for now."
       - title: Pawn of Prophecy
         author: David Eddings
       - title: Valuable Humans in Transit
@@ -43,22 +47,25 @@ years:
         author: Robin Sloane
       - title: The Trading Game
         author: Gary Stevenson
+        review: "Entertaining read about a young trader's introduction to the world of investment banking. Fun, but clearly fiction or hugely sensationalised and not the serious autobiography claimed by the author."
       - title: Redemption Ark
         author: Alastair Reynolds
       - title: "Energy: A Human History"
         author: Vaclav Smil
+        review: "A deep dive into how energy has shaped human progress and human societies, from pre-history to the modern day. It feels like Smil builds a strong argument for continuing to increase our energy generation capacity, but never actually makes this point. This book (2017) is an expanded edition of a previous book *Energy in World History* (1994), which might be worth also reading to see if he continued the thread there, then removed it from the update..."
       - title: The First Fifteen Lives of Harry August
         author: Claire North
+        review: "For some reason I associate this book with sci-fi, but it's more like light magical realism, groundhog day if the cycle was an entire lifetime and not as funny. It's a nice read, although the second half—which I felt was tense—might drag a bit."
       - title: All the Names
         author: Jose Saramago
-        review: "I'm a sucker for really long lists—for example, the page-long exploration of gravestones presented to Jose in the cemetery when he visits. Great book, probably not as good as *The Gospel According to Jesus Christ*. Somehow Jose (the narrator) comes across as both ignorant and canny, relatable and pretentious; Jose (the character) is pathetic but very likeable. The writing is so good you don't even notice the lack of punctuation, or that we're told only one character's proper name."
+        review: "I'm a sucker for shaggy dog lists—for example, the page-long exploration of gravestones presented to Jose in the cemetery when he visits. Great book, probably not as good as [*The Gospel According to Jesus Christ*](/books#The_Gospel_According_to_Jesus_Christ). Somehow Jose (the narrator) comes across as both ignorant and canny, relatable and pretentious; Jose (the character) is pathetic but very likeable. As you'd expect with Saramago, the prose is so good you don't even notice the lack of punctuation."
       - title: Sea People
         author: Christina Thompson
         review: "Originally recommended in [this review](https://www.thepsmiths.com/p/review-sea-people-by-christina-thompson). Really a book about the philosophy and the history of science, exploring Western understanding of how basically a single group of people—the Polynesians—settled the huge area between Hawaii, New Zealand, and Easter Island. Thorough and constantly interesting, peeling back the layers as we work through the chronology from European discovery of Polynesia to the present day. Particularly interesting are the parts about 'two ways of thinking', where Europeans struggled to rectify assumptions in their way of thinking with those of the Polynesians."
       - title: Book of the New Sun
         author: Gene Wolfe
         star: yes
-        review: "Excellent, mysterious, dense. I can see why the endless discussion about this book has continued online basically since it was released. Fantasy or sci-fi, depending on how much you're paying attention."
+        review: "I honestly can't believe I was never introduced to Wolfe earlier—I think if I'd read this as a teen I'd be completely obsessed. I can see why the endless discussion about this book has continued online basically since it was released."
 
   - year: "2023"
     books:
@@ -82,14 +89,17 @@ years:
       - title: The Return of the King
         author: J.R.R. Tolkien
         pages: 800
+        review: I read the whole trilogy in one go, as if a huge single tome. I can't believe I hadn't read these before, absolute cornerstones of the fantasy genre. I did feel like you could tell that Tolkein was coming from *The Hobbit* through the start of *The Fellowship of the Ring*, and the tone of the series got darker from there.
 
       - title: The Two Towers
         author: J.R.R. Tolkien
         pages: 750
+        review: "See the review of [The Return of the King](/books#The_Return_of_the_King) above."
 
       - title: The Fellowship of the Ring
         author: J.R.R. Tolkien
         pages: 700
+        review: "See the review of [The Return of the King](/books#The_Return_of_the_King) above."
 
       - title: Only Forward
         author: Michael Marshall Smith
