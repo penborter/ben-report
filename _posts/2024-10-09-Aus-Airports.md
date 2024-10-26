@@ -57,13 +57,13 @@ Below is a photo of the airstrip from a 1943 military aerial survey[^3], showing
 
 <div class="hover">
 {% include picture.html
-   file="parap-1943.png"
+   file="Parap-1943.png"
    class="hover-hide"
    caption="Parap Aerodrome in 1943, main airstrip highlighted yellow. Hover over to show present day."
 %}
 
 {% include picture.html
-   file="parap-2023.png"
+   file="Parap-2023.png"
    class="hover-show"
    caption="Ross Smith Avenue in 2023, old airstrip highlighted yellow."
 %}
@@ -102,7 +102,7 @@ link="https://www.qantasnewsroom.com.au/media-releases/qantas-celebrates-80-year
 %}
 
 {% include picture.html
-   file="mountbatten.png"
+   file="Mountbatten.png"
    caption="<strong>Courier Mail, 03/04/1935</strong>: Lady Mountbatten may travel by 'plane from Australia. <a href='https://trove.nla.gov.au/newspaper/article/35880834'>Source</a>"
 %}
 
