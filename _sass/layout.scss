@@ -109,7 +109,7 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
 }
 
 .full-width {
-  margin-top: 2em;
+  //margin-top: 2em;
   display: block;
   width: 100%;
 }
@@ -308,8 +308,8 @@ nav {
   margin: -0.3em -0.5em 0 -0.5em;
   padding: 0.3em 0.5em 0 0.5em;
 
-  border: 1px solid var(--bg);
-  border-radius: 10px;
+  //border: 1px solid var(--bg);
+  //border-radius: 10px;
 
   &:hover {
     filter: none;
@@ -386,7 +386,7 @@ main.col-2 {
 nav.locked {
   position: absolute;
   top: 2em;
-  padding-left: #{"max(2em + 1em, 50vw - 650px + 1em - 1px)"};
+  padding-left: #{"max(2em + 0.5em, 50vw - 650px + 1em)"};
 
   width: fit-content;
   z-index: 1;
@@ -593,7 +593,7 @@ footer {
   font-size: 14px;
   color: var(--bg);
   margin: auto;
-  padding: 2.2em 0;
+  padding: 2.3em 0;
 
   display: grid;
   grid-template-columns: 1fr calc(#{$content-width} + #{$sidebar-width}) minmax($sidebar-width, 1fr) 1fr;
@@ -669,10 +669,12 @@ footer {
 
   position: relative;
   top: 0.5em;
+  padding-top: 0.5em;
 }
 
 .list-cat-container {
   position: relative;
+  top: -1.5em;
 
   ul {
     padding: 0;
@@ -716,7 +718,7 @@ footer {
   .card {
     padding: 2em;
     //border: 1px solid var(--fg);
-    border-radius: 10px;
+    //border-radius: 10px;
   }
 
   a {
@@ -812,7 +814,7 @@ img {
   //             0 4px 4px var(--shadow-color), 
   //             0 8px 8px var(--shadow-color);
   //border: 1px solid var(--fg);
-  border-radius: 5px;
+  //border-radius: 5px;
 }
 
 img:not(.img-gallery) {
@@ -959,7 +961,7 @@ tr:nth-child(even) {
 
   .image-wrapper {
     display: inline;
-    margin: 0 4px;
+    margin: 0 8px;
 
     a {
       position: relative;
@@ -990,7 +992,7 @@ tr:nth-child(even) {
   height: 100%;
   width: auto;
   cursor: default;
-  border: 1px solid var(--fg);
+  border: 2px solid var(--fg);
 }
 
 .gallery-meta {

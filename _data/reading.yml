@@ -1,6 +1,28 @@
 years:
   - year: "2024"
     books:
+      - title: A Desolation Called Peace
+        author: Arkady Martine
+      - title: A Memory Called Empire
+        author: Arkady Martine
+      - title: A Triumph of Genius
+        author: Ronald K. Fierstein
+      - title: Assassin's Quest
+        author: Robin Hobb
+      - title: Royal Assassin
+        author: Robin Hobb
+      - title: Assassin's Apprentice
+        author: Robin Hobb
+      - title: The Elegance of the Hedgehog
+        author: Muriel Barbery
+      - title: Conquest
+        author: Nina Allan 
+      - title: His Master's Voice
+        author: Stanislaw Lem
+      - title: A Gentleman in Moscow
+        author: Amor Towles
+      - title: The Mind's I
+        author: Douglas Hofstadter and Daniel Dennett
       - title: A Perfect Vacuum
         author: Stanislaw Lem
       - title: Echopraxia

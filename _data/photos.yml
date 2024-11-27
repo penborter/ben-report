@@ -58,42 +58,24 @@ euro:
   - name: euro-18.jpeg
     thumb: euro-18.jpeg
     text: University town, Edinburgh
-sydney:
-  title: Sydney
+sydney-1:
+  title: Sydney 1
   blurb: "Pictures from in and around Sydney"
-  imagefolder: /assets/sydney
-  thumb: Sydney-thumb.jpeg
+  imagefolder: /assets/sydney-1
+  thumb: Sydney-1-thumb.jpeg
   images:
-  - name: Sydney-1.jpg
-    thumb: Sydney-1.jpg
-    text: Brickwork, Surry Hills
   - name: Sydney-2.jpg
     thumb: Sydney-2.jpg
     text: Lighthouse (in Wollongong, not Sydney)
-  - name: Sydney-3.jpg
-    thumb: Sydney-3.jpg
-    text: Fire escape, Wynyard 
   - name: Sydney-4.jpg
     thumb: Sydney-4.jpg
     text: Foot traffic, Pyrmont
   - name: Sydney-5.jpg
     thumb: Sydney-5.jpg
     text: Off the water, Darling Harbour
-  - name: Sydney-6.jpg
-    thumb: Sydney-6.jpg
-    text: Anzac Bridge crossing, Pyrmont
   - name: Sydney-7.jpg
     thumb: Sydney-7.jpg
     text: Giving way, Garden Island
-  - name: Sydney-8.jpg
-    thumb: Sydney-8.jpg
-    text: Highway patrol, Bondi
-  - name: Sydney-9.jpg
-    thumb: Sydney-9.jpg
-    text: Cruising, Sydney Harbour
-  - name: Sydney-10.jpg
-    thumb: Sydney-10.jpg
-    text: Palm trees, Bondi
   - name: Sydney-11.jpg
     thumb: Sydney-11.jpg
     text: Lights out, Cockatoo Island
@@ -103,12 +85,52 @@ sydney:
   - name: Sydney-13.jpg
     thumb: Sydney-13.jpg
     text: Merging traffic, Darling Harbour
-  - name: Sydney-14.jpg
-    thumb: Sydney-14.jpg
-    text: Ferris wheel, Luna Park
   - name: Sydney-15.jpg
     thumb: Sydney-15.jpg
     text: Candid, the Rocks
+  - name: Sydney-21.jpg
+    thumb: Sydney-21.jpg
+    text: Anzac onlookers, Pyrmont
+  - name: Sydney-22.jpg
+    thumb: Sydney-22.jpg
+    text: Watching the pacific, Vaucluse
+  - name: Sydney-25.jpg
+    thumb: Sydney-25.jpg
+    text: Lost, Darling Harbour
+  - name: Sydney-26.jpg
+    thumb: Sydney-26.jpg
+    text: Downhill, The Rocks
+  - name: Sydney-29.jpg
+    thumb: Sydney-29.jpg
+    text: Security, Circular Quay
+
+sydney-2:
+  title: Sydney 2
+  blurb: "Pictures from in and around Sydney"
+  imagefolder: /assets/sydney-2
+  thumb: Sydney-2-thumb.jpeg
+  images:
+  - name: Sydney-1.jpg
+    thumb: Sydney-1.jpg
+    text: Brickwork, Surry Hills
+  - name: Sydney-3.jpg
+    thumb: Sydney-3.jpg
+    text: Fire escape, Wynyard 
+  - name: Sydney-6.jpg
+    thumb: Sydney-6.jpg
+    text: Anzac Bridge crossing, Pyrmont
+  - name: Sydney-8.jpg
+    thumb: Sydney-8.jpg
+    text: Highway patrol, Bondi
+  - name: Sydney-9.jpg
+    thumb: Sydney-9.jpg
+    text: Cruising, Sydney Harbour
+  - name: Sydney-10.jpg
+    thumb: Sydney-10.jpg
+    text: Palm trees, Bondi
+  - name: Sydney-14.jpg
+    thumb: Sydney-14.jpg
+    text: Ferris wheel, Luna Park
   - name: Sydney-16.jpg
     thumb: Sydney-16.jpg
     text: International Towers, Barangaroo
@@ -124,33 +146,18 @@ sydney:
   - name: Sydney-20.jpg
     thumb: Sydney-20.jpg
     text: Couples baggage, Haymarket
-  - name: Sydney-21.jpg
-    thumb: Sydney-21.jpg
-    text: Anzac onlookers, Pyrmont
-  - name: Sydney-22.jpg
-    thumb: Sydney-22.jpg
-    text: Watching the pacific, Vaucluse
   - name: Sydney-23.jpg
     thumb: Sydney-23.jpg
     text: Diamond Bay, Vaucluse
   - name: Sydney-24.jpg
     thumb: Sydney-24.jpg
     text: Will Ashton Lookout, Waverton
-  - name: Sydney-25.jpg
-    thumb: Sydney-25.jpg
-    text: Lost, Darling Harbour
-  - name: Sydney-26.jpg
-    thumb: Sydney-26.jpg
-    text: Downhill, The Rocks
   - name: Sydney-27.jpg
     thumb: Sydney-27.jpg
     text: Hornby Lighthouse, Watsons Bay
   - name: Sydney-28.jpg
     thumb: Sydney-28.jpg
     text: Looking Out, North Head
-  - name: Sydney-29.jpg
-    thumb: Sydney-29.jpg
-    text: Security, Circular Quay
   - name: Sydney-30.jpg
     thumb: Sydney-30.jpg
     text: Marathon, Hyde Park
