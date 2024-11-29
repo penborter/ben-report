@@ -1,63 +1,99 @@
 <script type="text/javascript">
 
-document.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.horizontal-gallery-wrapper');
-  const photos = document.querySelectorAll('.image-wrapper');
-  let currentPhotoIndex = 0;
+// Inject the opacity CSS - not needed if no JS
+const style = document.createElement('style');
+style.textContent = `
+  .image-wrapper {
+    transition: opacity 0.3s ease;
+  }
+  .image-wrapper.dimmed {
+    opacity: 0.25;
+  }
+`;
+document.head.appendChild(style);
 
-  function scrollToPhoto(index) {
+document.addEventListener('DOMContentLoaded', function() {
+  const gallery = document.querySelector('.horizontal-gallery-wrapper');
+  const images = document.querySelectorAll('.image-wrapper');
+  let currentIndex = 0;
+
+  function updateImageStates() {
+    // Reset all images
+    images.forEach(img => img.classList.add('dimmed'));
+    // Highlight current image
+    images[currentIndex].classList.remove('dimmed');
+  }
+
+  function scrollToImage(index) {
+    // Handle wrapping around at the ends
     if (index < 0) {
-      index = photos.length - 1;
-    } else if (index >= photos.length) {
+      index = images.length - 1;
+    } else if (index >= images.length) {
       index = 0;
     }
-
-    currentPhotoIndex = index;
-    const photo = photos[currentPhotoIndex];
-    const containerWidth = container.clientWidth;
-    const photoWidth = photo.clientWidth;
-    const scrollLeft = photo.offsetLeft + photoWidth - containerWidth + 10;
-
-    container.scrollTo({
-      left: scrollLeft,
+    
+    currentIndex = index;
+    const targetImage = images[currentIndex];
+    
+    // Calculate scroll position to center the image
+    const galleryRect = gallery.getBoundingClientRect();
+    const imageRect = targetImage.getBoundingClientRect();
+    const scrollOffset = (imageRect.left + gallery.scrollLeft) - (galleryRect.width / 2) + (imageRect.width / 2);
+    
+    // Scroll to center the image
+    gallery.scrollTo({
+      left: scrollOffset,
       behavior: 'smooth'
     });
+
+    // Update the dimming states
+    updateImageStates();
   }
 
-  function handleKeyDown(event) {
-    if (event.code === 'ArrowRight' || event.code === 'ArrowLeft') {
+  function handleKeyPress(event) {
+    // Only handle left and right arrow keys
+    if (event.key === 'ArrowLeft') {
       event.preventDefault();
-      const direction = event.code === 'ArrowRight' ? 1 : -1;
-      scrollToPhoto(currentPhotoIndex + direction);
+      scrollToImage(currentIndex - 1);
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      scrollToImage(currentIndex + 1);
     }
   }
 
-  document.addEventListener('keydown', handleKeyDown);
+  // Initialize the dimming state
+  updateImageStates();
 
-  // Optional: Add touch swipe support for mobile devices
-  let touchStartX = 0;
-  let touchEndX = 0;
+  // Add keyboard event listener
+  document.addEventListener('keydown', handleKeyPress);
 
-  container.addEventListener('touchstart', e => {
-    touchStartX = e.changedTouches[0].screenX;
-  }, false);
+  // Optional: Update dimming when scrolling manually
+  let scrollTimeout;
+  gallery.addEventListener('scroll', () => {
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+      // Find the most centered image
+      let closestImage = 0;
+      let closestDistance = Infinity;
+      const galleryCenter = gallery.getBoundingClientRect().left + gallery.getBoundingClientRect().width / 2;
+      
+      images.forEach((img, index) => {
+        const rect = img.getBoundingClientRect();
+        const imageCenter = rect.left + rect.width / 2;
+        const distance = Math.abs(galleryCenter - imageCenter);
+        
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestImage = index;
+        }
+      });
 
-  container.addEventListener('touchend', e => {
-    touchEndX = e.changedTouches[0].screenX;
-    handleSwipe();
-  }, false);
-
-  function handleSwipe() {
-    if (touchEndX < touchStartX) {
-      scrollToPhoto(currentPhotoIndex + 1);
-    }
-    if (touchEndX > touchStartX) {
-      scrollToPhoto(currentPhotoIndex - 1);
-    }
-  }
-
-  // Initialize the gallery
-  scrollToPhoto(0);
+      if (closestImage !== currentIndex) {
+        currentIndex = closestImage;
+        updateImageStates();
+      }
+    }, 20); // Debounce the scroll event
+  });
 });
   
 </script>
