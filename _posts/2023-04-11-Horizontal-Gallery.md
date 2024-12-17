@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to make a horizontal gallery layout without Javascript
+title: How I make my horizontal gallery (without Javascript)
 tags: [site, learning, photography]
 photoloc: /assets/posts/horizontal
 render_with_liquid: false
@@ -127,12 +127,71 @@ For narrow screen widths or vertically oriented screens, obviously the horizonta
 }
 ```
 
-## Optional Javascript
-Last section, to be written up. Basically just allows for key presses to navigate through the gallery.
+## Javascript (Optional)
+The gallery should work as-is, without any javascript involved. I've added a bit to the galleries here, just to give another option for scrolling and implement some photo-dimming functionality.
+
+```javascript
+document.addEventListener('DOMContentLoaded', function() {
+  const gallery = document.querySelector('.horizontal-gallery-wrapper');
+  const images = document.querySelectorAll('.image-wrapper');
+  let currentIndex = 0;
+
+  function updateImageStates() {
+    // Reset all images
+    images.forEach(img => img.classList.add('dimmed'));
+    // Highlight current image
+    images[currentIndex].classList.remove('dimmed');
+  }
+
+  function scrollToImage(index) {
+    // Handle wrapping around at the ends
+    if (index < 0) {
+      index = images.length - 1;
+    } else if (index >= images.length) {
+      index = 0;
+    }
+    
+    currentIndex = index;
+    const targetImage = images[currentIndex];
+    
+    // Calculate scroll position to center the image
+    const galleryRect = gallery.getBoundingClientRect();
+    const imageRect = targetImage.getBoundingClientRect();
+    const scrollOffset = (imageRect.left + gallery.scrollLeft) - (galleryRect.width / 2) + (imageRect.width / 2);
+    
+    // Scroll to center the image
+    gallery.scrollTo({
+      left: scrollOffset,
+      behavior: 'smooth'
+    });
+
+    // Update the dimming states
+    updateImageStates();
+  }
+
+  function handleKeyPress(event) {
+    // Only handle left and right arrow keys
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      scrollToImage(currentIndex - 1);
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      scrollToImage(currentIndex + 1);
+    }
+  }
+
+  // Initialize the dimming state
+  updateImageStates();
+
+  // Add keyboard event listener
+  document.addEventListener('keydown', handleKeyPress);
+  });
+});
+```
 
 ## Wrapping Up
 
-That's all there is to it! No JS required, just forcing the page contents to extend off to the right and telling the page to scroll in that direction. This effect works well with a static sidebar, where the photos can scroll under the sidebar and off the screen to the left. 
+That's all there is to it! No javascript required, just forcing the page contents to extend off to the right and telling the page to scroll in that direction. This effect works well with a static sidebar, where the photos can scroll under the sidebar and off the screen to the left. 
 
 Other finishing touches could include: adding a page footer into the `gallery-meta` div, and including a liquid content tag in that same div to allow for a custom blurb for each gallery. 
 

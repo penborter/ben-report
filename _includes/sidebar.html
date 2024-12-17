@@ -11,23 +11,33 @@
     {% endif %}
   </div>
 
-  {% if page.layout == "post" %}
-  <div class="post-footer">
+  {% if page.title == "Welcome" %}
+    <div id="socials">{% include socials.html %}</div>
+  {% endif %}
 
-    {% if page.tags %}
-      <ul class="flexbox">
-        {% for tag in page.tags %}
-          <li>
-            <a href="/tags#{{ tag | downcase }}" class="tag">#{{ tag }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  
-    {% if page.date %}
-        <p>{{ page.date | date: "%Y-%m-%d" }}</p>
-    {% endif %}
-  </div>
+  {% if page.layout == "post" %}
+    <div class="post-footer">
+
+      {% if page.tags %}
+        <ul class="flexbox">
+          {% for tag in page.tags %}
+            <li>
+              <a href="/tags#{{ tag | downcase }}" class="tag">#{{ tag }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    
+      {% if page.date %}
+          <p>{{ page.date | date: "%Y-%m-%d" }}</p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if page.layout == "book" %}
+    <div class="book-cover">
+      <img src="/assets/books/{{ page.book }}.jpg">
+    </div>
   {% endif %}
 
   {% if page.toc == true %}

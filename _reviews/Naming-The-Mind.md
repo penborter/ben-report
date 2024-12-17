@@ -3,11 +3,18 @@ layout: book
 book: Naming the Mind
 subtitle: by Kurt Danziger
 published: 16 April 2022
+toc: true
 ---
+
+<blockquote class="quoteback" darkmode="" data-title="The%20Enclosure%20of%20the%20Human%20Psyche" data-author="L. M. Sacasas" cite="https://theconvivialsociety.substack.com/p/the-enclosure-of-the-human-psyche">
+...the whole technological environment is increasingly designed so as to enclose the human psyche not with hedgerows and fences, but with an array of data gathering tools and techniques so that the human psyche might be rendered more manageable and so that its value can be more readily extracted.
+<footer>L. M. Sacasas <cite><a href="https://theconvivialsociety.substack.com/p/the-enclosure-of-the-human-psyche">https://theconvivialsociety.substack.com/p/the-enclosure-of-the-human-psyche</a></cite></footer>
+</blockquote>
+<script note="" src="https://cdn.jsdelivr.net/gh/Blogger-Peer-Review/quotebacks@1/quoteback.js"></script>
 
 Kurt Danzinger is an academic who focuses on the history of psychology. *Naming the Mind* is a history of how psychological terms came to be. We take these terms like "intelligence", "motivation" and "perception" for granted without considering the context and assumtpions contained within these terms' definitions.
 
-## Implicit Asumptions
+## Implicit assumptions
 Psychological "traits" rely on implicit assumptions that do not apply universally.
 The meaning of psychological terms are based on convention and discourse; they are not representative of "non-textual phenomena". In all cases is a gap between the definitions and the actual phenomena. Psychologists try to fit their research to these popular pre-defined categories (e.g. attitude, intelligence, motivation).
 The categories we have today (and ultimately any categories at all) are not natural divisions in how the human mind operates.
@@ -36,7 +43,7 @@ Development of psychological terms is driven by cultural context, not empirical 
 
 > Psychological categories have a political dimension because they are not purely descriptive but also normative. Adopting a particular classification of psychological phenomena, and implicitly rejecting a myriad possible alternative classifications, means establishing a certain form for the recognition of human conduct and human individuality.
 
-## 20th Century Context
+## 20th Century context
 The development of the field of psychology reflects the 20th century need for legibility and mass social selection.
 Industrialisation at the turn of the 20th century led to systematisation of education and an increased focus on intelligence as a way to ascribe success / failure away from the system itself and on to the individuals within it.
 Danzinger identifies a general pattern of applying new psychological ideas to education, then broadening them to adults. This includes terms like "intelligence", "personality", and "motivation".

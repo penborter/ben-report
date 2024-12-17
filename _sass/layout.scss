@@ -676,7 +676,7 @@ footer {
 
 .list-cat-container {
   position: relative;
-  top: -1.5em;
+  //top: -1.5em;
 
   ul {
     padding: 0;
@@ -773,6 +773,19 @@ footer {
   }
 }
 
+.book-cover {
+  width: 55%;
+  padding-top: 2em;
+
+  img {
+    border-radius: 5px;
+    box-shadow: 0 2px 2px var(--shadow-color), 
+                0 4px 4px var(--shadow-color), 
+                0 8px 8px var(--shadow-color),
+                0 16px 16px var(--shadow-color);
+  }
+}
+
 .strong {
   font-weight: 550;
 }
@@ -842,6 +855,26 @@ iframe {
   margin-top: 1em;
 }
 
+// Socials List
+
+#socials {
+  margin-top: 0.5em;
+}
+
+.social-link {
+
+  text-decoration: none;
+  margin-right: 0.2em;
+
+  svg {
+  height: 20px;
+  fill: var(--bg-accent-1);
+
+    &:hover {
+      fill: var(--fg);
+    }
+  }
+}
 
 // Hover / swap functionality for posts
 

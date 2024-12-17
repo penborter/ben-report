@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Re-reading
-tags: reading, context
+tags: [reading, context]
 ---
 
 Books are different every time you read them. Sometimes the time isn't right to read a particular book; often there are many times are *are* right for that book, for different reasons.
