@@ -1,6 +1,16 @@
 years:
   - year: "2024"
     books:
+      - title: The Last Policeman
+        author: Robert Winters
+      - title: The Silverberg Business
+        author: Robert Freeman Wexler
+      - title: The Stranger
+        author: Albert Camus
+      - title: Permutation City
+        author: Greg Egan
+      - title: Travels in the Americas
+        author: Albert Camus
       - title: A Desolation Called Peace
         author: Arkady Martine
       - title: A Memory Called Empire

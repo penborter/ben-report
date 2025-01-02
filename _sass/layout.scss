@@ -806,6 +806,29 @@ footer {
   }
 }
 
+// Checkbox Lists, e.g. TODO page
+
+ul.task-list {
+  list-style: none;
+  padding-left: 0;
+
+  li.task-list-item {
+    padding-left: 0;
+
+    .task-list-item-checkbox {
+      margin: 0 1em 0 0;
+    }
+
+    ul {
+      padding-left: 2.6em;
+
+      &:last-child {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
+
 // Figures
 
 figure {
