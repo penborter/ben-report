@@ -23,7 +23,7 @@ There is a colour switch button hidden in the footer, to swap between "dark mode
 
 The [NBA part of the site](https://nba.ben.report) is exactly the same as above, except it is set in [Departure Mono](https://departuremono.com/).
 
-The base colours are <span class='hex-code' style='--background:#F2E3D9; --text:#2A4644;'>#F2E3D9</span>, <span class='hex-code' style='--background:#FF8833; --text:#2A4644;'>#FF8833</span> and <span class='hex-code' style='--background:#201813; --text:#F4F5EF;'>#201813</span>.
+The base colours are <span class='hex-code' style='--background:#E4DBCD; --text:#2A4644;'>#E4DBCD</span>, <span class='hex-code' style='--background:#FF8833; --text:#2A4644;'>#FF8833</span> and <span class='hex-code' style='--background:#363330; --text:#F4F5EF;'>#363330</span>.
 
 Data is updated weekly, on Mondays, through a regular GitHub action.
 
