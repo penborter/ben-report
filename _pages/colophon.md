@@ -21,14 +21,15 @@ There is a colour switch button hidden in the footer, to swap between "dark mode
 
 ## NBA
 
-The [NBA part of the site](https://nba.ben.report) is exactly the same as above, with the addition of [undefined medium](https://undefined-medium.com/) for some of the stats boards.
+The [NBA part of the site](https://nba.ben.report) is exactly the same as above, except it is set in [Departure Mono](https://departuremono.com/).
 
 The base colours are <span class='hex-code' style='--background:#F2E3D9; --text:#2A4644;'>#F2E3D9</span>, <span class='hex-code' style='--background:#FF8833; --text:#2A4644;'>#FF8833</span> and <span class='hex-code' style='--background:#201813; --text:#F4F5EF;'>#201813</span>.
+
+Data is updated weekly, on Mondays, through a regular GitHub action.
 
 ## Additions
 
 I don't have a better place to include them, so I'm listing here some planned / aspirational additions for the site:
-- ~~a separate NBA section~~ **DONE** -> [NBA.ben.report](https://nba.ben.report)
 - sidenotes
 - finished versions of all of the draft posts (lol)
 - a Jekyll theme based on the current state of the site
