@@ -1,6 +1,11 @@
 @import url('https://rsms.me/inter/inter.css');
 
 @font-face {
+  font-family: "Univers";
+  src: url('/assets/fonts/UniversRegular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: "iA Duo";
   src: url('/assets/fonts/iADuo.woff2') format('woff2');
 }
