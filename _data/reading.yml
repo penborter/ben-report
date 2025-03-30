@@ -1,8 +1,36 @@
 years:
+  - year: "2025"
+    books:
+      - title: Anathem
+        author: Neal Stephenson
+        star: yes
+        review: "If I'd read this book when I was a teenager, it think it'd be one of the foundational books of my library, one that I'd come back to again and again. I would have been obsessed! Even so, still excellent sci-fi within what starts off as a fantasy setting. So interesting, and so fun to parse through all the re-named theorems and concepts. Highly recommend if you're a fan of *The Name of the Rose*, *The Book of the New Sun*, or *Ventus* by Karl Schroeder."
+      - title: The Intellectual Life of the British Working Class
+        author: Johnathan Rose
+        review: "Starts with a political argument, namely that exposure to great literature was one of the catalysts of the labour movement, and then goes on in a series of case studies. Extremely interesting, and although a lot of the case studies are broadly similar it's still pretty fun each time to read someone's reflections about discovering reading for the first time as an adult."
+      - title: Michaelmas
+        author: Algis Budrys
+      - title: Castle of Days
+        author: Gene Wolfe
+      - title: Essays One
+        author: Lydia Davis
+      - title: In Defence of Sanity
+        author: G.K. Chesterton
+      - title: The Way of Kings
+        author: Brandon Sanderson
+      - title: Words of Radiance
+        author: Brandon Sanderson
+      - title: World of Trouble
+        author: Ben Winters
+        review: "Fun, but not as good as the other two. Mostly sticks the landing. Not sure if I'm relieved or frustrated about how the conspiracy plot actually played out."
+      - title: Countdown City
+        author: Ben Winters
+        review: "A pretty good sequel, though I'd recommend detoxing between this one and *The Last Policeman* to get rid of some of those end-of-the-world blues."
   - year: "2024"
     books:
       - title: The Last Policeman
-        author: Robert Winters
+        author: Ben Winters
+        review: "Bleak throughout, given the setting ([the eschaton is *actually* imminent](https://en.wikipedia.org/wiki/Immanentize_the_eschaton)), but still able to make a fun murder mystery out of it. Everyone's suicidal, so what's one more? Also aided by the fact that I couldn't help but relate to a protagonist who's very tall but a little weird with it."
       - title: The Silverberg Business
         author: Robert Freeman Wexler
       - title: The Stranger
@@ -777,7 +805,7 @@ years:
         author: Ursula Le Guin
         link: https://openlibrary.org/works/OL59864W/The_Left_Hand_of_Darkness
 
-      - title: If on a Winter's Night a Traveller
+      - title: If on a Winter's Night a Traveler
         author: Italo Calvino
         link: https://openlibrary.org/works/OL15358W/Se_una_notte_d'inverno_un_viaggiatore
         star: yes

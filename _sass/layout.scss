@@ -271,7 +271,7 @@ main {
   background-color: var(--bg);
 
   display: grid;
-  grid-template-columns: 1fr $sidebar-width $content-width minmax($sidebar-width, 1fr) 1fr;
+  grid-template-columns: 1fr $sidebar-width $content-width minmax(0, $sidebar-width) 1fr;
 }
 
 article>ul, ol {
@@ -293,6 +293,21 @@ article {
 
   .reading-meta p:first-child, p:first-child {
     margin-top: 0;
+  }
+}
+
+.article-wide {
+  grid-column: 3 / 5;
+  padding-right: 2em;
+
+  column-count: 2;
+  column-gap: 1.2em;
+
+  & > * {
+    margin: 0;
+    margin-bottom: 1.2em;
+    break-inside: avoid;
+    align-self: start;
   }
 }
 
@@ -550,7 +565,9 @@ blockquote {
 
 .quote-meta {
   margin-top: 0.8em;
-  font-size: 0.9em;
+  padding-top: 0.8em;
+  border-top: 1px solid var(--bg-accent-3);
+  font-size: 1.05em;
 }
 
 *:not(pre) > code {

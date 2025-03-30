@@ -1,9 +1,16 @@
+{% assign quote_link = nil %}
+{% if include.link %}
+  {% assign quote_link = include.link %}
+{% elsif include.book %}
+  {% assign formatted_title = include.title | replace: " ", "_" %}
+  {% assign quote_link = "/books#" | append: formatted_title %}
+{% endif %}
+
 <blockquote>
   {{ include.content | markdownify }}
   <div class="quote-meta">
-    &#x21B3; 
-    {% if include.link %}<a href="{{ include.link }}">{% endif %} 
-      {{ include.author }}, <span style="font-style: italic;">{{ include.title }}</span>
-    {% if include.link %}</a>{% endif %}
+    
+      {{ include.author }} — {% if quote_link %}<a href="{{ quote_link }}">{% endif %}<span style="font-style: italic;">{{ include.title }}</span>
+    {% if quote_link %}</a>{% endif %}
   </div>
 </blockquote>
