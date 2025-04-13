@@ -34,12 +34,6 @@
     </div>
   {% endif %}
 
-  {% if page.layout == "book" %}
-    <div class="book-cover">
-      <img src="/assets/books/{{ page.book }}.jpg">
-    </div>
-  {% endif %}
-
   {% if page.toc == true %}
     <div class="toc narrow-remove">
       {% include toc.html html=content h_min=2 %}
