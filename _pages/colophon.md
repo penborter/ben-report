@@ -21,7 +21,7 @@ There is a colour switch button hidden in the footer, to swap between "dark mode
 
 ## NBA
 
-The [NBA part of the site](https://nba.ben.report) is exactly the same as above, except it is set in [Departure Mono](https://departuremono.com/).
+The [NBA part of the site](https://nba.ben.report) is exactly the same as above, except it is set in [JetBrains  Mono](https://www.jetbrains.com/lp/mono/).
 
 The base colours are <span class='hex-code' style='--background:#E4DBCD; --text:#2A4644;'>#E4DBCD</span>, <span class='hex-code' style='--background:#FF8833; --text:#2A4644;'>#FF8833</span> and <span class='hex-code' style='--background:#363330; --text:#F4F5EF;'>#363330</span>.
 
