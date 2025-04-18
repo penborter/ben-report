@@ -4,6 +4,7 @@ book: After Babel
 subtitle: by George Steiner
 published: 04 September 2024
 toc: true
+has_cover: true
 ---
 
 A book about language and translation, basically arguing that **all** communication is translation. Translation is typically imagined between languages, but Steiner raises the idea of translation between historical and present [contexts](/notes/context) as well as between people's internal thoughts, which still need translating even if they're speaking the same language.  
