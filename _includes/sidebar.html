@@ -34,7 +34,14 @@
     </div>
   {% endif %}
 
-  {% if page.toc == true %}
+  {% if page.layout == "book" and page.has_cover %}
+    <div class="book-cover">
+      <img src="/assets/books/{{ page.book }}.jpg">
+    </div>
+  {% endif %}
+
+
+  {% if page.toc %}
     <div class="toc narrow-remove">
       {% include toc.html html=content h_min=2 %}
       <a href="#" class="toc-return">Return to top ⤴</a>
