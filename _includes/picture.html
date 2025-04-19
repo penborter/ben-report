@@ -1,30 +1,32 @@
 {% comment %}
-Images to be inserted into posts.
-Pass the folder_name attribute into the post metadata and use as folder_name=page.folder_name
-Other attributes can be used as needed, requires:
-- folder
-- file
-Optional:
-- class, defaults to "normal"
-    - wide: full-width picture
-    - double: full height, two pictures side-by-side sharing a caption
-- caption
-- title
-
+flexbox image gallery include for blog posts.
+requires:
+- file: semicolon-separated filenames
+optional:
+- title: semicolon-separated titles
+- class: space-separated CSS classes (e.g. "wide double")
+- caption: string or markdown
+assumes:
+- page.photoloc is the base path for images
 {% endcomment %}
 
 {% assign filenames = include.file | split: "; " %}
 {% assign titles = include.title | split: "; " %}
-{% assign columns = filenames | size %}
 
-<div class="gallery pic-{{ include.class | default: "normal" }}" style="--columns: {{ columns | default: 1 }}">
+{% assign raw_classes = include.class | default: "normal" | split: " " %}
+{% assign pic_classes = "" %}
+{% for c in raw_classes %}
+  {% assign pic_classes = pic_classes | append: "pic-" | append: c | append: " " %}
+{% endfor %}
+
+<div class="gallery {{ pic_classes | strip }}">
     {% for file in filenames %}
     <figure>
-        <img src="{{ page.photoloc }}/{{ file }}" alt="{{ titles[forloop.index] }}" loading="lazy">
+        <img src="{{ page.photoloc }}/{{ file }}" alt="{{ titles[forloop.index0] | default: '' }}" class="zoomable" loading="lazy">
     </figure>
     {% endfor %}
 
     {% if include.caption %}
-    <figcaption class="caption-{{ include.class | default: "normal" }}">{{ include.caption | markdownify }}</figcaption>
+    <figcaption class="{{ pic_classes | strip }}">{{ include.caption | markdownify }}</figcaption>
     {% endif %}
 </div>

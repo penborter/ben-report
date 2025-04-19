@@ -1,0 +1,43 @@
+{% raw %}
+<script defer>
+  (() => {
+    let overlay = null;                       // current lightbox
+  
+    document.addEventListener('click', e => {
+      /* 1. if lightbox is open, any click starts close sequence */
+      if (overlay) {
+        const dead = overlay;                 // capture element
+        dead.classList.remove('show');        // start fade/scale out
+        dead.addEventListener('transitionend', () => {
+          dead.remove();                      // yank from DOM
+          overlay = null;                     // now nothing is open
+        }, { once: true });
+        return;
+      }
+  
+      /* 2. locate something zoomable */
+      const holder = e.target.closest('.zoomable');
+      if (!holder) return;
+  
+      e.preventDefault();
+  
+      const img = holder.tagName === 'IMG'
+                 ? holder
+                 : holder.querySelector('img');
+      if (!img) return;
+  
+      /* 3. build + show fresh overlay */
+      overlay = document.createElement('div');
+      overlay.className = 'lightbox-overlay';
+  
+      const big = img.cloneNode();
+      big.style.cssText = 'max-width:97vw;max-height:97vh;object-fit:contain;';
+      overlay.appendChild(big);
+      document.body.appendChild(overlay);
+  
+      /* kick off entrance animation next frame */
+      requestAnimationFrame(() => overlay.classList.add('show'));
+    });
+  })();
+  </script>  
+{% endraw %}
