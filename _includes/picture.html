@@ -22,7 +22,7 @@ assumes:
 <div class="gallery {{ pic_classes | strip }}">
     {% for file in filenames %}
     <figure>
-        <img src="{{ page.photoloc }}/{{ file }}" alt="{{ titles[forloop.index0] | default: '' }}" class="zoomable" loading="lazy">
+        <img src="{{  page.photoloc | append: '/' | append: file | relative_url }}" alt="{{ titles[forloop.index0] | default: '' }}" class="zoomable" loading="lazy">
     </figure>
     {% endfor %}
 

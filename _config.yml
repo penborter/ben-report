@@ -4,8 +4,11 @@ url: https://ben.report
 title: ben.report
 description: ben.report
 
+#2a. Included files
+include:
+  - assets
 
-# 2. Excluded files
+# 2b. Excluded files
 exclude:
   - LICENSE
   - CNAME
