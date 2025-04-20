@@ -2,7 +2,7 @@
 layout: post
 title: Walking from Circular Quay to Balmoral
 tags: [photography, sydney]
-photoloc: /assets/posts/cqb_walk/
+photoloc: /assets/posts/cqb_walk
 toc: true
 ---
 
