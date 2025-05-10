@@ -24,9 +24,9 @@ $light_accent_1: hsl(150, 15%, 60%);
 $light_accent_2: hsl(70, 15%, 97%);
 $light_accent_3: hsl(150, 15%, 80%);
 
-$dark-transparent-1: scale-color($dark, $alpha: -55%);
+$dark-transparent-1: scale-color($dark, $alpha: -15%);
 $dark-transparent-2: scale-color($dark_accent_1, $alpha: -70%);
-$light-transparent-1: scale-color($light, $alpha: -55%);
+$light-transparent-1: scale-color($light, $alpha: -15%);
 $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
 
 // 2.2 CSS Variables
@@ -402,7 +402,7 @@ main.col-2 {
 
 nav.locked {
   position: absolute;
-  top: 2em;
+  top: 3em;
   padding-left: #{"max(2em + 0.5em, 50vw - 650px + 1em)"};
 
   width: fit-content;
@@ -443,6 +443,7 @@ nav.locked {
 .sidebar.locked {
   nav {
     padding-left: 0.5em;
+    top: 2em;
   }
   .sidebar_titles {
     margin-top: 3.75em;
@@ -648,9 +649,9 @@ footer {
   .list-cat {
     text-align: right;
     position: sticky;
-    top: 2em;
+    top: 3em;
 
-    margin-left: -5.1em;
+    margin-left: -5em;
     width: fit-content;
 
     h1 {
@@ -1095,7 +1096,7 @@ tr:nth-child(even) {
 }
 
 .img-gallery {
-  height: 100%;
+  height: calc(100% - 1em);
   width: auto;
   cursor: default;
   border: 2px solid var(--fg);
@@ -1243,8 +1244,13 @@ mark {
     margin-left: 0;
 
     .list-cat {
-      margin-left: 0;
-      width: 100%;
+      margin-left: auto;
+      margin-right: -0.3em;
+      padding: 0.3em;
+      background: var(--bg);
+      border-radius: 5px;
+
+      top: 1em;
     }
   }
 
