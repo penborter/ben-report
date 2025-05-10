@@ -1,43 +1,124 @@
 {% raw %}
 <script defer>
-  (() => {
-    let overlay = null;                       // current lightbox
+  ;(function(){
+    const imgs = [...document.querySelectorAll('img.zoomable')]
+    let idx = 0, overlay, imgEl, counter
   
-    document.addEventListener('click', e => {
-      /* 1. if lightbox is open, any click starts close sequence */
-      if (overlay) {
-        const dead = overlay;                 // capture element
-        dead.classList.remove('show');        // start fade/scale out
-        dead.addEventListener('transitionend', () => {
-          dead.remove();                      // yank from DOM
-          overlay = null;                     // now nothing is open
-        }, { once: true });
-        return;
-      }
+    function updateCounter(){
+      counter.textContent = `${idx+1}/${imgs.length}`
+    }
   
-      /* 2. locate something zoomable */
-      const holder = e.target.closest('.zoomable');
-      if (!holder) return;
+    function show(i){
+      idx = (i + imgs.length) % imgs.length
+      imgEl.src = imgs[idx].src
+      updateCounter()
+      overlay.style.display = 'flex'
+      document.body.style.overflow = 'hidden'
+    }
   
-      e.preventDefault();
+    function hide(){
+      overlay.style.display = 'none'
+      document.body.style.overflow = ''
+    }
   
-      const img = holder.tagName === 'IMG'
-                 ? holder
-                 : holder.querySelector('img');
-      if (!img) return;
+    function keynav(e){
+      if (!overlay || overlay.style.display !== 'flex') return
+      if (e.key === 'ArrowRight') show(idx+1)
+      if (e.key === 'ArrowLeft') show(idx-1)
+      if (e.key === 'Escape') hide()
+    }
   
-      /* 3. build + show fresh overlay */
-      overlay = document.createElement('div');
-      overlay.className = 'lightbox-overlay';
+    document.addEventListener('DOMContentLoaded', () => {
+      overlay = document.createElement('div')
+      Object.assign(overlay.style, {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '100vh',
+        background: 'var(--bg-transparent)',
+        display: 'none',
+        justifyContent: 'center',
+        alignItems: 'center',
+        cursor: 'zoom-out',
+        zIndex: 9999
+      })
   
-      const big = img.cloneNode();
-      big.style.cssText = 'max-width:97vw;max-height:97vh;object-fit:contain;';
-      overlay.appendChild(big);
-      document.body.appendChild(overlay);
+      imgEl = document.createElement('img')
+      Object.assign(imgEl.style, {
+        width: 'auto',
+        height: 'auto',
+        maxWidth: '97vw',
+        maxHeight: '97vh',
+        cursor: 'zoom-out'
+      })
+      overlay.appendChild(imgEl)
   
-      /* kick off entrance animation next frame */
-      requestAnimationFrame(() => overlay.classList.add('show'));
-    });
-  })();
+      const leftArrow  = document.createElement('div'),
+            rightArrow = document.createElement('div')
+      leftArrow.textContent  = '◀'
+      rightArrow.textContent = '▶'
+      Object.assign(leftArrow.style, {
+        position: 'absolute',
+        left: '1em',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        fontSize: '2em',
+        color: 'var(--bg-accent-1)',
+        cursor: 'pointer',
+        userSelect: 'none',
+        zIndex: 10000
+      })
+      Object.assign(rightArrow.style, {
+        position: 'absolute',
+        right: '1em',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        fontSize: '2em',
+        color: 'var(--bg-accent-1)',
+        cursor: 'pointer',
+        userSelect: 'none',
+        zIndex: 10000
+      })
+      overlay.append(leftArrow, rightArrow)
+  
+      counter = document.createElement('div')
+      Object.assign(counter.style, {
+        position: 'absolute',
+        bottom: '1em',
+        right: '1em',
+        padding: '0.2em 0.5em',
+        background: 'rgba(0,0,0,0.5)',
+        color: '#fff',
+        fontSize: '0.9em',
+        borderRadius: '3px',
+        zIndex: 10000
+      })
+      overlay.appendChild(counter)
+  
+      // swipe nav
+      let touchStartX = 0
+      overlay.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].clientX
+      })
+      overlay.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].clientX - touchStartX
+        if (Math.abs(dx) > 50) {
+          if (dx < 0) show(idx+1)
+          else show(idx-1)
+        }
+      })
+  
+      leftArrow.addEventListener('click', e => { e.stopPropagation(); show(idx-1) })
+      rightArrow.addEventListener('click', e => { e.stopPropagation(); show(idx+1) })
+      if (imgs.length < 2) leftArrow.style.display = rightArrow.style.display = 'none'
+  
+      overlay.addEventListener('click', hide)
+      document.body.appendChild(overlay)
+  
+      imgs.forEach((el, i) => el.addEventListener('click', () => show(i)))
+      document.addEventListener('keydown', keynav)
+    })
+  })()
   </script>  
 {% endraw %}
