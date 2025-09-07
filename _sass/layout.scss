@@ -176,7 +176,7 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
   display: block;
   padding: 1em;
 
-  border-radius: 5px;
+  //border-radius: 5px;
   border: 1px solid var(--color-main);
   background: var(--color-bg);
 
@@ -332,7 +332,7 @@ nav {
     filter: none;
     transition: 0.3s ease;
 
-    a:not(.navName), a:visited {
+    a, a:visited {
       color: var(--fg);
     }
 
@@ -553,7 +553,7 @@ blockquote, .footnotes {
   padding: 1.5em;
 
   border: 1px solid var(--bg-accent-3);
-  border-radius: 5px;
+  //border-radius: 5px;
  
   p {
     margin: 0;
@@ -796,7 +796,7 @@ footer {
   padding-top: 2em;
 
   img {
-    border-radius: 5px;
+    //border-radius: 5px;
     box-shadow: 0 2px 2px var(--shadow-color), 
                 0 4px 4px var(--shadow-color), 
                 0 8px 8px var(--shadow-color),
@@ -1136,7 +1136,7 @@ mark {
   background: var(--fg-accent-1);
   color: var(--bg);
   padding: 0.1em 0.2em;
-  border-radius: 3px;
+  //border-radius: 3px;
 }
 
 // Responsiveness
@@ -1248,7 +1248,7 @@ mark {
       margin-right: -0.3em;
       padding: 0.3em;
       background: var(--bg);
-      border-radius: 5px;
+      //border-radius: 5px;
 
       top: 1em;
     }
