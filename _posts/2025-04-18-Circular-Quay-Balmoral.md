@@ -35,4 +35,4 @@ Anyway, the weather was beautiful, the walk was great. I think we'll do it again
    class="double wide"
 %}
 
-This post was also a good excuse to test out photo layouts, and the lightbox js that I'm starting to implement. Double pictures can be combined with wide now, as you can see above. Click on any of the pictures to zoom in, which should work around the site.
+This post was also a good excuse to test out photo layouts, and the lightbox js that I'm starting to implement. Double pictures can be combined with wide now, as you can see above. Click on any of the pictures to zoom in, which should work around the site. It's also a good reminder that I need to stop cropping photos to random aspect ratios, because they end up looking weird when stacked side by side.

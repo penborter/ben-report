@@ -1,9 +1,22 @@
 years:
   - year: "2025"
     books:
+      - title: A Fire Upon the deep
+        author: Vernor Vinge
+        star: yes
+      - title: The Word
+        author: John Barton
+      - title: On the Calculation of Volume
+        author: Solvej Balle
+      - title: The Invention of Morel
+        author: Adolfo Bioy Casares
+      - title: Personal History
+        author: Katharine Graham
       - title: Matter
         author: Iain M. Banks
         review: "Add this to the fantasy characters in sci-fi settings genre. I feel like further Banks gets from the Culture, the most interesting the stories are."
+      - title: The Collapse of Complex Societies
+        author: Joseph Tainter
       - title: Anathem
         author: Neal Stephenson
         star: yes
