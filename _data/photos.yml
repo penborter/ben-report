@@ -360,3 +360,62 @@ hawaii:
   - name: hawaii-14.jpg
     thumb: hawaii-14.jpg
     text: Holokai Catamaran
+japan:
+  title: Japan 2025
+  imagefolder: /assets/japan
+  thumb: japan-thumb.jpg
+  images:
+  - name: japan-1.jpg
+    thumb: japan-1.jpg
+    text: Tokyo open-top tour bus - 1
+  - name: japan-2.jpg
+    thumb: japan-2.jpg
+    text: Tokyo open-top tour bus - 2
+  - name: japan-3.jpg
+    thumb: japan-3.jpg
+    text: Tokyo open-top tour bus - 3
+  - name: japan-4.jpg
+    thumb: japan-4.jpg
+    text: Out for delivery - 1
+  - name: japan-5.jpg
+    thumb: japan-5.jpg
+    text: Ministry of Foreign Affairs' Iikura Guesthouse
+  - name: japan-6.jpg
+    thumb: japan-6.jpg
+    text: Minato Citizens' Festival 2025 - 1
+  - name: japan-7.jpg
+    thumb: japan-7.jpg
+    text: Minato Citizens' Festival 2025 - 2
+  - name: japan-8.jpg
+    thumb: japan-8.jpg
+    text: Minato Citizens' Festival 2025 - 3
+  - name: japan-9.jpg
+    thumb: japan-9.jpg
+    text: Minato Citizens' Festival 2025 - 4
+  - name: japan-10.jpg
+    thumb: japan-10.jpg
+    text: Asakusa Higashi Hongan-ji Temple, Tokyo
+  - name: japan-11.jpg
+    thumb: japan-11.jpg
+    text: The entrance to Kappabashi-dori
+  - name: japan-12.jpg
+    thumb: japan-12.jpg
+    text: Out for delivery - 2
+  - name: japan-13.jpg
+    thumb: japan-13.jpg
+    text: Looking at the Mitsui Garden Hotel, Ginza
+  - name: japan-14.jpg
+    thumb: japan-14.jpg
+    text: Hamarikyu Gardens, Chuo City
+  - name: japan-15.jpg
+    thumb: japan-15.jpg
+    text: View north from the Sanjō Ōhashi Bridge
+  - name: japan-16.jpg
+    thumb: japan-16.jpg
+    text: At the bottom of Kiyomizu-dera
+  - name: japan-17.jpg
+    thumb: japan-17.jpg
+    text: Partway up Kiyomizu-dera
+  - name: japan-18.jpg
+    thumb: japan-18.jpg
+    text: One of the many deer in Nara
