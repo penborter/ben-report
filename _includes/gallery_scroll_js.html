@@ -14,8 +14,12 @@ document.head.appendChild(style);
 
 document.addEventListener('DOMContentLoaded', function() {
   const gallery = document.querySelector('.horizontal-gallery-wrapper');
-  const images = document.querySelectorAll('.image-wrapper');
+  const images = document.querySelectorAll('.horizontal-gallery-wrapper > *');
   let currentIndex = 0;
+  let isScrolling = false;
+  let hasScrolledOnce = false;
+  let previousIndex = 0;
+  let lastProgrammaticScroll = 0;
 
   function updateImageStates() {
     // Reset all images
@@ -25,39 +29,57 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function scrollToImage(index) {
-    // Handle wrapping around at the ends
     if (index < 0) {
       index = images.length - 1;
     } else if (index >= images.length) {
       index = 0;
     }
+
+    previousIndex = currentIndex;
+
+    if (index === 0 && previousIndex !== 0) {
+      hasScrolledOnce = false; // only reset if we navigated back to 0
+    }
     
     currentIndex = index;
     const targetImage = images[currentIndex];
     
-    // Calculate scroll position to center the image
     const galleryRect = gallery.getBoundingClientRect();
     const imageRect = targetImage.getBoundingClientRect();
     const scrollOffset = (imageRect.left + gallery.scrollLeft) - (galleryRect.width / 2) + (imageRect.width / 2);
     
-    // Scroll to center the image
+    isScrolling = true;
+    
     gallery.scrollTo({
       left: scrollOffset,
       behavior: 'smooth'
     });
 
-    // Update the dimming states
     updateImageStates();
+    lastProgrammaticScroll = Date.now();
+    
+    setTimeout(() => {
+      isScrolling = false;
+      updateImageStates();
+      lastProgrammaticScroll = Date.now();
+    }, 350);
   }
 
   function handleKeyPress(event) {
-    // Only handle left and right arrow keys
     if (event.key === 'ArrowLeft') {
       event.preventDefault();
+      if (currentIndex === 1) {
+        hasScrolledOnce = false; // reset when going back to gallery-meta
+      }
       scrollToImage(currentIndex - 1);
     } else if (event.key === 'ArrowRight') {
       event.preventDefault();
-      scrollToImage(currentIndex + 1);
+      if (!hasScrolledOnce && currentIndex === 0) {
+        scrollToImage(1);
+        hasScrolledOnce = true;
+      } else {
+        scrollToImage(currentIndex + 1);
+      }
     }
   }
 
@@ -70,8 +92,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // Optional: Update dimming when scrolling manually
   let scrollTimeout;
   gallery.addEventListener('scroll', () => {
+    if (isScrolling) return;
+
     clearTimeout(scrollTimeout);
     scrollTimeout = setTimeout(() => {
+
+      // Don't auto-update if we just intentionally scrolled somewhere
+      if (Date.now() - lastProgrammaticScroll < 500) return;
+
       // Find the most centered image
       let closestImage = 0;
       let closestDistance = Infinity;

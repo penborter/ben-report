@@ -1,6 +1,38 @@
 years:
   - year: "2025"
     books:
+      - title: Raven Stratagem
+        author: Yoon Ha Lee
+      - title: Ninefox Gambit
+        author: Yoon Ha Lee
+      - title: The Secret of Secrets
+        author: Dan Brown
+      - title: Origin
+        author: Dan Brown
+      - title: Reading (A Short Introduction)
+        author: Belinda Jack
+      - title: Orality and Literacy
+        author: Walter J Ong
+      - title: The Evolutionary Void
+        author: Peter F Hamilton
+      - title: The Temporal Void
+        author: Peter F Hamilton
+      - title: The Dreaming Void
+        author: Peter F Hamilton
+      - title: Judas Unchained
+        author: Peter F Hamilton
+      - title: Pandora's Star
+        author: Peter F Hamilton
+      - title: The Diamond Age
+        author: Neal Stephenson
+      - title: The Ball and the Cross
+        author: GK Chesterton
+      - title: The Folding Knife
+        author: KJ Parker
+      - title: Is That a Fish in Your Ear?
+        author: David Bellos
+      - title: The Early History of God
+        author: Mark Smith
       - title: A Fire Upon the deep
         author: Vernor Vinge
         star: yes
