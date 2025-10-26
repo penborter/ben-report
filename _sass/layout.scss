@@ -52,7 +52,8 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
   --bg-transparent: #{$light-transparent-1};
   --bg-accent-transparent: #{$light-transparent-2};
 
-  --shadow-color: rgba(0, 0, 0, 0.03);
+  --shadow: 0 2px 4px var(--shadow-color), 0 4px 8px var(--shadow-color), 0 8px 16px var(--shadow-color), 0 16px 32px var(--shadow-color);
+  --shadow-color: rgba(0, 0, 0, 0.05);
   --border-color: var(--fg-accent-1);
 
   --navName-color: #3f6d56;
@@ -73,7 +74,7 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
   --bg-transparent: #{$dark-transparent-1};
   --bg-accent-transparent: #{$dark-transparent-2};
 
-  --shadow-color: rgba(0, 0, 0, 0.08);
+  --shadow-color: rgba(0, 0, 0, 0.1);
   --border-color: var(--bg-accent-1);
 
   --navName-color: #76ba98;
@@ -897,6 +898,8 @@ img {
 
 img:not(.img-gallery) {
   display: block;
+  border: 1px solid var(--fg);
+  box-shadow: var(--shadow);
 }
 
 .video {

@@ -1,421 +1,421 @@
 euro:
   title: Europe 2022
-  imagefolder: /assets/euro
-  thumb: euro-thumb.jpeg
+  imagefolder: /euro
+  thumb: euro-thumb.webp
   blurb: "Happy snaps from a trip to Europe in 2022"
   images:
-  - name: euro-1.jpeg
-    thumb: euro-1.jpeg
+  - name: euro-1.webp
+    thumb: euro-1.webp
     text: Metallic tower of Fourvière, Lyon
-  - name: euro-2.jpeg
-    thumb: euro-2.jpeg
+  - name: euro-2.webp
+    thumb: euro-2.webp
     text: Saint Antoine marketplace, Lyon
-  - name: euro-3.jpeg
-    thumb: euro-3.jpeg
+  - name: euro-3.webp
+    thumb: euro-3.webp
     text: Hotel view, Lyon
-  - name: euro-4.jpeg
-    thumb: euro-4.jpeg
+  - name: euro-4.webp
+    thumb: euro-4.webp
     text: By the Saône, Lyon
-  - name: euro-5.jpeg
-    thumb: euro-5.jpeg
+  - name: euro-5.webp
+    thumb: euro-5.webp
     text: Castel Sant'Angelo, Rome
-  - name: euro-6.jpeg
-    thumb: euro-6.jpeg
+  - name: euro-6.webp
+    thumb: euro-6.webp
     text: No parking, Rome
-  - name: euro-7.jpeg
-    thumb: euro-7.jpeg
+  - name: euro-7.webp
+    thumb: euro-7.webp
     text: Vatican museums, Vatican City
-  - name: euro-8.jpeg
-    thumb: euro-8.jpeg
+  - name: euro-8.webp
+    thumb: euro-8.webp
     text: Temple of Castor and Pollux, Rome 
-  - name: euro-9.jpeg
-    thumb: euro-9.jpeg
+  - name: euro-9.webp
+    thumb: euro-9.webp
     text: Towards the Gulf of Trieste, Trieste
-  - name: euro-10.jpeg
-    thumb: euro-10.jpeg
+  - name: euro-10.webp
+    thumb: euro-10.webp
     text: The good ship X, Trieste
-  - name: euro-11.jpeg
-    thumb: euro-11.jpeg
+  - name: euro-11.webp
+    thumb: euro-11.webp
     text: Santuario di Monte Grisa, Trieste
-  - name: euro-12.jpeg
-    thumb: euro-12.jpeg
+  - name: euro-12.webp
+    thumb: euro-12.webp
     text: Enjoying the Santuario sun, Trieste
-  - name: euro-13.jpeg
-    thumb: euro-13.jpeg
+  - name: euro-13.webp
+    thumb: euro-13.webp
     text: Bled Castle, Bled
-  - name: euro-14.jpeg
-    thumb: euro-14.jpeg
+  - name: euro-14.webp
+    thumb: euro-14.webp
     text: On the lake, Bled
-  - name: euro-15.jpeg
-    thumb: euro-15.jpeg
+  - name: euro-15.webp
+    thumb: euro-15.webp
     text: Watching the Place du Trocadéro, Paris
-  - name: euro-16.jpeg
-    thumb: euro-16.jpeg
+  - name: euro-16.webp
+    thumb: euro-16.webp
     text: Park gates, Paris
-  - name: euro-17.jpeg
-    thumb: euro-17.jpeg
+  - name: euro-17.webp
+    thumb: euro-17.webp
     text: Museé de l'Orangerie, Paris
-  - name: euro-18.jpeg
-    thumb: euro-18.jpeg
+  - name: euro-18.webp
+    thumb: euro-18.webp
     text: University town, Edinburgh
 sydney-1:
   title: Sydney 1
   blurb: "Pictures from in and around Sydney"
-  imagefolder: /assets/sydney-1
-  thumb: Sydney-1-thumb.jpeg
+  imagefolder: /sydney-1
+  thumb: Sydney-1-thumb.webp
   images:
-  - name: Sydney-2.jpg
-    thumb: Sydney-2.jpg
+  - name: Sydney-2.webp
+    thumb: Sydney-2.webp
     text: Lighthouse (in Wollongong, not Sydney)
-  - name: Sydney-4.jpg
-    thumb: Sydney-4.jpg
+  - name: Sydney-4.webp
+    thumb: Sydney-4.webp
     text: Foot traffic, Pyrmont
-  - name: Sydney-5.jpg
-    thumb: Sydney-5.jpg
+  - name: Sydney-5.webp
+    thumb: Sydney-5.webp
     text: Off the water, Darling Harbour
-  - name: Sydney-7.jpg
-    thumb: Sydney-7.jpg
+  - name: Sydney-7.webp
+    thumb: Sydney-7.webp
     text: Giving way, Garden Island
-  - name: Sydney-11.jpg
-    thumb: Sydney-11.jpg
+  - name: Sydney-11.webp
+    thumb: Sydney-11.webp
     text: Lights out, Cockatoo Island
-  - name: Sydney-12.jpg
-    thumb: Sydney-12.jpg
+  - name: Sydney-12.webp
+    thumb: Sydney-12.webp
     text: Chemistry building, Sydney University
-  - name: Sydney-13.jpg
-    thumb: Sydney-13.jpg
+  - name: Sydney-13.webp
+    thumb: Sydney-13.webp
     text: Merging traffic, Darling Harbour
-  - name: Sydney-15.jpg
-    thumb: Sydney-15.jpg
+  - name: Sydney-15.webp
+    thumb: Sydney-15.webp
     text: Candid, the Rocks
-  - name: Sydney-21.jpg
-    thumb: Sydney-21.jpg
+  - name: Sydney-21.webp
+    thumb: Sydney-21.webp
     text: Anzac onlookers, Pyrmont
-  - name: Sydney-22.jpg
-    thumb: Sydney-22.jpg
+  - name: Sydney-22.webp
+    thumb: Sydney-22.webp
     text: Watching the pacific, Vaucluse
-  - name: Sydney-25.jpg
-    thumb: Sydney-25.jpg
+  - name: Sydney-25.webp
+    thumb: Sydney-25.webp
     text: Lost, Darling Harbour
-  - name: Sydney-26.jpg
-    thumb: Sydney-26.jpg
+  - name: Sydney-26.webp
+    thumb: Sydney-26.webp
     text: Downhill, The Rocks
-  - name: Sydney-29.jpg
-    thumb: Sydney-29.jpg
+  - name: Sydney-29.webp
+    thumb: Sydney-29.webp
     text: Security, Circular Quay
 
 sydney-2:
   title: Sydney 2
   blurb: "Pictures from in and around Sydney"
-  imagefolder: /assets/sydney-2
-  thumb: Sydney-2-thumb.jpeg
+  imagefolder: /sydney-2
+  thumb: Sydney-2-thumb.webp
   images:
-  - name: Sydney-1.jpg
-    thumb: Sydney-1.jpg
+  - name: Sydney-1.webp
+    thumb: Sydney-1.webp
     text: Brickwork, Surry Hills
-  - name: Sydney-3.jpg
-    thumb: Sydney-3.jpg
+  - name: Sydney-3.webp
+    thumb: Sydney-3.webp
     text: Fire escape, Wynyard 
-  - name: Sydney-6.jpg
-    thumb: Sydney-6.jpg
+  - name: Sydney-6.webp
+    thumb: Sydney-6.webp
     text: Anzac Bridge crossing, Pyrmont
-  - name: Sydney-8.jpg
-    thumb: Sydney-8.jpg
+  - name: Sydney-8.webp
+    thumb: Sydney-8.webp
     text: Highway patrol, Bondi
-  - name: Sydney-9.jpg
-    thumb: Sydney-9.jpg
+  - name: Sydney-9.webp
+    thumb: Sydney-9.webp
     text: Cruising, Sydney Harbour
-  - name: Sydney-10.jpg
-    thumb: Sydney-10.jpg
+  - name: Sydney-10.webp
+    thumb: Sydney-10.webp
     text: Palm trees, Bondi
-  - name: Sydney-14.jpg
-    thumb: Sydney-14.jpg
+  - name: Sydney-14.webp
+    thumb: Sydney-14.webp
     text: Ferris wheel, Luna Park
-  - name: Sydney-16.jpg
-    thumb: Sydney-16.jpg
+  - name: Sydney-16.webp
+    thumb: Sydney-16.webp
     text: International Towers, Barangaroo
-  - name: Sydney-17.jpg
-    thumb: Sydney-17.jpg
+  - name: Sydney-17.webp
+    thumb: Sydney-17.webp
     text: Palisade Hotel, Millers Point
-  - name: Sydney-18.jpg
-    thumb: Sydney-18.jpg
+  - name: Sydney-18.webp
+    thumb: Sydney-18.webp
     text: Sydney metro, Barangaroo
-  - name: Sydney-19.jpg
-    thumb: Sydney-19.jpg
+  - name: Sydney-19.webp
+    thumb: Sydney-19.webp
     text: Start of the Wynard Walk, Barangaroo
-  - name: Sydney-20.jpg
-    thumb: Sydney-20.jpg
+  - name: Sydney-20.webp
+    thumb: Sydney-20.webp
     text: Couples baggage, Haymarket
-  - name: Sydney-23.jpg
-    thumb: Sydney-23.jpg
+  - name: Sydney-23.webp
+    thumb: Sydney-23.webp
     text: Diamond Bay, Vaucluse
-  - name: Sydney-24.jpg
-    thumb: Sydney-24.jpg
+  - name: Sydney-24.webp
+    thumb: Sydney-24.webp
     text: Will Ashton Lookout, Waverton
-  - name: Sydney-27.jpg
-    thumb: Sydney-27.jpg
+  - name: Sydney-27.webp
+    thumb: Sydney-27.webp
     text: Hornby Lighthouse, Watsons Bay
-  - name: Sydney-28.jpg
-    thumb: Sydney-28.jpg
+  - name: Sydney-28.webp
+    thumb: Sydney-28.webp
     text: Looking Out, North Head
-  - name: Sydney-30.jpg
-    thumb: Sydney-30.jpg
+  - name: Sydney-30.webp
+    thumb: Sydney-30.webp
     text: Marathon, Hyde Park
 
 nz:
   title: New Zealand
   blurb: "Roadtrip around New Zealand's South Island"
-  imagefolder: /assets/nz
-  thumb: nz-thumb.jpeg
+  imagefolder: /nz
+  thumb: nz-thumb.webp
   images:
-  - name: nz-1.jpg
-    thumb: nz-1.jpg
+  - name: nz-1.webp
+    thumb: nz-1.webp
     text: Stacked up, Lindis Pass
-  - name: nz-2.jpg
-    thumb: nz-2.jpg
+  - name: nz-2.webp
+    thumb: nz-2.webp
     text: Floating away, Mt Pisa
-  - name: nz-3.jpg
-    thumb: nz-3.jpg
+  - name: nz-3.webp
+    thumb: nz-3.webp
     text: Cycle club, Dunedin
-  - name: nz-4.jpg
-    thumb: nz-4.jpg
+  - name: nz-4.webp
+    thumb: nz-4.webp
     text: Lindis Pass viewpoint
-  - name: nz-5.jpg
-    thumb: nz-5.jpg
+  - name: nz-5.webp
+    thumb: nz-5.webp
     text: Setting off, Tekapo
-  - name: nz-6.jpg
-    thumb: nz-6.jpg
+  - name: nz-6.webp
+    thumb: nz-6.webp
     text: Across the water, Lake Tekapo
-  - name: nz-7.jpg
-    thumb: nz-7.jpg
+  - name: nz-7.webp
+    thumb: nz-7.webp
     text: Somewhere between Wanaka and Queenstown, I
-  - name: nz-8.jpg
-    thumb: nz-8.jpg
+  - name: nz-8.webp
+    thumb: nz-8.webp
     text: Somewhere between Wanaka and Queenstown, II
-  - name: nz-9.jpg
-    thumb: nz-9.jpg
+  - name: nz-9.webp
+    thumb: nz-9.webp
     text: Larnach Castle, Dunedin
-  - name: nz-10.jpg
-    thumb: nz-10.jpg
+  - name: nz-10.webp
+    thumb: nz-10.webp
     text: Repairs, Christchurch
 usa:
   title: USA
   blurb: "A collection from two trips to the USA"
-  imagefolder: /assets/usa
-  thumb: usa-thumb.jpeg
+  imagefolder: /usa
+  thumb: usa-thumb.webp
   images:
-  - name: usa-1.jpg
-    thumb: usa-1.jpg
+  - name: usa-1.webp
+    thumb: usa-1.webp
     text: LA Streets
-  - name: usa-2.jpg
-    thumb: usa-2.jpg
+  - name: usa-2.webp
+    thumb: usa-2.webp
     text: Up the road from the White House
-  - name: usa-3.jpg
-    thumb: usa-3.jpg
+  - name: usa-3.webp
+    thumb: usa-3.webp
     text: Salton City, CA
-  - name: usa-4.jpg
-    thumb: usa-4.jpg
+  - name: usa-4.webp
+    thumb: usa-4.webp
     text: Just outside of Salton City
-  - name: usa-5.jpg
-    thumb: usa-5.jpg
+  - name: usa-5.webp
+    thumb: usa-5.webp
     text: Parked in Seattle
-  - name: usa-6.jpg
-    thumb: usa-6.jpg
+  - name: usa-6.webp
+    thumb: usa-6.webp
     text: Santa Monica beach 
-  - name: usa-7.jpg
-    thumb: usa-7.jpg
+  - name: usa-7.webp
+    thumb: usa-7.webp
     text: Hotel windows in San Francisco
-  - name: usa-8.jpg
-    thumb: usa-8.jpg
+  - name: usa-8.webp
+    thumb: usa-8.webp
     text: Doorway in Alcatraz
-  - name: usa-9.jpg
-    thumb: usa-9.jpg
+  - name: usa-9.webp
+    thumb: usa-9.webp
     text: Alcatraz interior
-  - name: usa-10.jpg
-    thumb: usa-10.jpg
+  - name: usa-10.webp
+    thumb: usa-10.webp
     text: The Sky Needle
-  - name: usa-11.jpg
-    thumb: usa-11.jpg
+  - name: usa-11.webp
+    thumb: usa-11.webp
     text: Seattle bridge
-  - name: usa-12.jpg
-    thumb: usa-12.jpg
+  - name: usa-12.webp
+    thumb: usa-12.webp
     text: BNSF in Centennial Park, Seattle
 gor:
   title: Great Ocean Road
   blurb: "A trip down the Great Ocean Road"
-  imagefolder: /assets/gor
-  thumb: GOR-thumb.jpeg
+  imagefolder: /gor
+  thumb: GOR-thumb.webp
   images:
-  - name: GOR-2.jpg
-    thumb: GOR-2.jpg
+  - name: GOR-2.webp
+    thumb: GOR-2.webp
     text: Torquay surf patrol
-  - name: GOR-3.jpg
-    thumb: GOR-3.jpg
+  - name: GOR-3.webp
+    thumb: GOR-3.webp
     text: Incoming storm near Apollo Bay
-  - name: GOR-4.jpg
-    thumb: GOR-4.jpg
+  - name: GOR-4.webp
+    thumb: GOR-4.webp
     text: Cape Patton lookout point
-  - name: GOR-5.jpg
-    thumb: GOR-5.jpg
+  - name: GOR-5.webp
+    thumb: GOR-5.webp
     text: The Road, Cape Patton
-  - name: GOR-6.jpg
-    thumb: GOR-6.jpg
+  - name: GOR-6.webp
+    thumb: GOR-6.webp
     text: Some idiot (me)
-  - name: GOR-7.jpg
-    thumb: GOR-7.jpg
+  - name: GOR-7.webp
+    thumb: GOR-7.webp
     text: Assorted tourists, pt. 1
-  - name: GOR-8.jpg
-    thumb: GOR-8.jpg
+  - name: GOR-8.webp
+    thumb: GOR-8.webp
     text: The chariot
-  - name: GOR-9.jpg
-    thumb: GOR-9.jpg
+  - name: GOR-9.webp
+    thumb: GOR-9.webp
     text: Assorted tourists, pt. 2
-  - name: GOR-10.jpg
-    thumb: GOR-10.jpg
+  - name: GOR-10.webp
+    thumb: GOR-10.webp
     text: Assorted tourists, pt. 3
-  - name: GOR-11.jpg
-    thumb: GOR-11.jpg
+  - name: GOR-11.webp
+    thumb: GOR-11.webp
     text: Assorted tourists, pt. 4
 gee:
   title: Geelong
   blurb: "Some highlights from living in Geelong"
-  imagefolder: /assets/gee
-  thumb: gee-thumb.jpg
+  imagefolder: /gee
+  thumb: gee-thumb.webp
   images:
-  - name: gee-1.jpg
-    thumb: gee-1.jpg
+  - name: gee-1.webp
+    thumb: gee-1.webp
     text: Geelong carousel
-  - name: gee-2.jpg
-    thumb: gee-2.jpg
+  - name: gee-2.webp
+    thumb: gee-2.webp
     text: Parked on the pier
-  - name: gee-3.jpg
-    thumb: gee-3.jpg
+  - name: gee-3.webp
+    thumb: gee-3.webp
     text: Clifton Springs digger
-  - name: gee-4.jpg
-    thumb: gee-4.jpg
+  - name: gee-4.webp
+    thumb: gee-4.webp
     text: Country Club Drive
-  - name: gee-5.jpg
-    thumb: gee-5.jpg
+  - name: gee-5.webp
+    thumb: gee-5.webp
     text: Fishing in Corio Bay, I
-  - name: gee-6.jpg
-    thumb: gee-6.jpg
+  - name: gee-6.webp
+    thumb: gee-6.webp
     text: Fishing in Corio Bay, II
-  - name: gee-7.jpg
-    thumb: gee-7.jpg
+  - name: gee-7.webp
+    thumb: gee-7.webp
     text: Geelong architecture
-  - name: gee-8.jpg
-    thumb: gee-8.jpg
+  - name: gee-8.webp
+    thumb: gee-8.webp
     text: Setting off from Western Beach
-  - name: gee-9.jpg
-    thumb: gee-9.jpg
+  - name: gee-9.webp
+    thumb: gee-9.webp
     text: Point Lonsdale view
-  - name: gee-10.jpg
-    thumb: gee-10.jpg
+  - name: gee-10.webp
+    thumb: gee-10.webp
     text: The old Bellarine railway
 hawaii:
   title: Hawaii 2023
   blurb: "Hawaii trip pics"
-  imagefolder: /assets/hawaii
-  thumb: hawaii-thumb.jpg
+  imagefolder: /hawaii
+  thumb: hawaii-thumb.webp
   images:
-  - name: hawaii-1.jpg
-    thumb: hawaii-1.jpg
+  - name: hawaii-1.webp
+    thumb: hawaii-1.webp
     text: Resort view
-  - name: hawaii-2.jpg
-    thumb: hawaii-2.jpg
+  - name: hawaii-2.webp
+    thumb: hawaii-2.webp
     text: USS Arizona Memorial - 1
-  - name: hawaii-3.jpg
-    thumb: hawaii-3.jpg
+  - name: hawaii-3.webp
+    thumb: hawaii-3.webp
     text: USS Arizona Memorial - 2
-  - name: hawaii-4.jpg
-    thumb: hawaii-4.jpg
+  - name: hawaii-4.webp
+    thumb: hawaii-4.webp
     text: U.S. Army Museum of Hawaii
-  - name: hawaii-5.jpg
-    thumb: hawaii-5.jpg
+  - name: hawaii-5.webp
+    thumb: hawaii-5.webp
     text: Fire rescue
-  - name: hawaii-6.jpg
-    thumb: hawaii-6.jpg
+  - name: hawaii-6.webp
+    thumb: hawaii-6.webp
     text: Don Ho Street
-  - name: hawaii-7.jpg
-    thumb: hawaii-7.jpg
+  - name: hawaii-7.webp
+    thumb: hawaii-7.webp
     text: Not the beachfront
-  - name: hawaii-8.jpg
-    thumb: hawaii-8.jpg
+  - name: hawaii-8.webp
+    thumb: hawaii-8.webp
     text: Waikiki Walkway
-  - name: hawaii-9.jpg
-    thumb: hawaii-9.jpg
+  - name: hawaii-9.webp
+    thumb: hawaii-9.webp
     text: Pearl Harbour Memorial
-  - name: hawaii-10.jpg
-    thumb: hawaii-10.jpg
+  - name: hawaii-10.webp
+    thumb: hawaii-10.webp
     text: Interstate H-1
-  - name: hawaii-11.jpg
-    thumb: hawaii-11.jpg
+  - name: hawaii-11.webp
+    thumb: hawaii-11.webp
     text: Hotel morning
-  - name: hawaii-12.jpg
-    thumb: hawaii-12.jpg
+  - name: hawaii-12.webp
+    thumb: hawaii-12.webp
     text: Fit check
-  - name: hawaii-13.jpg
-    thumb: hawaii-13.jpg
+  - name: hawaii-13.webp
+    thumb: hawaii-13.webp
     text: Signs point to lobby
-  - name: hawaii-14.jpg
-    thumb: hawaii-14.jpg
+  - name: hawaii-14.webp
+    thumb: hawaii-14.webp
     text: Holokai Catamaran
 japan:
   title: Japan 2025
-  imagefolder: /assets/japan
-  thumb: japan-thumb.jpg
+  imagefolder: /japan
+  thumb: japan-thumb.webp
   images:
-  - name: japan-1.jpg
-    thumb: japan-1.jpg
+  - name: japan-1.webp
+    thumb: japan-1.webp
     text: Tokyo open-top tour bus - 1
-  - name: japan-2.jpg
-    thumb: japan-2.jpg
+  - name: japan-2.webp
+    thumb: japan-2.webp
     text: Tokyo open-top tour bus - 2
-  - name: japan-3.jpg
-    thumb: japan-3.jpg
+  - name: japan-3.webp
+    thumb: japan-3.webp
     text: Tokyo open-top tour bus - 3
-  - name: japan-4.jpg
-    thumb: japan-4.jpg
+  - name: japan-4.webp
+    thumb: japan-4.webp
     text: Out for delivery - 1
-  - name: japan-5.jpg
-    thumb: japan-5.jpg
+  - name: japan-5.webp
+    thumb: japan-5.webp
     text: Ministry of Foreign Affairs' Iikura Guesthouse
-  - name: japan-6.jpg
-    thumb: japan-6.jpg
+  - name: japan-6.webp
+    thumb: japan-6.webp
     text: Minato Citizens' Festival 2025 - 1
-  - name: japan-7.jpg
-    thumb: japan-7.jpg
+  - name: japan-7.webp
+    thumb: japan-7.webp
     text: Minato Citizens' Festival 2025 - 2
-  - name: japan-8.jpg
-    thumb: japan-8.jpg
+  - name: japan-8.webp
+    thumb: japan-8.webp
     text: Minato Citizens' Festival 2025 - 3
-  - name: japan-9.jpg
-    thumb: japan-9.jpg
+  - name: japan-9.webp
+    thumb: japan-9.webp
     text: Minato Citizens' Festival 2025 - 4
-  - name: japan-10.jpg
-    thumb: japan-10.jpg
+  - name: japan-10.webp
+    thumb: japan-10.webp
     text: Asakusa Higashi Hongan-ji Temple, Tokyo
-  - name: japan-11.jpg
-    thumb: japan-11.jpg
+  - name: japan-11.webp
+    thumb: japan-11.webp
     text: The entrance to Kappabashi-dori
-  - name: japan-12.jpg
-    thumb: japan-12.jpg
+  - name: japan-12.webp
+    thumb: japan-12.webp
     text: Out for delivery - 2
-  - name: japan-13.jpg
-    thumb: japan-13.jpg
+  - name: japan-13.webp
+    thumb: japan-13.webp
     text: Looking at the Mitsui Garden Hotel, Ginza
-  - name: japan-14.jpg
-    thumb: japan-14.jpg
+  - name: japan-14.webp
+    thumb: japan-14.webp
     text: Hamarikyu Gardens, Chuo City
-  - name: japan-15.jpg
-    thumb: japan-15.jpg
+  - name: japan-15.webp
+    thumb: japan-15.webp
     text: View north from the Sanjō Ōhashi Bridge
-  - name: japan-16.jpg
-    thumb: japan-16.jpg
+  - name: japan-16.webp
+    thumb: japan-16.webp
     text: At the bottom of Kiyomizu-dera
-  - name: japan-17.jpg
-    thumb: japan-17.jpg
+  - name: japan-17.webp
+    thumb: japan-17.webp
     text: Partway up Kiyomizu-dera
-  - name: japan-18.jpg
-    thumb: japan-18.jpg
+  - name: japan-18.webp
+    thumb: japan-18.webp
     text: One of the many deer in Nara
