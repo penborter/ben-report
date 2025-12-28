@@ -27,11 +27,11 @@ Here's a quick summary. Australia's:
 We'll go through these airports, and a couple of other interesting contenders below.
 
 ## Daly Waters Airfield (1928)
-Firstly, let's get Daly Waters Airfield out of the way. It's the top Google search result (at least for me) for the question of Australia's oldest international airport, with its [Wikipedia page](https://en.wikipedia.org/wiki/Daly_Waters_Airfield) stating that: 
+Firstly, let's get Daly Waters Airfield out of the way. It's the top Google search result (at least for me) for the question of Australia's oldest international airport, with its [Wikipedia page](https://en.wikipedia.org/wiki/Daly_Waters_Airfield)[^1] stating that: 
 
 > Daly Waters was Australia's first international airfield.<sup>[*citation needed*]</sup>
 
-Not sure about this one. The earliest mentions of it I could find were from around 1927, in letters between the Chairman of the North Australia Commission[^1] and the Controller of Civil Aviation for the Australian Department of Defense, requesting information on (emphasis added): 
+Not sure about this one. The earliest mentions of it I could find were from around 1927, in letters between the Chairman of the North Australia Commission[^2] and the Controller of Civil Aviation for the Australian Department of Defense, requesting information on (emphasis added): 
 
 {% include quote.html 
 content="establishing air services in North Australia ... [for an] extension of the Queensland Services from Camooweal to <strong>Daly Waters</strong> or alternatively to Katherine."
@@ -43,7 +43,7 @@ There is basically no information (again, that I could find) on whether an airfi
 
 ## Parap Aerodrome (1919)
   
-Parap Aerodrome, at the time just outside of Darwin, was the final destination for Ross and Keith Smith on their winning trip in the [1919 London to Sydney air race](https://en.wikipedia.org/wiki/1919_England_to_Australia_flight)[^2]. This appears to be the first internal flight into or out of Australia. Even though the Smith brothers were paid for their troubles (through prize money), it wasn't a commercial flight as there were no passengers or cargo. Only room for crew on this flight. 
+Parap Aerodrome, at the time just outside of Darwin, was the final destination for Ross and Keith Smith on their winning trip in the [1919 London to Sydney air race](https://en.wikipedia.org/wiki/1919_England_to_Australia_flight)[^3]. This appears to be the first internal flight into or out of Australia. Even though the Smith brothers were paid for their troubles (through prize money), it wasn't a commercial flight as there were no passengers or cargo. Only room for crew on this flight. 
 
 The bulk of the available sources (all of which are like pre-SEO-era Darwin tourist websites) contain substantially the same text, without citations. [An example is here](https://www.australiaforeveryone.com.au/files/darwin/old-qantas-hangar.html#:~:text=Qantas%20Empire%20Airways%20used%20the%20aerodrome%20as%20their%20Australian%20departure%20point%20and%20landfall%20for%20the%20long%20Timor%20Sea%20crossing.); they all note that Qantas used Parap Aerodrome as the Australian end of the Timor sea crossing, although the Qantas hangar on site (still there today) appears to have been built later, around 1934.
 
@@ -53,7 +53,7 @@ author="Qantas" title="Early Years, 1918-1938"
 link="https://www.qantas.com/us/en/about-us/our-company/our-history/early-years-1918-1938.html"
 %}
 
-Below is a photo of the airstrip from a 1943 military aerial survey[^3], showing Parap Aerodrome about 18 months after the first Japanese air raids during WWII. Although it isn't still an operating airfield, Parap having succumbed to suburban sprawl, the alignment of the main runway is preserved by Ross Smith Avenue that still runs through Parap. 
+Below is a photo of the airstrip from a 1943 military aerial survey[^4], showing Parap Aerodrome about 18 months after the first Japanese air raids during WWII. Although it isn't still an operating airfield, Parap having succumbed to suburban sprawl, the alignment of the main runway is preserved by Ross Smith Avenue that still runs through Parap. 
 
 <div class="hover">
 {% include picture.html
@@ -108,7 +108,7 @@ link="https://www.qantasnewsroom.com.au/media-releases/qantas-celebrates-80-year
 
 ## Summary
 
-So, to wrap up: Of Australia's airports, Brisbane has been an *international* airport for the longest, offering passenger services since 1935. Sydney Airport, meanwhile, is Australia's oldest in continuous operation, though it started offering international passenger services after Brisbane[^4].  
+So, to wrap up: Of Australia's airports, Brisbane has been an *international* airport for the longest, offering passenger services since 1935. Sydney Airport, meanwhile, is Australia's oldest in continuous operation, though it started offering international passenger services after Brisbane[^5].  
 
 ## Sources / Further Reading
 
@@ -120,8 +120,8 @@ So, to wrap up: Of Australia's airports, Brisbane has been an *international* ai
 - [State Library NSW – Aviation in Australia](https://www.sl.nsw.gov.au/stories/aviation-australia/qantas-passenger-flight-australia)
 
 
-
-[^1]: The Northern Territory was briefly (from 1927 to 1931) split into two parts, North Australia and Central Australia. 
-[^2]: A more contemporary article can be [found here](http://www.airwaysmuseum.com/Downloads/First%20to%20Australia.pdf).
-[^3]: Sourced from Geoscience Australia's [Historical Aerial Photography Search Application](https://aerialphotography-geoscience-au.hub.arcgis.com/), film no. MAP3202, frame V32.
-[^4]: I'm not exactly sure when from, but when I find out I'll update date it here.
+[^1]: The Wikipedia page [has since been updated](https://en.wikipedia.org/w/index.php?title=Daly_Waters_Airfield&diff=prev&oldid=1149900512), with the following update notes: "Removed comments about <i>'first international airport'</i> as there is no supporting evidence." 
+[^2]: The Northern Territory was briefly (from 1927 to 1931) split into two parts, North Australia and Central Australia. 
+[^3]: A more contemporary article can be [found here](http://www.airwaysmuseum.com/Downloads/First%20to%20Australia.pdf).
+[^4]: Sourced from Geoscience Australia's [Historical Aerial Photography Search Application](https://aerialphotography-geoscience-au.hub.arcgis.com/), film no. MAP3202, frame V32.
+[^5]: I'm not exactly sure when from, but when I find out I'll update date it here.

@@ -3,7 +3,7 @@ layout: post
 title: Irrationality and Legibility
 description: Irrationality and Legibility
 summary: Irrationality and Legibility
-tags: [thoughts, book]
+tags: [cognition]
 photoloc:
 blurb: Reality refuses to be simplified, despite our best efforts. 
 ---

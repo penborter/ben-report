@@ -4,6 +4,7 @@ book: Alchemy
 subtitle: by Rory Sutherland 
 published: 01 November 2020 
 toc: true
+tags: [cognition]
 ---
 
 Provocation for a too-rational world. Exploring why the best ideas don't always make sense - they make you feel more than they make you think.

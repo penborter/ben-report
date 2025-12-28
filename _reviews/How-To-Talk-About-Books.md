@@ -4,6 +4,7 @@ book: How to Talk About Books You Haven't Read
 title: How to Talk About Books You Haven't Read
 subtitle: by Pierre Bayard
 published: 15 March 2023
+tags: [reading]
 ---
 
 More interesting than the title suggests––reading is not the only way to engage with literature. Bayard argues that not having read a book need not be an impediment to having an interesting conversation about it.

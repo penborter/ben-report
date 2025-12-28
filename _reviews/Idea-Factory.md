@@ -3,6 +3,7 @@ layout: book
 book: The Idea Factory
 subtitle: Jon Gertner
 published: 15 March 2023
+tags: [history]
 ---
 
 ## Ideas looking for a problem

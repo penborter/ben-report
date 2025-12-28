@@ -25,3 +25,10 @@ Books are different every time you read them. Sometimes the time isn't right to 
     title="My weekly review habit"
     link="https://www.benkuhn.net/weekly/"
 %}
+
+{% include quote.html 
+    content="Many of the books I’d already read but I was coming to them now under guidance, and seeing them from new and unsuspected angles. … I was acquiring knowledge now under discipline, and finding, while doing it, that the masses of undigested, unselected facts, with which my retentive memory teemed, were falling into form and place and becoming altogether more formidable weapons in my armoury."
+    author="Jonathan Rose"
+    title="The Intellectual Life of the British Working Classes"
+    link="/books/the-intellectual-life-of-the-british-working-classes"
+%}

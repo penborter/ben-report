@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Brain Out of Water
-tags: cognition
+title: Mismatch Theory
+tags: [cognition, context]
 ---
 
 We tend to understand the brain by metaphor, comparing it against the most sophisticated machine we can think of. The brain as a computer, the brain as a difference engine, the brain as a steam engine, etc. These metaphors start to break down when we really think about what the brain is "for".

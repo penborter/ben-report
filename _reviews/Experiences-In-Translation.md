@@ -3,6 +3,7 @@ layout: book
 book: Experiences in Translation
 subtitle: by Umberto Eco
 published: 2 April 2023
+tags: [language]
 ---
 
 ## Communication is Translation

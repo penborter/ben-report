@@ -5,6 +5,7 @@ subtitle: by Johnathan Rose
 published: 13 April 2025
 toc: true
 has_cover: true
+tags: [reading, history]
 ---
 
 Really interesting book which does exactly what it says on the cover, highlighting the reading and intellectual history of the British working class from around 1800 through to 1950. 

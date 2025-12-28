@@ -1,14 +1,31 @@
 years:
   - year: "2025"
     books:
+      - title: The World Beyond Your Head
+        author: Matthew Crawford
+      - title: Distant Star
+        author: Roberto Bolaño
+        review: "Working my way up to *2666*, which is more of a summer holiday book. This one is much more approachable in length and also great, an account of an artist / poet / pilot / serial killer that the narrator is loosely intertwined with. I do feel now strong sense of the Chilean socialist art scene in the late 90's, although I probably missed or misunderstood all the references."
+      - title: Neverness
+        author: David Zindell
+        review: "Vivid, odd and weirdly horny throughout (which might be distracting for some people), it reminded me of [Gene Wolfe](/books#The_Book_of_the_New_Sun) but maybe only 80% as effective. Impressive worldbuilding, and the strange universe feels familiar even though, despite the pilots' fenestering, the narrative really only dwells in three places."
+      - title: Can We Trust the Gospels?
+        author: Peter J. Williams
+      - title: Revenant Gun
+        author: Yoon Ha Lee
+        review: "I really enjoyed this nice trilogy of sci-fi novels. Would recommend if you are a fan of the [*Teixcalaan*](/books#A_Memory_Called_Empire) series, but thought: '*we're spending too much time introspecting with the characters, I wish there was a bit more warfare.*'"
       - title: Raven Stratagem
         author: Yoon Ha Lee
+        review: "See [Revenant Gun](/books#Revenant_Gun) above."
       - title: Ninefox Gambit
         author: Yoon Ha Lee
+        review: "See [Revenant Gun](/books#Revenant_Gun) above."
       - title: The Secret of Secrets
         author: Dan Brown
+        review: What can I say, it's a Robert Langdon novel. A good, light holiday read for the plane across to Japan. Much, much better than *Origin*. You can also sort of tell he discovered ChatGPT halfway through the book; it gets mentioned a couple of times, only in the second half, and the writing starts to maybe tend towards that sort of voice... maybe I'm overthinking it though.
       - title: Origin
         author: Dan Brown
+        review: Maybe the worst in the Robert Langdon series? Not a lot happens, they action basically occurs in two places for the entire book, and the payoff is not worth slogging through Dan Brown prose to get there. 
       - title: Reading (A Short Introduction)
         author: Belinda Jack
       - title: Orality and Literacy
@@ -33,13 +50,15 @@ years:
         author: David Bellos
       - title: The Early History of God
         author: Mark Smith
-      - title: A Fire Upon the deep
+      - title: A Fire Upon the Deep
         author: Vernor Vinge
+        review: "I'm going to have to start collecting all of these fantasy / sci-fi blend books into one post, it seems to be the genre I'm enjoying the most at the moment. Sufficiently weird aliens, maybe the most plausible concept for justifying why superintelligences wouldn't control the galaxy. I read a review that said something like <i>'Vinge has several ideas in this one book that, on their own, would keep a lesser author going for years.'</i> I know there's a sequel, but this book was so good I sort of don't want to race to read it, just bask in the glow of the first one."
         star: yes
       - title: The Word
         author: John Barton
       - title: On the Calculation of Volume
         author: Solvej Balle
+        review: 
       - title: The Invention of Morel
         author: Adolfo Bioy Casares
       - title: Personal History
@@ -96,6 +115,7 @@ years:
         author: Arkady Martine
       - title: A Memory Called Empire
         author: Arkady Martine
+        star: yes
       - title: A Triumph of Genius
         author: Ronald K. Fierstein
         review: "I had no idea the extent of Edwin Land's and Polaroid's rate of invention, particularly through WWII, which are set out in the first third of the book. Polarising light filters, heat-seeking missiles, instant photography, an appreciable contribution to the U2 spy plane. Then the fast pace of the first third gives way to an extremely thorough recount of the anti-trust case. This part is interesting, maybe a bit too detailed, although I appreciate the effort that's gone in to distilling a years-long patent dispute into a single book."
@@ -178,7 +198,7 @@ years:
       - title: Sea People
         author: Christina Thompson
         review: "Originally recommended in [this review](https://www.thepsmiths.com/p/review-sea-people-by-christina-thompson). Really a book about the philosophy and the history of science, exploring Western understanding of how basically a single group of people—the Polynesians—settled the huge area between Hawaii, New Zealand, and Easter Island. Thorough and constantly interesting, peeling back the layers as we work through the chronology from European discovery of Polynesia to the present day. Particularly interesting are the parts about 'two ways of thinking', where Europeans struggled to rectify assumptions in their way of thinking with those of the Polynesians."
-      - title: Book of the New Sun
+      - title: The Book of the New Sun
         author: Gene Wolfe
         star: yes
         review: "I honestly can't believe I was never introduced to Wolfe earlier. Excellent, 10/10 would read again, highly recommended. There's nothing like a series of good etymology puzzles to get you hooked on a book. I can see why the endless discussion about this book has continued online basically since it was released."
@@ -439,6 +459,7 @@ years:
 
       - title: A Memory Called Empire
         author: Arkady Martine
+        star: yes
 
       - title: A Million Miles in a Thousand Years
         author: Donald Miller

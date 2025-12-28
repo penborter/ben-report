@@ -5,6 +5,7 @@ subtitle: by Kurt Danziger
 published: 16 April 2022
 toc: true
 has_cover: true
+tags: [cognition]
 ---
 
 <blockquote class="quoteback" darkmode="" data-title="The%20Enclosure%20of%20the%20Human%20Psyche" data-author="L. M. Sacasas" cite="https://theconvivialsociety.substack.com/p/the-enclosure-of-the-human-psyche">

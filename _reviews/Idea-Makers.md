@@ -5,6 +5,7 @@ subtitle: by Stephen Wolfram
 summary: Profiles on Idea Makers who influenced Steven Wolfram personally or connected to his own work in some way.
 published: 03 November 2020 
 toc: true
+tags: [history]
 ---
 
 Recommended by [Nassim Taleb](https://fs.blog/2012/02/book-recommendations-from-nassim-taleb/) as an improvement on scientists' portraits normally written by science communicators, instead written by an insider. The book is a collection of profiles on _Idea Makers_ that either influenced Wolfram personally or connected to his own work in some way.

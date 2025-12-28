@@ -4,6 +4,7 @@ book: To Sell is Human
 subtitle: by Daniel Pink
 published: 10 April 2023
 toc: true
+tags: [self-help]
 ---
 
 ## All work is sales

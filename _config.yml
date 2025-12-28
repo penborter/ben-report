@@ -3,6 +3,7 @@ site: Ben Porter
 url: https://ben.report
 title: ben.report
 description: ben.report
+cdn_url: https://cdn.ben.report
 
 #2a. Included files
 include:

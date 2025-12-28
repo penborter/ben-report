@@ -23,9 +23,9 @@
 
         {% for image in gallery.images %}
           <div class="image-wrapper">
-            <a href="{{ gallery.imagefolder }}/{{ image.name }}"  title="{{ image.text}}">
+            <a href="{{ site.cdn_url }}{{ gallery.imagefolder }}/{{ image.thumb }}"  title="{{ image.text}}">
               <div class="image-caption">{{ image.text }}</div>
-              <img class="img-gallery" src="https://cdn.ben.report{{ gallery.imagefolder }}/{{ image.thumb }}" alt="{{ image.text }}" loading="lazy">
+              <img class="img-gallery" src="{{ site.cdn_url }}{{ gallery.imagefolder }}/{{ image.thumb }}" alt="{{ image.text }}" loading="lazy">
             </a>
 
           </div>

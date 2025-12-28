@@ -52,7 +52,7 @@ layout: default
 
                   <a class="{{ item_class }}" href="{{ item.url }}"
                     {% if item.thumb %}
-                      style="background-image: url(https://cdn.ben.report/{{ item.photo_id }}/{{ item.thumb }}); background-size: cover;"
+                      style="background-image: url({{ site.cdn_url }}/{{ item.photo_id }}/{{ item.thumb }}); background-size: cover;"
                     {% endif %}>
                     <li class="truncate">{{ item.title | markdownify | remove: '<p>' | remove: '</p>' }}</li>
                   </a>

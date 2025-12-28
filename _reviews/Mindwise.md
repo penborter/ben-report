@@ -4,6 +4,7 @@ book: Mindwise
 subtitle: by Nicholas Epley
 published: 4 April 2022
 toc: true
+tags: [cognition]
 ---
 
 > Others' minds are not open books, but this doesn't deter us from trying to read them anyway. The tools at our intuitive disposal–our own mind, stereotypes about the minds of others, and others' observed actions–are simplifying heuristics that give imperfect insight into the minds of others.

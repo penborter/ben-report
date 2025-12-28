@@ -3,6 +3,7 @@ layout: book
 book: The Big Change
 subtitle: by Frederick Allen
 published: 14 April 2022
+tags: [history]
 ---
 
 Progress of American life from 1900-1950, written in 1952. It's interesting to read about the social and cultural changes caused by technology at a time when technological progress was much slower than it seems to be now. Original recommendation was from Morgan Housel's review in [23 books that changed my life](https://www.collaborativefund.com/blog/23-books-that-changed-my-life/).

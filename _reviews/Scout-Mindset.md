@@ -4,6 +4,7 @@ book: The Scout Mindset
 subtitle: by Julia Galef
 published: 2 April 2022
 toc: true
+tags: [self-help]
 ---
 
 ## Scout Mindset

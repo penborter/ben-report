@@ -4,6 +4,7 @@ book: Influence
 subtitle: by Robert Cialdini
 published: 17 February 2022
 toc: true
+tags: [self-help]
 ---
 
 ## Compliance Professionals

@@ -4,6 +4,7 @@ book: Atomic Habits
 subtitle: by James Clear
 published: 10 July 2021
 toc: true
+tags: [self-help]
 ---
 
 ## The Habit Cycle

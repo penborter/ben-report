@@ -13,6 +13,12 @@ assumes:
 {% assign filenames = include.file | split: "; " %}
 {% assign titles = include.title | split: "; " %}
 
+{% if page.photoloc %}
+  {% assign pic_loc = page.photoloc %}
+{% else %}
+  {% assign pic_loc = site.cdn_url | append: "/posts" %}
+{% endif %}
+
 {% assign raw_classes = include.class | default: "normal" | split: " " %}
 {% assign pic_classes = "" %}
 {% for c in raw_classes %}
@@ -22,7 +28,7 @@ assumes:
 <div class="gallery {{ pic_classes | strip }}">
     {% for file in filenames %}
     <figure>
-        <img src="{{  page.photoloc | append: '/' | append: file | relative_url }}" alt="{{ titles[forloop.index0] | default: '' }}" class="zoomable" loading="lazy">
+        <img src="{{  pic_loc | append: '/' | append: file | relative_url }}" alt="{{ titles[forloop.index0] | default: '' }}" class="zoomable" loading="lazy">
     </figure>
     {% endfor %}
 

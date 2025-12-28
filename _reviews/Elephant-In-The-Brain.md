@@ -4,6 +4,7 @@ book: The Elephant in the Brain
 subtitle: by Simler and Hanson
 published: 1 March 2021
 toc: true
+tags: [cognition]
 ---
 
 The Elephant in the Brain is the selfish agenda every one of us clearly has, but refuses to acknowledge. Simler and Hanson aim to explain the relationship between our motives, justification, and actions, and why we don't want to talk about it.
