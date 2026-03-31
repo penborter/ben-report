@@ -1,4 +1,25 @@
 years:
+  - year: "2026"
+    books:
+      - title: Too Like the Lightning
+        author: Ava Palmer
+      - title: The Social Construction of What?
+        author: Ian Hacking
+      - title: Foucault's Pendulum
+        author: Umberto Eco
+      - title: Till We Have Faces
+        author: C.S. Lewis
+      - title: A Canticle for Leibowitz
+        author: Walter Miller Jr.
+      - title: Anathem
+        author: Neal Stephenson
+        star: yes
+      - title: Essays Two
+        author: Lydia Davis
+      - title: A Time of Gifts
+        author: Patrick Leigh Fermor
+      - title: Quicksilver
+        author: Neal Stephenson
   - year: "2025"
     books:
       - title: The World Beyond Your Head
