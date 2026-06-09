@@ -3,6 +3,7 @@ layout: default
 title: Bookshelf
 updated: October 2025
 permalink: /books
+toc_years: true
 ---
 
 <article>
@@ -17,18 +18,19 @@ permalink: /books
   </p>
 </div>  
 
+{% assign slug_log = "" %}
 {% for entry in site.data.reading.years %}
-<div class="book-cat-wrap">
+<div class="book-cat-wrap" id="year-{{ entry.year }}">
   <div class="list-cat">
     <h1>{{ entry.year }}</h1>
     <span class="number">{{ entry.books | size }} books</span>
   </div>
   <div class="list-cat-container">
     {% for book in entry.books %}
-      
+
       {% assign has_review = false %}
       {% assign book_url = book.link %}
-      
+
       {% for review in site.reviews %}
         {% if review.book == book.title %}
           {% assign book_url = review.url %}
@@ -36,7 +38,17 @@ permalink: /books
         {% endif %}
       {% endfor %}
 
-      <h2 class="list-item {% if book.star %} starred{% endif %}" id="{{ book.title | replace: ' ', '_' }}">
+      {% assign slug = book.title | replace: ' ', '_' %}
+      {% assign marker = slug | append: ';;' %}
+      {% assign seen_count = slug_log | split: marker | size | minus: 1 %}
+      {% if seen_count > 0 %}
+        {% assign book_id = slug | append: '-' | append: seen_count %}
+      {% else %}
+        {% assign book_id = slug %}
+      {% endif %}
+      {% assign slug_log = slug_log | append: marker %}
+
+      <h2 class="list-item {% if book.star %} starred{% endif %}" id="{{ book_id }}">
         {% if has_review %}<a class="book-link" href="{{ book_url }}">{% endif %}
         {{ book.title }}
         {% if has_review %}</a>{% endif %}

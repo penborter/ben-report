@@ -1,7 +1,7 @@
 <div class="sidebar{% if page.url contains 'photos' %} locked{% endif %}">
   {% include navigation.html %}
   
-  <div class="sidebar_titles">
+  <div class="sidebar-titles">
     {% if page.title %}
       <h1>{{ page.title }}</h1>
     {% endif %}
@@ -11,8 +11,10 @@
     {% endif %}
   </div>
 
-  {% if page.title == "Welcome" %}
-    <div id="socials">{% include socials.html %}</div>
+  {% if page.sidebar_content %}
+    <div>
+      <p>{{ page.sidebar_content }}</p>
+    </div>
   {% endif %}
 
   {% if page.layout == "post" %}
@@ -47,5 +49,12 @@
       <a href="#" class="toc-return">Return to top ⤴</a>
     </div>
   {% endif%}
+
+  {% if page.toc_years %}
+    <div class="toc narrow-remove">
+      {% include toc-years.html %}
+      <a href="#" class="toc-return">Return to top ⤴</a>
+    </div>
+  {% endif %}
 
 </div>

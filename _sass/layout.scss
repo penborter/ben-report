@@ -97,6 +97,10 @@ $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
   }
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 // Utility classes
 
 .block {
@@ -277,10 +281,14 @@ main {
 }
 
 article>ul, ol {
-  padding-left: 1em;
+  padding-left: 0.5em;
 
   li {
     padding-left: 0.5em;
+
+    &::marker {
+      content: "–";
+    }
   }
 }
 
@@ -374,6 +382,8 @@ nav {
     text-decoration: none;
     color: var(--bg-accent-1);
 
+    font-variation-settings: "wght" 200;
+
     &:hover {
       text-decoration: underline;
       text-underline-offset: 4px;
@@ -421,7 +431,7 @@ nav.locked {
 
   z-index: 1;
 
-  .sidebar_titles {
+  .sidebar-titles {
     h1 {
       margin-bottom: 0;
     }
@@ -443,7 +453,7 @@ nav.locked {
     padding-left: 0.5em;
     top: 2em;
   }
-  .sidebar_titles {
+  .sidebar-titles {
     margin-top: 3.75em;
   }
 }
@@ -553,7 +563,8 @@ blockquote, .footnotes {
   border: 1px solid var(--bg-accent-3);
 
   p {
-    margin: 0;
+    margin: 0.5em 0;
+    text-indent: 2ch;
   }
 }
 
@@ -642,6 +653,7 @@ footer {
 }
 
 .book-cat-wrap {
+  scroll-margin-top: 3.5em;
 
   .list-cat {
     text-align: right;
@@ -659,6 +671,7 @@ footer {
       position: inherit;
       top: auto;
       display: block;
+      margin-top: -0.2em;
     }
   }
 
@@ -672,7 +685,7 @@ footer {
 
 .list-cat {
   display: block;
-  color: var(--bg-accent-3);
+  color: var(--bg-accent-1);
   font-weight: 700;
 
   .number {
@@ -723,6 +736,113 @@ footer {
     margin-left: -4.5em;
     padding-left: 4.5em;
   }
+}
+
+.stream {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stream-item {
+  display: block;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--bg-accent-1);
+
+  .stream-head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.6em;
+  }
+
+  .stream-head-right {
+    margin-left: auto;        // pin to the right even with no title
+    flex-shrink: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 0.6em;               // date sits just inside the tag
+    white-space: nowrap;
+  }
+
+  .stream-link {
+    font-variation-settings: "wght" 300;
+    //text-decoration: none;
+
+    &:hover {
+      background: var(--bg-accent-transparent);
+    }
+  }
+
+  .stream-body {
+    margin-top: 0.5rem;
+    //font-size: 0.95em;
+    //color: var(--bg-accent-2);
+
+    p {
+      //margin: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .stream-date {
+    font-size: 0.8em;
+    color: var(--bg-accent-1);
+  }
+
+  .stream-words {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.85em;
+    color: var(--bg-accent-1);
+    //text-decoration: none;
+
+    &:hover {
+      color: var(--fg);
+    }
+  }
+
+  blockquote {
+    margin: 0.5rem 0 0;
+  }
+}
+
+// Colour-coded type pill. --color-main / --color-bg per type use the
+// same HSL values as the homepage callouts (_pages/about.html).
+.stream-tag {
+  padding: 0.15em 0.6em;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: var(--color-main);
+  background: var(--color-bg);
+  border: 1px solid var(--color-main);
+}
+
+.stream-tag-post {
+  --color-main: hsl(120deg 90% 45%);
+  --color-bg: hsl(120deg 90% 45% / 0.1);
+}
+.stream-tag-photo {
+  --color-main: hsl(280deg 100% 70%);
+  --color-bg: hsl(280deg 100% 70% / 0.1);
+}
+.stream-tag-review {
+  --color-main: hsl(210deg 100% 75%);
+  --color-bg: hsl(210deg 100% 75% / 0.1);
+}
+.stream-tag-note {
+  --color-main: hsl(325deg 100% 70%);
+  --color-bg: hsl(325deg 100% 70% / 0.1);
+}
+.stream-tag-thought {
+  --color-main: hsl(30deg 100% 55%);
+  --color-bg: hsl(30deg 100% 55% / 0.1);
 }
 
 .aligned {
@@ -815,10 +935,8 @@ footer {
 }
 
 .starred {
-  list-style-type: "★";
-  display: list-item;
-
-  &::marker {
+  &::after {
+    content: " ★";
     color: var(--bg-accent-1);
   }
 }
@@ -1134,6 +1252,11 @@ mark {
   padding: 0.1em 0.2em;
 }
 
+quoteback-component,
+blockquote.quoteback {
+  font-variation-settings: normal;
+}
+
 // Responsiveness
 // Main breakpoint @ 1000px from multi-column to single column
 
@@ -1245,15 +1368,6 @@ mark {
       background: var(--bg);
 
       top: 1em;
-    }
-  }
-
-  .starred {
-    display: block;
-
-    &::after {
-      content: "★";
-      color: var(--bg-accent-1);
     }
   }
 

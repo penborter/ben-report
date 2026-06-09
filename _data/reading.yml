@@ -1,6 +1,37 @@
 years:
   - year: "2026"
     books:
+      - title: The Fall of Hyperion
+        author: Dan Simmons
+        review: "Not as strong as *Hyperion*, but still enjoyable — too many temptations and intriguing ideas that didn't totally pay off, although it's still worth reading to wrap up the threads of *Hyperion*. I feel like I should read some John Keats, then have another go at these two."
+      - title: Hyperion
+        author: Dan Simmons
+        review: "Basically a sci-fi *Canterbury Tales* (a structure I strongly endorse), with each character's story getting a style and tone all its own. It also doesn't feel aged, meaning a lot of Simmons' guesses about future technology aren't yet wrong, except for his assumption that newspapers would continue to be relevant."
+      - title: Dubliners
+        author: James Joyce
+        review: "Going in with no context, it took me a couple of stories to realise that the revelations themselves, and the inability to respond with any action, was the point of each story. But a beautiful collection. At some point I'll read *Ulysses*."
+      - title: We
+        author: Yevgeny Zaymatin
+        review: "Basically a more earnest *1984*, but written almost 25 years earlier. Amazingly prescient, both in the short term for Russia and in the long term globally. Obviously specific to the English translation, but I liked the pun on 'i': as a first-person pronoun, as shorthand for I-330, and for imaginary numbers."
+      - title: At Swim-Two-Birds
+        author: Flann O'Brien
+        star: yes
+        review: "A much weirder book than I was expecting, and there was a lot more poetry through the middle than I was prepared for, but excellent overall. The adventure with the Pooka and the Good Fairy is maybe the strongest part. And it still feels original and interesting, even with the rise of metafiction and author-as-character since it was written."
+      - title: The Confusion
+        author: Neal Stephenson
+        review: "The payoff of the masquerade ball scene at the Hotel d'Arcachon from [*Quicksilver*](/books#Quicksilver) is almost enough on its own to make the book worth reading. Plus Jack's continued adventures with alchemical gold, Eliza's continued adventures with imponderable silver, and Daniel Waterhouse is also around."
+      - title: In Pursuit of Civility
+        author: Keith Thomas
+        review: "Largely a collection of quotations and contemporary opinions, from the last few hundred years of Western society, on our understanding of civility, 'being civilised', and the positive and negative consequences thereof. Wide-ranging, although maybe shallower than I'd like (which is probably a necessary consequence of the range)."
+      - title: The Prime of Ms Jean Brodie
+        author: Muriel Spark
+        star: yes
+        review: "Just as interesting and lively as *The Comforters*, but the plot is much more taut and the book is better for it. Spark's ability to jump around chronologically without losing focus is amazing, the whole book flows forward while digressing to the past, the future, without losing the main through line of Ms. Brodie's prime."
+      - title: The Comforters
+        author: Muriel Spark
+        review: "Really strong first half, then the second half slips away and the ideas aren't really developed. I couldn't tell if that was on purpose too, as the narrator gets more distracted by Caroline's critiques. Still, an enjoyable read, enough that I wanted to read another Spark where she sticks the landing. It reminded me conceptually a bit of B.S. Johnson."
+      - title: Seven Surrenders
+        author: Ada Palmer
       - title: Too Like the Lightning
         author: Ava Palmer
       - title: The Social Construction of What?
@@ -9,15 +40,18 @@ years:
         author: Umberto Eco
       - title: Till We Have Faces
         author: C.S. Lewis
+        review: "I've never actually read *The Lion, the Witch, and the Wardrobe*, nor did I really know the story of Cupid and Psyche, but I had a good time reading this book. Hard for me to know the sincerity of the portrayal either; it felt like it captured something important."
       - title: A Canticle for Leibowitz
         author: Walter Miller Jr.
       - title: Anathem
         author: Neal Stephenson
         star: yes
+        review: "Re-read — [reviewed below](/books#Anathem-1)."
       - title: Essays Two
         author: Lydia Davis
       - title: A Time of Gifts
         author: Patrick Leigh Fermor
+        review: "Interesting that the author waited until later in life to write this memoir of his late-teens trans-European trip, but the book is probably better off for it. An amazing snapshot of life across Europe between the two world wars, from the (retrospective) vantage point of either the world's most amiable teenager or a more xenophilic society than you'd expect for 1930s Europe. There's also an stunning pages-long passage where Fermor — a high-school dropout — rattles off the lists of memorised plays, speeches and poems that he has in his arsenal to stave off the boredom between towns."
       - title: Quicksilver
         author: Neal Stephenson
   - year: "2025"

@@ -13,11 +13,11 @@ At this point I should just start another theme, I don't think the Stretch theme
 
 The base colours are <span class='hex-code' style='--background:#F4F5EF; --text:#455E58;'>#F4F5EF</span> and <span class='hex-code' style='--background:#2A4644; --text:#F4F5EF;'>#2A4644</span>, with two light and two dark accent colours calculated based on those.
 
-Font wise, the entire site is set in [Inter](https://rsms.me/inter/), except for code snippets which are in [iA Duo](https://github.com/iaolo/iA-Fonts).
+The entire site is set in [Ease](https://fonts.studiofeixen.ch/ease/) by Studio Feixen, except for code snippets, which are in [iA Duo](https://github.com/iaolo/iA-Fonts).
 
 The [Photos](/photos) page is just html and css, with a bit of optional javascript for arrow key scrolling. I have a [write up](/posts/horizontal-gallery) of how the horizontal galleries work.
 
-There is a colour switch button hidden in the footer, to swap between "dark mode" and "light mode".
+There is a colour switch button stashed in the footer, to swap between light and dark modes.
 
 ## NBA
 

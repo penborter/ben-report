@@ -17,6 +17,9 @@ exclude:
   - Gemfile.lock
   - stretch.gemspec
   - .jekyll-cache
+  - scripts
+  - stream_inbox
+  - .github
 
 # 3. Gems / Plugins
 plugins:
@@ -65,15 +68,21 @@ defaults:
     values:
       layout: photo
       main_columns: col-2 # Default to double column layout for photos pages
+  -
+    scope:
+      path: ""
+      type: "thoughts"
+    values:
+      layout: page
+      sitemap: false
 
-encoding: utf-8 
+encoding: utf-8
 lang: en-GB
 
 # 6. Collections
+# Pages last so feed.md / the stream layout sees
+# the other collections fully rendered.
 collections:
-  pages:
-    output: true
-    permalink: /:name
   photos:
     output: true
     permalink: /photos/:slug
@@ -89,6 +98,12 @@ collections:
   notes:
     output: true
     permalink: /notes/:slug
+  thoughts:
+    output: true
+    permalink: /thoughts/:slug
+  pages:
+    output: true
+    permalink: /:name
 
 # 7. Site Navigation
 nav_header:
@@ -98,6 +113,8 @@ nav_header:
   url: /photos
 - title: Books
   url: /books
+- title: Stream
+  url: /stream
 
 nav_secondary:
 - title: Tags
