@@ -24,9 +24,9 @@ $light_accent_1: hsl(150, 15%, 60%);
 $light_accent_2: hsl(70, 15%, 97%);
 $light_accent_3: hsl(150, 15%, 80%);
 
-$dark-transparent-1: scale-color($dark, $alpha: -15%);
+$dark-transparent-1: scale-color($dark, $alpha: -35%);
 $dark-transparent-2: scale-color($dark_accent_1, $alpha: -70%);
-$light-transparent-1: scale-color($light, $alpha: -15%);
+$light-transparent-1: scale-color($light, $alpha: -35%);
 $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
 
 // 2.2 CSS Variables
@@ -324,8 +324,6 @@ article {
 nav {
   font-size: 16px;
   font-weight: 500;
-  background: var(--bg-transparent);
-  backdrop-filter: blur(10px);
 
   height: $navbar-height;
 
@@ -336,7 +334,9 @@ nav {
 
   &:hover {
     filter: none;
-    transition: 0.3s ease;
+    //transition: 0.3s ease;
+    background: var(--bg-transparent);
+    backdrop-filter: blur(10px);
 
     a, a:visited {
       color: var(--fg);

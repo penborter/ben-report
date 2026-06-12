@@ -16,6 +16,45 @@ layout: default
         <ul {% if page.card == true %}class="card-collection"{% endif %}>
     {% endunless %}
 
+    {% if page.sort_alpha == true %}
+
+      {% comment %}
+      Alphabetical ordering that ignores a leading "The", "A" or "An".
+           Builds a sort key (lowercased, article stripped) for each item, packs
+           the key, url and title into a delimited string, then sorts those strings.
+      {% endcomment %}
+
+      {% assign rows = "" %}
+      {% for item in site[page.display_collection] %}
+        {% if page.category and item[page.category] %}
+          {% assign raw_title = item[page.category] %}
+        {% else %}
+          {% assign raw_title = item.title %}
+        {% endif %}
+        {% assign key = raw_title | downcase %}
+        {% assign a2 = key | slice: 0, 2 %}
+        {% assign a3 = key | slice: 0, 3 %}
+        {% assign a4 = key | slice: 0, 4 %}
+        {% if a4 == "the " %}
+          {% assign key = key | slice: 4, 500 %}
+        {% elsif a3 == "an " %}
+          {% assign key = key | slice: 3, 500 %}
+        {% elsif a2 == "a " %}
+          {% assign key = key | slice: 2, 500 %}
+        {% endif %}
+        {% assign rows = rows | append: key | append: ":::" | append: item.url | append: ":::" | append: raw_title | append: ";;;" %}
+      {% endfor %}
+
+      {% assign rowarr = rows | split: ";;;" | sort %}
+      {% for row in rowarr %}
+        {% assign parts = row | split: ":::" %}
+        <li class="list-item truncate">
+          <a class="list-link" href="{{ parts[1] }}">{{ parts[2] | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+        </li>
+      {% endfor %}
+
+    {% else %}
+
     {% for item in site[page.display_collection] %}
 
       {% comment %}
@@ -71,6 +110,8 @@ layout: default
           {% endif %}
     
     {% endfor %}
+
+    {% endif %}
 
     {% unless page.by_date == true %}
       </div>

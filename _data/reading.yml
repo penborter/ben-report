@@ -1,6 +1,8 @@
 years:
   - year: "2026"
     books:
+      - title: The Shifting Realities of Philip K. Dick
+        author: Philip K. Dick
       - title: The Fall of Hyperion
         author: Dan Simmons
         review: "Not as strong as *Hyperion*, but still enjoyable — too many temptations and intriguing ideas that didn't totally pay off, although it's still worth reading to wrap up the threads of *Hyperion*. I feel like I should read some John Keats, then have another go at these two."
@@ -26,7 +28,7 @@ years:
       - title: The Prime of Ms Jean Brodie
         author: Muriel Spark
         star: yes
-        review: "Just as interesting and lively as *The Comforters*, but the plot is much more taut and the book is better for it. Spark's ability to jump around chronologically without losing focus is amazing, the whole book flows forward while digressing to the past, the future, without losing the main through line of Ms. Brodie's prime."
+        review: "Just as interesting and lively as *The Comforters*, but the plot is much more evenly tensioned throughout and the book is better for it. Spark's ability to jump around chronologically without losing focus is amazing, the whole book flows forward while digressing to the past, the future, without losing the main through line of Ms. Brodie's prime."
       - title: The Comforters
         author: Muriel Spark
         review: "Really strong first half, then the second half slips away and the ideas aren't really developed. I couldn't tell if that was on purpose too, as the narrator gets more distracted by Caroline's critiques. Still, an enjoyable read, enough that I wanted to read another Spark where she sticks the landing. It reminded me conceptually a bit of B.S. Johnson."
