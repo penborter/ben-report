@@ -3,7 +3,7 @@ layout: book
 book: The Shifting Realities of Philip K. Dick
 subtitle: by Philip K. Dick (edited by Lawrence Sutin)
 published: 12 June 2026
-tags: [writing]
+tags: [biography, writing]
 toc: true
 ---
 

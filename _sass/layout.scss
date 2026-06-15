@@ -286,7 +286,7 @@ article>ul, ol {
   li {
     padding-left: 0.5em;
 
-    &::marker {
+    &::marker:not(ol) {
       content: "–";
     }
   }
@@ -564,7 +564,7 @@ blockquote, .footnotes {
 
   p {
     margin: 0.5em 0;
-    text-indent: 2ch;
+    //text-indent: 2ch;
   }
 }
 

@@ -3,7 +3,7 @@ layout: book
 book: A Time of Gifts
 subtitle: by Patrick Leigh Fermor
 published: 9 June 2026
-tags: [history, travel]
+tags: [biography, travel, walking]
 ---
 
 ## Notes
@@ -13,11 +13,11 @@ Reading this book, I was constantly reminded of (a) the XKCD comic [*Average Fam
 
 > It had struck me in Holland that an average non-expert, gallery-sauntering inhabitant of the British Isles would know the names, and a little of the work, of scores of Dutch, Flemish and Italian painters and of twenty Frenchmen at the very least. Equally certainly, of half a dozen Spaniards: all thanks to geography, religion, the Grand Tour and the vagaries of fashion.
 
-What do you mean the "average non-expert" would know "scores" of European painters? And throughout, music and singing comes up as a primary form of entertainment for rich and poor, although it is hard to tell (like everything) if that's a byproduct of the author's interests or a genuine underlying opinion. Maybe I'm showing my ignorance. 
+What do you mean "an average non-expert" would know "scores" of European painters?? And throughout, music and singing comes up as a primary form of entertainment for rich and poor, although it is hard to tell (like everything) if that's a byproduct of the author's interests or a genuine underlying opinion. Maybe I'm showing my ignorance. 
 
 Then there's a pages-long passage in the book where Fermor is describing how he kept himself entertained. Unbelievable the breadth and retention of a classical education for someone who dropped out of school at 17, noting that he does credit his mother and label himself as one of the "people who need poetry", "stocking up [on memorised poems] for a desert island or for a stretch of solitary".
 
-Anyway the book is great, and Fermor has a way of stringing together these long descriptive passages that just seem to flow and build up more and more evocative imagery. See below an example of feeding time in Bavaria.
+Anyway the book is great, and Fermor has a way of stringing together these long descriptive passages that just seem to flow and build into more and more evocative imagery. See below an example of feeding time in Bavaria.
 
 > The trunks of these feasting burghers were as wide as casks. The spread of their buttocks over the oak benches was not far short of a yard. They branched at the loins into thighs as thick as the torsos of ten-year-olds and arms on the same scale strained like bolsters at the confining serge. Chin and chest formed a single column, and each close-packed nape was creased with its three deceptive smiles. Every bristle had been cropped and shaven from their knobbly scalps. Except when five o’clock veiled them with shadow, surfaces as polished as ostriches’ eggs reflected the lamplight. The frizzy hair of their wives was wrenched up from scarlet necks and pinned under slides and then hatted with green Bavarian trilbys and round one pair of elephantine shoulders a little fox stole was clasped. The youngest of this group, resembling a matinée idol under some cruel spell, was the bulkiest. Under tumbling blond curls his china blue eyes protruded from cheeks that might have been blown up with a bicycle pump, and cherry lips laid bare the sort of teeth that make children squeal. There was nothing bleary or stunned about their eyes. The setting may have reduced their size, but it keyed their glances to a sharper focus. Hands like bundles of sausages flew nimbly, packing in forkload on forkload of ham, salami, frankfurter, krenwurst and blutwurst and stone tankards were lifted for long swallows of liquid which sprang out again instantaneously on cheek and brow. They might have been competing with stop-watches, and their voices, only partly gagged by the cheekfuls of good things they were grinding down, grew louder while their unmodulated laughter jarred the air in frequent claps. Pumpernickel and aniseed rolls and bretzels bridged all the slack moments but supplies always came through before a true lull threatened. Huge oval dishes, laden with schweinebraten, potatoes, sauerkraut, red cabbage and dumplings were laid in front of each diner. They were followed by colossal joints of meat – unclassifiable helpings which, when they were picked clean, shone on the scoured chargers like calves’ pelvises or the bones of elephants. Waitresses with the build of weight-lifters and all-in wrestlers whirled this provender along and features dripped and glittered like faces at an ogre’s banquet. But all too soon the table was an empty bone-yard once more
 
