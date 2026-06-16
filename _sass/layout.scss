@@ -565,6 +565,10 @@ blockquote, .footnotes {
   p {
     margin: 0.5em 0;
     //text-indent: 2ch;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -813,15 +817,21 @@ footer {
 // Colour-coded type pill. --color-main / --color-bg per type use the
 // same HSL values as the homepage callouts (_pages/about.html).
 .stream-tag {
-  padding: 0.15em 0.6em;
+  padding: 0.2em 0.7em;
   border-radius: 20px;
   font-size: 0.75em;
-  font-weight: 500;
+  //font-weight: 500;
   letter-spacing: 0.02em;
 
   color: var(--color-main);
   background: var(--color-bg);
   border: 1px solid var(--color-main);
+
+  &:hover {
+    box-shadow: 0 2px 2px var(--shadow-color),
+                0 4px 4px var(--shadow-color),
+                0 8px 8px var(--shadow-color);
+  }
 }
 
 .stream-tag-post {
@@ -840,9 +850,46 @@ footer {
   --color-main: hsl(325deg 100% 70%);
   --color-bg: hsl(325deg 100% 70% / 0.1);
 }
-.stream-tag-thought {
-  --color-main: hsl(30deg 100% 55%);
-  --color-bg: hsl(30deg 100% 55% / 0.1);
+.stream-tag-all {
+  --color-main: var(--bg-accent-1);
+  --color-bg: var(--bg);
+  border: 1px solid var(--bg-accent-1);
+
+  &:hover {
+    border: 1px solid var(--fg);
+    --color-main: var(--fg);
+  }
+
+  &.active {
+    border: 1px solid var(--fg);
+    --color-main: var(--fg);
+  }
+}
+
+// Sidebar tag filters
+.stream-filters {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 0.4em;
+  //margin-top: 1.5em;
+}
+
+.stream-filter {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.5;
+  //transition: opacity 0.15s ease, background 0.15s ease, color 0.15s ease;
+
+  &:not(.active) {
+    background: var(--bg);
+  }
+
+  &:hover {
+    background: var(--color-bg);
+  }
 }
 
 .aligned {
@@ -1499,7 +1546,7 @@ blockquote.quoteback {
 
 // Theme Switch
 
-button {
+.btn-toggle {
   position: relative;
   left: 5px;
   top: -14px;

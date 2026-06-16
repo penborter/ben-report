@@ -1,0 +1,170 @@
+---
+layout: default
+---
+
+{% comment %}
+  Renders the stream feed: post/note/photo/review entries from
+  _data/stream.yml, merged in date order with file-based thoughts from
+  _thoughts/. The merge uses the sort-string trick — one row per item:
+  "<iso-date>|<source>|<index>", sorted descending.
+
+  Thoughts live as Markdown files in _thoughts/. They have no stream.yml
+  entry — they're picked up from `site.thoughts` directly and their date
+  is the YYYY-MM-DD prefix on the filename. Title (optional) and `link`
+  (optional manual title link, e.g. "/books#…") come from front matter.
+  `link` is used rather than `url` because Jekyll computes `doc.url`.
+
+  IMPORTANT: `pages:` must be declared LAST in `_config.yml`
+  `collections:` so feed.md (using this layout) renders after all the
+  collections it references — otherwise doc.content reads as raw source.
+{% endcomment %}
+
+<article class="article">
+
+  {{ content }}
+
+  <ul class="stream">
+
+    {% comment %} Build one sortable row per item. {% endcomment %}
+    {% assign rows = "" | split: "" %}
+    {% for entry in site.data.stream %}
+      {% capture row %}{{ entry.date }}|y|{{ forloop.index0 }}{% endcapture %}
+      {% assign rows = rows | push: row %}
+    {% endfor %}
+    {% for doc in site.thoughts %}
+      {% assign fname = doc.path | split: "/" | last %}
+      {% assign d = fname | slice: 0, 10 %}
+      {% capture row %}{{ d }}T12:00:00+10:00|t|{{ forloop.index0 }}{% endcapture %}
+      {% assign rows = rows | push: row %}
+    {% endfor %}
+    {% assign rows = rows | sort | reverse %}
+
+    {% for row in rows %}
+      {% assign parts = row | split: "|" %}
+      {% assign idx = parts[2] | plus: 0 %}
+
+      {% if parts[1] == "t" %}
+        {% comment %} ── file-based thought ─────────────────────────
+        Title is linked ONLY if the file's front matter has a `link:`
+        (manual override, e.g. "/books#…"). No auto-fallback to the
+        thought's own /thoughts/<slug> page. {% endcomment %}
+        {% assign doc = site.thoughts[idx] %}
+        {% assign fname = doc.path | split: "/" | last %}
+        {% assign t_date = fname | slice: 0, 10 %}
+
+        <li class="stream-item stream-note">
+          <div class="stream-head">
+            {% if doc.title %}
+              {% if doc.link %}
+                <a class="stream-link" href="{{ doc.link }}">{{ doc.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+              {% else %}
+                <span class="stream-link">{{ doc.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+              {% endif %}
+            {% endif %}
+            <span class="stream-head-right">
+              <span class="stream-date">{{ t_date | date: "%d %b %Y" }}</span>
+              <span class="stream-tag stream-tag-note">Note</span>
+            </span>
+          </div>
+          <div class="stream-body">{{ doc.content }}</div>
+        </li>
+
+      {% else %}
+        {% comment %} ── stream.yml entry (post/note/photo/review) ──
+        Also handles any legacy yaml-only `type: thought` entry. {% endcomment %}
+        {% assign entry = site.data.stream[idx] %}
+        {% assign tag_type = entry.type %}
+        {% case entry.type %}
+          {% when "post" %}{% assign collection = site.posts %}{% assign tag_label = "Post" %}
+          {% when "note" %}{% assign collection = site.notes %}{% assign tag_label = "Note" %}
+          {% when "photo" %}{% assign collection = site.photos %}{% assign tag_label = "Photo" %}
+          {% when "review" %}{% assign collection = site.reviews %}{% assign tag_label = "Book" %}
+          {% else %}{% assign collection = nil %}{% assign tag_label = "Note" %}{% assign tag_type = "note" %}
+        {% endcase %}
+
+        <li class="stream-item stream-{{ tag_type }}">
+
+          <div class="stream-head">
+            {% assign doc = nil %}
+            {% if collection %}
+              {% assign doc = collection | where: "path", entry.ref | first %}
+            {% endif %}
+            {% assign link_url = entry.url %}
+            {% if link_url == nil and doc %}{% assign link_url = doc.url %}{% endif %}
+            {% if entry.title %}
+              {% if link_url %}
+                <a class="stream-link" href="{{ link_url }}">{{ entry.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+              {% else %}
+                <span class="stream-link">{{ entry.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+              {% endif %}
+            {% endif %}
+
+            <span class="stream-head-right">
+              <span class="stream-date">{{ entry.date | date: "%d %b %Y" }}</span>
+              <span class="stream-tag stream-tag-{{ tag_type }}">{{ tag_label }}</span>
+            </span>
+          </div>
+
+          {% if entry.content %}
+            <div class="stream-body">{{ entry.content | markdownify }}</div>
+          {% endif %}
+          {% if entry.quote %}
+            {% include quote.html
+                content=entry.quote.text
+                author=entry.quote.author
+                title=entry.quote.source
+                link=entry.quote.link
+                book=entry.quote.book %}
+          {% endif %}
+
+          {% comment %} Footer: word count, or for redirect posts the destination host. {% endcomment %}
+          {% if entry.type == "post" or entry.type == "review" %}
+            {% if doc %}
+              {% assign words = doc.content | strip_html | number_of_words %}
+              {% if words > 0 %}
+                {% if words >= 1000 %}
+                  {% assign rem = words | modulo: 1000 | prepend: '00' | slice: -3, 3 %}
+                  {% capture words_fmt %}{{ words | divided_by: 1000 }},{{ rem }}{% endcapture %}
+                {% else %}
+                  {% assign words_fmt = words %}
+                {% endif %}
+                <a class="stream-words" href="{{ doc.url }}">[ …{{ words_fmt }} words ]</a>
+              {% elsif doc.redirect_to contains "://" %}
+                {% assign rparts = doc.redirect_to | split: "/" %}
+                <a class="stream-words" href="{{ doc.redirect_to }}">[ …{{ rparts[2] }} ]</a>
+              {% endif %}
+            {% endif %}
+          {% endif %}
+
+        </li>
+      {% endif %}
+
+    {% endfor %}
+
+  </ul>
+
+</article>
+
+<script>
+  // Sidebar tag filters: show only stream items whose type matches the
+  // selected button. Items carry a `stream-<type>` class; "All" clears the
+  // filter. No URL state — purely client-side toggle.
+  (function () {
+    var filters = document.querySelectorAll('.stream-filter');
+    var items = document.querySelectorAll('.stream-item');
+
+    filters.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var type = btn.getAttribute('data-filter');
+
+        filters.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+
+        items.forEach(function (item) {
+          var show = type === 'all' || item.classList.contains('stream-' + type);
+          item.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>

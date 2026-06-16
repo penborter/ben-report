@@ -17,6 +17,16 @@
     </div>
   {% endif %}
 
+  {% if page.layout == "stream" %}
+    <div class="stream-filters">
+      <button type="button" class="stream-tag stream-tag-all stream-filter active" data-filter="all">All</button>
+      <button type="button" class="stream-tag stream-tag-post stream-filter" data-filter="post">Post</button>
+      <button type="button" class="stream-tag stream-tag-note stream-filter" data-filter="note">Note</button>
+      <button type="button" class="stream-tag stream-tag-photo stream-filter" data-filter="photo">Photo</button>
+      <button type="button" class="stream-tag stream-tag-review stream-filter" data-filter="review">Book</button>
+    </div>
+  {% endif %}
+
   {% if page.layout == "post" %}
     <div class="post-footer">
 

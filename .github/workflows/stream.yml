@@ -1,0 +1,73 @@
+name: Update stream
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "_posts/**"
+      - "_notes/**"
+      - "_photos/**"
+      - "_reviews/**"
+      - "stream_inbox/**"
+
+# Allow the job to push the regenerated _data/stream.yml back.
+permissions:
+  contents: write
+
+# Never react to our own commit-back (also guarded by [skip ci]).
+concurrency: stream
+
+jobs:
+  update-stream:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history for diff + git dates)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Convert stream_inbox/ into _thoughts/
+        run: |
+          mapfile -t INBOX < <(find stream_inbox -maxdepth 1 -type f -name '*.md' ! -name 'README.md')
+          if [ "${#INBOX[@]}" -gt 0 ]; then
+            printf 'Inbox: %s\n' "${INBOX[@]}"
+            python3 scripts/stream_add.py inbox "${INBOX[@]}"
+          else
+            echo "Inbox empty."
+          fi
+
+      - name: Append stream.yml entries for new posts/notes/photos/reviews
+        run: |
+          BEFORE='${{ github.event.before }}'
+          # First push to a branch reports an all-zero "before" SHA.
+          if [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            RANGE_ARGS="${{ github.sha }}"
+          else
+            RANGE_ARGS="$BEFORE ${{ github.sha }}"
+          fi
+          # Thoughts deliberately excluded: the stream layout reads
+          # `site.thoughts` directly, so they don't need stream.yml entries.
+          mapfile -t ADDED < <(git diff --name-only --diff-filter=A $RANGE_ARGS -- _posts _notes _photos _reviews)
+          if [ "${#ADDED[@]}" -gt 0 ]; then
+            printf 'Added: %s\n' "${ADDED[@]}"
+            python3 scripts/stream_add.py collection "${ADDED[@]}"
+          else
+            echo "No new posts/notes/photos/reviews."
+          fi
+
+      - name: Commit if changed
+        run: |
+          git add -A _thoughts stream_inbox _data/stream.yml
+          if git diff --quiet --cached; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -m "Update stream [skip ci]"
+          git push
