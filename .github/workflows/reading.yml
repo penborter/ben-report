@@ -1,0 +1,60 @@
+name: Update reading list
+
+on:
+  # Monday ~6am Sydney (AEST) / 7am (AEDT).
+  schedule:
+    - cron: "0 20 * * 0"
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Sheet tab to sync (default: current year)"
+        required: false
+        type: string
+      dry_run:
+        description: "Log what would be added without committing"
+        required: false
+        type: boolean
+        default: false
+
+# Allow the job to push the updated _data/reading.yml back.
+permissions:
+  contents: write
+
+concurrency: reading
+
+jobs:
+  update-reading:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Sync finished books from the Google Sheet
+        env:
+          # Via env, not inline ${{ }}, so the input can't inject shell.
+          YEAR: ${{ inputs.year }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          ARGS=()
+          if [ -n "$YEAR" ]; then
+            ARGS+=(--year "$YEAR")
+          fi
+          if [ "$DRY_RUN" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+          python3 scripts/reading_sync.py "${ARGS[@]}"
+
+      - name: Commit if changed
+        run: |
+          git add -A _data/reading.yml _pages/books.html .github/reading-sync-state.json
+          if git diff --quiet --cached; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git commit -m "Update reading list [skip ci]"
+          git push
