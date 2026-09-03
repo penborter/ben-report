@@ -1,6 +1,26 @@
 years:
   - year: "2026"
     books:
+      - title: The Traitor
+        author: Seth Dickinson
+      - title: On the Calculation of Volume II
+        author: Solvej Balle
+      - title: Ancillary Mercy
+        author: Ann Leckie
+      - title: Ancillary Sword
+        author: Ann Leckie
+      - title: Ancillary Justice
+        author: Ann Leckie
+      - title: The Player of Games
+        author: Iain M. Banks
+      - title: Never Let Me Go
+        author: Kazuo Ishiguro
+      - title: The Employees
+        author: Olga Ravn
+      - title: Language and Silence
+        author: George Steiner
+      - title: Moby Dick
+        author: Herman Melville
       - title: The Shifting Realities of Philip K. Dick
         author: Philip K. Dick
         review: "Basically lines up with what I expected from having read his fiction writing — a bit paranoid, skeptical of reality, suspicious of authority, etc. — but more… downtrodden."
