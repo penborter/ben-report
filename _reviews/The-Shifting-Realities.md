@@ -26,10 +26,9 @@ Basically lines up with what I expected from having read his fiction writing —
   title="The Short, Happy Life of a Science Fiction Writer (1976)"
 %}
 
-Interesting how much tighter the two chapters from the sequel to *The Man in the High Castle* are. Clearly he saves his focus for the novels themselves, not that it was in short supply with his prolific publishing rate. But the rest of the writing is very conversational, the effect of which I think compounds as they're set back to back to back.
+I found it interesting how much tighter the two chapters from the sequel to *The Man in the High Castle* are. Clearly he saves his focus for the novels themselves, not that it was in short supply with his prolific publishing rate. Even the couple of plot outlines are compelling. He was not struggling for ideas. But the rest of the writing is very conversational and a touch more rambling, the effect of which I think compounds as they're set back to back to back.
 
-
-Also interesting the breadth of references he has available to him (reminds me of Patrick Leigh Fermor's list of all his memorised texts).
+Also interesting the breadth of references he has available to him (reminds me of Patrick Leigh Fermor's [list of all his memorised texts](/books/a-time-of-gifts#Quotes)).
 
 ## Quotes
 

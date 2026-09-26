@@ -1,3 +1,61 @@
+euro26:
+  title: Europe 2026
+  imagefolder: /euro26
+  thumb: euro26-thumb.webp
+  images:
+  - name: euro26-01.webp
+    thumb: euro26-01.webp
+    text: St. Mark's square, Venice
+  - name: euro26-02.webp
+    thumb: euro26-02.webp
+    text: Commerce in St. Mark's square, Venice
+  - name: euro26-03.webp
+    thumb: euro26-03.webp
+    text: Venetian architecture, Venice
+  - name: euro26-04.webp
+    thumb: euro26-04.webp
+    text: Bolognese architecture, Bologna
+  - name: euro26-05.webp
+    thumb: euro26-05.webp
+    text: Under construction, Bologna
+  - name: euro26-06.webp
+    thumb: euro26-06.webp
+    text: Inspecting the produce, Bologna
+  - name: euro26-07.webp
+    thumb: euro26-07.webp
+    text: Basilica di San Petronio, Bologna
+  - name: euro26-08.webp
+    thumb: euro26-08.webp
+    text: Inspecting the catch - 1, Bologna
+  - name: euro26-09.webp
+    thumb: euro26-09.webp
+    text: Near the Santuario della Madonna di San Luca, Bologna
+  - name: euro26-10.webp
+    thumb: euro26-10.webp
+    text: Pedestrians, Turin
+  - name: euro26-11.webp
+    thumb: euro26-11.webp
+    text: Shaving in the River Po, Turin
+  - name: euro26-12.webp
+    thumb: euro26-12.webp
+    text: Highly visible, Turin
+  - name: euro26-13.webp
+    thumb: euro26-13.webp
+    text: Inspecting the catch - 2, Istanbul
+  - name: euro26-14.webp
+    thumb: euro26-14.webp
+    text: Party outside the Galata Tower, Istanbul
+  - name: euro26-15.webp
+    thumb: euro26-15.webp
+    text: Emrah Bufe, Istanbul
+    
+    
+    
+    
+    
+    
+    
+    
 euro:
   title: Europe 2022
   imagefolder: /euro
