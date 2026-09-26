@@ -14,7 +14,6 @@ $caption-wide: calc(1 / #{$pic-wide}); // fits the caption back to normal conten
 $light: hsl(70, 25%, 95%);
 $dark: hsl(175, 25%, 22%);
 
-
 // 2 Calculated Variables
 // 2.1 Main colours and accents
 $dark_accent_1: hsl(165, 25%, 45%);
@@ -29,11 +28,16 @@ $dark-transparent-2: scale-color($dark_accent_1, $alpha: -70%);
 $light-transparent-1: scale-color($light, $alpha: -35%);
 $light-transparent-2: scale-color($light_accent_1, $alpha: -70%);
 
+
 // 2.2 CSS Variables
 // Converting sass variable colours to CSS variables for the dark / light theme switcher
 // The theme sets which of the two input colours is --fg (foreground) and which is --bg (background)
 
 :root {
+
+  --new-green-1: rgb(213 243 211);
+  --new-green-2: rgb(24 160 33);
+  --new-green-0: rgb(238 250 237);
 
   // Padding for narrow screen widths
   --narrow-padding: max(1.5em, calc((100vw - #{$content-width}) / 2));
@@ -570,10 +574,6 @@ blockquote, .footnotes {
       margin-bottom: 0;
     }
   }
-}
-
-blockquote {
-  font-size: 0.9em;
 }
 
 .quote-meta {
