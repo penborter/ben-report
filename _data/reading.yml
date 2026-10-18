@@ -1,6 +1,8 @@
 years:
   - year: "2026"
     books:
+      - title: Cryptonomicon
+        author: Neal Stephenson
       - title: The System of the World
         author: Neal Stephenson
       - title: The Traitor
