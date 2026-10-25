@@ -1,6 +1,8 @@
 years:
   - year: "2026"
     books:
+      - title: Encounters with the Archdruid
+        author: John McPhee
       - title: Cryptonomicon
         author: Neal Stephenson
       - title: The System of the World
